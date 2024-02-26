@@ -137,20 +137,6 @@ También en Mini Program OAuth Scenario, aquí el ID Client también es la ident
 
 ![Client-Id](../OpenAPIs/img/Clientd-id.png)
 
-## Cuerpo de solicitud (Request body)
-
-El cuerpo de solicitud contiene la información de solicitud detallada en formato JSON.Los campos encerrados en el cuerpo de solicitud varían según los servicios.Para obtener más información, consulte el documento específico de especificación API. 
-
-## Estructura de respuesta (Response structure)
-
-Las siguientes figuras ilustran la estructura de respuesta:
-
-![Structure_response](../OpenAPIs/img/Estructtura_Response.png)
 
 
-## Encabezado de respuesta (Response header)
-
-El encabezado de respuesta lleva la información sobre la respuesta, que contiene principalmente los siguientes campos.
-
-Nota: Los nombres de campo son insensibles al caso.
 
