@@ -35,7 +35,5 @@ my.httpRequest({
   success(res1) {},
 }).then((res2) => {
   // res1 === res2
-},(res) => {
-  console.log(res.error, res.errorMessage);
-})
+},(res) => console.log(res.error, res.errorMessage));
 ```
