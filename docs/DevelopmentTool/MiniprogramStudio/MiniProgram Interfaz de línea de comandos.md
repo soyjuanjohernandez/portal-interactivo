@@ -51,23 +51,16 @@ La siguiente tabla enumera todos los comandos disponibles del Miniprogram CLI y 
 
 Antes de usar los comandos CLI, asegúrese de cumplir con los siguientes requisitos previos:
 
-<ul>
-    <li>
-        Tenga un conocimiento básico de ejecutar líneas de comando en sistemas Windows, MacOS o Linux.
-    </li>
-    <li>
-        Instale Node.js 16 en su sistema operativo.
-    </li>
-    <li>
-       Obtenga su ID de clave de acceso y su clave de acceso secreto en la [plataforma Mini Program](/). Estas credenciales están disponibles en su sección de perfil, a las que se puede acceder haciendo clic en el icono de perfil en la esquina superior derecha dentro de cualquier espacio de trabajo.
-    </li>
-    <li>
-       Aprenda los permisos de su rol de usuario en la plataforma Mini Program para evitar cualquier error de operación no autorizado.Para obtener más información, consulte los [roles de los miembros](/).
-    </li>
-    <li>
-        Asegúrese de que el mini programa que pretenda operar a través de Miniprogram CLI ya se crea dentro de su espacio de trabajo.Para obtener orientación sobre la creación de un mini programa, consulte [Crear mini programs](/).
-    </li>
-</ul>
+
+* Tenga un conocimiento básico de ejecutar líneas de comando en sistemas Windows, MacOS o Linux.
+
+* Instale Node.js 16 en su sistema operativo.
+
+* Obtenga su ID de clave de acceso y su clave de acceso secreto en la [plataforma Mini Program](/). Estas credenciales están disponibles en su sección de perfil, a las que se puede acceder haciendo clic en el icono de perfil en la esquina superior derecha dentro de cualquier espacio de trabajo.
+
+* Aprenda los permisos de su rol de usuario en la plataforma Mini Program para evitar cualquier error de operación no autorizado.Para obtener más información, consulte los [roles de los miembros](/).
+
+* Asegúrese de que el mini programa que pretenda operar a través de Miniprogram CLI ya se crea dentro de su espacio de trabajo.Para obtener orientación sobre la creación de un mini programa, consulte [Crear mini programs](/).
 
 
 # Instalar o actualizar Miniprogram CLI

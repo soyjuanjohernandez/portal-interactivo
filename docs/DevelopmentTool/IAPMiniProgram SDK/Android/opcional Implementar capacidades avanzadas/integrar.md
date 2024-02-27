@@ -35,7 +35,7 @@ En primer lugar, necesita integrar el SDK de Google Maps tomando los siguientes 
 
 3. Update the build.gradle file to inject the mapsApiKey variable into the AndroidManifest.xml file as below.
 
-```json
+```js
 
 android {
     defaultConfig {
@@ -56,7 +56,7 @@ android {
 ### Paso 2: Agregue el repositorio maven
 Agregue el repositorio maven en su archivo *built.gradle* con el siguiente código:
 
-```json
+```js
 repositories{
     jcenter()
 }
@@ -65,7 +65,7 @@ repositories{
 ### Paso 3: Agregue las dependencias de los mapas
 Agregue las dependencias de mapas en el app-level *build.gradle* con el siguiente código:
 
-```json
+```js
 dependencies {
     implementation "com.alipay.plus.android:iapminiprogram-gmap:${iapminiprogram_version}"
 }
@@ -78,7 +78,7 @@ Si un miniprograma no proporciona una clave de Google API, la clave API de su ap
 
 **Kotlin**
 
-```java
+```js
 class DemoGriverMapCustomAPIKeyExtension: GriverMapCustomAPIKeyExtension {
     override fun canUseGoogleAPIKey(appId: String?): Boolean {
         return false
@@ -90,7 +90,7 @@ class DemoGriverMapCustomAPIKeyExtension: GriverMapCustomAPIKeyExtension {
 
 **Java**
 
-```java
+```js
 public class DemoGriverMapCustomAPIKeyExtension implements GriverMapCustomAPIKeyExtension {
     @Override
     public boolean canUseGoogleAPIKey(String appId) {
@@ -101,7 +101,7 @@ public class DemoGriverMapCustomAPIKeyExtension implements GriverMapCustomAPIKey
 
 2. Registre la ```Extension``` después de que el SDK se inicialice como se muestra a continuación.
 
-```java
+```js
 Griver.registerExtension(new GriverExtensionManifest(GriverMapCustomAPIKeyExtension.class, new DemoGriverMapCustomAPIKeyExtension()));
 ```
 
@@ -118,7 +118,7 @@ Para permitir a los usuarios reproducir videos en sus mini programa, debe integr
 
 Agregue las dependencias de video en el archivo ```build.gradle``` de nivel de la aplicación con el siguiente código:
 
-```json
+```js
 dependencies {
     implementation "com.alipay.plus.android:iapminiprogram-video:${iapminiprogram_version}"
 }
@@ -133,7 +133,7 @@ Para permitir a los usuarios implementar las capacidades de Lottie en sus mini p
 
 Agregue las dependencias de Lottie en el archivo *build.gradle* de nivel de la aplicación con el siguiente código:
 
-```json
+```js
 dependencies {
     implementation "com.alipay.plus.android:iapminiprogram-lottie:${iapminiprogram_version}"
 }
@@ -147,7 +147,7 @@ Para permitir a los usuarios implementar las capacidades Bluetooth en sus minipr
 
 Agregue las dependencias de Bluetooth al archivo *build.gradle* de nivel de la aplicación con el siguiente código:
 
-```json
+```js
 dependencies {
     implementation "com.alipay.plus.android:iapminiprogram-bluetooth:${iapminiprogram_version}"
 }

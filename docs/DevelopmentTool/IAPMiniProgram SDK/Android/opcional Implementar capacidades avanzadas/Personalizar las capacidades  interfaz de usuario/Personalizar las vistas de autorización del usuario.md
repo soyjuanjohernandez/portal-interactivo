@@ -8,7 +8,7 @@ sidebar_position: 1
 Para preocupaciones de privacidad, IAPminiprogram SDK muestra vistas de autorización de usuarios cuando los mini programas llaman a JSAPIS que requieren acceso a la información confidencial de los usuarios. La super aplicación puede personalizar estas vistas para crear una interfaz de usuario que coincida con su marca y cumpla con los requisitos regionales regionales.Este tema lo guía a través de cómo personalizar la vista de autorización del usuario.
 
 
-## Experiencia de usuario predeterminada
+## Experiencia de usuario predeterminada ⚽
 
 Si elige no proporcionar vistas personalizadas de autorización de usuario, el SDK muestra las vistas en forma de una ventana emergente inferior en la pantalla. Puede consultar la siguiente imagen para obtener un ejemplo de vista predeterminado:
 
@@ -482,15 +482,55 @@ El método createDialog tiene el siguiente parámetro de entrada cuyo valor pasa
             Interface to global information about an application environment.
         </td>
         <td>
-        </td>
             M
+        </td>
     </tr>
 </table>
 
 
 
+## Appendices
+### Cómo se especifica el parámetro de ámbitos
+IApminiprogram SDK especifica el parámetro de ámbitos de acuerdo con los ámbitos requeridos de JSAPI.Sin embargo, si el usuario autoriza un cierto alcance para un JSAPI, no necesita autorización repetida para otro JSAPI. Por lo tanto, no pasamos los valores correspondientes para los ámbitos autorizados.Consulte la siguiente tabla para el JSAPIS y sus ámbitos requeridos respectivamente:
+
+<table>
+    <tr>
+        <th>
+            JSAPIs
+        </th>
+        <th>
+            Alcances requeridos
+        </th>
+    </tr>
+    <tr>
+        <td>
+            Ubicación JSAPIs (e.g., my.getLocation)
+        </td>
+        <td>
+            scope.location
+        </td>
+    </tr>
+    <tr>
+        <td>
+            Imagen JSAPIs (e.g., my.chooseImage)
+        </td>
+        <td>
+            scope.album, scope.camera
+        </td>
+    </tr>
+    <tr>
+        <td>
+            video JSAPIs (e.g., my.chooseVideo)
+        </td>
+        <td>
+            scope.album, scope.camera
+        </td>
+    </tr>
+</table>
 
 
+## Ilustración de la vista de autorización del usuario
+La siguiente imagen ilustra los diversos elementos y sus posiciones en una vista de autorización de usuario predeterminada:
 
-
+![Ilustración de la vista de autorización del usuario](./img/customize2.png)
 

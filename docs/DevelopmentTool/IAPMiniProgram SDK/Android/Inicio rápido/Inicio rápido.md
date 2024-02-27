@@ -45,7 +45,6 @@ Agregue el archivo ***iapconnect_config_full*** en el directorio de activos de s
 
 ![iapconnect_config_ful](../../img/androidQuik1.png)
 
-
 ### Step 3: Agregue el repositorio maven
 Agregue el repositorio maven a su archivo de construcción raíz.
 
@@ -69,18 +68,17 @@ Para agregar dependencias, siga estos pasos:
 
 1. Agregue las dependencias en el archivo Build.gradle de la aplicación a nivel con el siguiente código:
 
-```json
+```js
 // en app build.gradle
 // Si hay algunos conflictos con el SDK existente, excluirlos
 dependencies {
     implementation "com.alipay.plus.android:iapminiprogram:${iapminiprogram_version}"
 }
-
 ```
 
 2. Externalice el número de versión en el archivo build.gradle para administrar fácilmente las actualizaciones con el siguiente código:
 
-```json
+```js
 ext {
     iapminiprogram_version = 'IAPMINPROGRAM_VERSION'
 }
@@ -93,7 +91,7 @@ Reemplace el valor de ```IAPMINPROGRAM_VERSION``` con el último número de vers
 Después de agregar dependencias, debe inicializar el SDK en el evento ```OnCreate``` de la aplicación. Consulte los siguientes códigos para obtener más detalles.
 
 #### Kotlin
-```json
+```js
 class YourApplication : Application() {
     override fun onCreate() {
         super.onCreate()
@@ -111,7 +109,7 @@ class YourApplication : Application() {
 ```
 #### Java
 
-```json
+```js
 public class YourApplication extends Application {
     @Override
     public void onCreate() {
