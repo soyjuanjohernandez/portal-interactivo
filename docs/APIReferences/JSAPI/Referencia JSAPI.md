@@ -149,7 +149,7 @@ Nota: Para las preguntas frecuentes de la barra de pestañas, ver [Preguntas fre
     <tr>
       <td>[my.navigateTo](/)</td>
       <td>Mantenga la página actual y salte a la página especificada dentro de la aplicación. Use 
-      my.navigateback para volver a la página original.</td>
+      ```my.navigateback``` para volver a la página original.</td>
     </tr>
     <tr>
       <td>[my.navigateBack](/)</td>
@@ -401,7 +401,7 @@ Para obtener más información sobre contexto de Canvas, ver [Contexto Canvas De
 
 ## Media
 
-### Image
+### Imagen
 <table>
   <thead>
     <tr>
@@ -467,7 +467,7 @@ Para obtener más información sobre contexto de Canvas, ver [Contexto Canvas De
   </tbody>
 </table>
 
-## Storage
+## Almacenamiento
 
 <table>
   <thead>
@@ -478,56 +478,416 @@ Para obtener más información sobre contexto de Canvas, ver [Contexto Canvas De
   </thead>
   <tbody>
     <tr>
-      <td>[](/)</td>
-      <td></td>
+      <td>[my.getStorage](/)</td>
+      <td>Obtener datos en caché.</td>
     </tr>
     <tr>
-      <td>[](/)</td>
-      <td></td>
+      <td>[my.getStorageSync](/)</td>
+      <td>Obtener datos en caché de forma sincrónica.</td>
     </tr>
     <tr>
-      <td>[](/)</td>
-      <td></td>
+      <td>[my.setStorage](/)</td>
+      <td>Almacena los datos de la clave especificada en la caché local, que se superponen a los datos originales correspondientes a la clave.</td>
     </tr>
     <tr>
-      <td>[](/)</td>
-      <td></td>
+      <td>[my.setStorageSync](/)</td>
+      <td>Almacena los datos de la clave especificada en la caché local, que se superponen a los datos originales correspondientes a la clave.</td>
     </tr>
     <tr>
-      <td>[](/)</td>
-      <td></td>
+      <td>[my.removeStorage](/)</td>
+      <td>Eliminar los datos almacenados en caché.</td>
+    </tr>
+    <tr>
+      <td>[my.removeStorageSync](/)</td>
+      <td>Eliminar datos en caché de forma sincrónica</td>
+    </tr>
+    <tr>
+      <td>[my.clearStorage](/)</td>
+      <td>Borra la caché de datos local.</td>
+    </tr>
+    <tr>
+      <td>[my.clearStorageSync](/)</td>
+      <td>Borra la caché de datos local de forma sincrónica.</td>
     </tr>
   </tbody>
 </table>
 
-## File
+## Archivo
+<table>
+    <tr>
+      <th>Nombre del API</th>
+      <th>Descripción de la función</th>
+    </tr>
+    <tr>
+      <td>[my.saveFile](/)</td>
+      <td>Guarda el archivo en el dispositivo.</td>
+    </tr>
+    <tr>
+      <td>[my.getFileInfo](/)</td>
+      <td>Obtener la información del archivo.</td>
+    </tr>
+    <tr>
+      <td>[my.getSavedFileInfo](/)</td>
+      <td>Obtiene la información del archivo guardado.</td>
+    </tr>
+    <tr>
+      <td>[my.getSavedFileList](/)</td>
+      <td>Obtiene la información de todos los archivos guardados.</td>
+    </tr>
+    <tr>
+      <td>[my.removeSavedFile](/)</td>
+      <td>Elimina el archivo guardado.</td>
+    </tr>
+     <tr>
+      <td>[my.chooseFileFromDisk](/)</td>
+      <td>Elegir un archivo para cargar.</td>
+    </tr>
+    <tr>
+      <td>[my.openDocument](/)</td>
+      <td>Permite a los usuarios previsualizar un archivo PDF dentro del miniprograma.</td>
+    </tr>
+</table>
 
-## Location
+## Ubicación
+<table>
+    <tr>
+      <th>Nombre del API</th>
+      <th>Descripción de la función</th>
+    </tr>
+    <tr>
+      <td>[my.getLocation](/)</td>
+      <td>Obtenga la ubicación geográfica actual del usuario.</td>
+    </tr>
+    <tr>
+      <td>[my.openLocation](/)</td>
+      <td>Vea la ubicación en el mapa incorporado.</td>
+    </tr>
+    <tr>
+      <td>[my.chooseLocation](/)</td>
+      <td>Abra el mapa incorporado para elegir una ubicación.</td>
+    </tr>
+</table>
 
-## Map
+## Mapa
+<table>
+    <tr>
+        <th>Nombre del API</th>
+        <th>Descripción de la función</th>
+    </tr>
+    <tr>
+        <td>[my.createMapContext](/)</td>
+        <td>Crea y devuelve un objeto de contexto de mapa mapContext.</td>
+    </tr>
+    <tr>
+        <td>[my.calculateRoute](/)</td>
+        <td>Calcula la ruta.</td>
+    </tr>
+</table>
 
-## Network
+## Red
+<table>
+    <tr>
+        <th>Nombre del API</th>
+        <th>Descripción de la función</th>
+    </tr>
+    <tr>
+        <td>[my.request](/)</td>
+        <td>Solicitud de red.</td>
+    </tr>
+    <tr>
+        <td>[my.uploadFile](/)</td>
+        <td>Cargue el recurso local al servidor de desarrolladores.</td>
+    </tr>
+    <tr>
+        <td>[my.downloadFile](/)</td>
+        <td>Descargue el recurso de archivo a la ubicación local.</td>
+    </tr>
+    <tr>
+        <td>[my.connectSocket](/)</td>
+        <td>Crea una conexión WebSocket.</td>
+    </tr>
+    <tr>
+        <td>[my.onSocketOpen](/)</td>
+        <td>Escuche el evento de habilitar la conexión WebSocket.</td>
+    </tr>
+    <tr>
+        <td>[my.offSocketOpen](/)</td>
+        <td>No se indique el evento de habilitar la conexión WebSocket.</td>
+    </tr>
+    <tr>
+        <td>[my.onSocketError](/)</td>
+        <td>Escuche los eventos de error de WebSocket.</td>
+    </tr>
+    <tr>
+        <td>[my.offSocketError](/)</td>
+        <td>No se deja a WebSocket Eventos de error.</td>
+    </tr>
+    <tr>
+        <td>[my.sendSocketMessage](/)</td>
+        <td>Enviar datos a través de la conexión WebSocket.</td>
+    </tr>
+    <tr>
+        <td>[my.onSocketMessage](/)</td>
+        <td>Escuche el evento de recibir mensajes del servidor por WebSocket.</td>
+    </tr>
+    <tr>
+        <td>[my.offSocketMessage](/)</td>
+        <td>No se indique el evento de recibir mensajes del servidor por WebSocket.</td>
+    </tr>
+    <tr>
+        <td>[my.closeSocket](/)</td>
+        <td>Cierre la conexión WebSocket.</td>
+    </tr>
+    <tr>
+        <td>[my.onSocketClose](/)</td>
+        <td>Escuche el evento de cerrar la conexión WebSocket.</td>
+    </tr>
+    <tr>
+        <td>[my.offSocketClose](/)</td>
+        <td>No se indique el caso de cerrar la conexión WebSocket.</td>
+    </tr>
+</table>
 
-## Device
+## Dispositivo
+### Información del sistema
 
-### System Information
-### Network Status
-### Clipboard
-### Whatch Shake
-### Accelerometer
+<table>
+    <tr>
+        <th>Nombre del API</th>
+        <th>Descripción de la función</th>
+    </tr>
+    <tr>
+        <td>[my.getSystemInfo](/)</td>
+        <td>Obtener información del sistema.</td>
+    </tr>
+</table>
+
+### Estado de la red
+<table>
+    <tr>
+        <th>Nombre del API</th>
+        <th>Descripción de la función</th>
+    </tr>
+    <tr>
+        <td>[my.getNetworkType](/)</td>
+        <td>Obtener el estado actual de la red.</td>
+    </tr>
+</table>
+
+### Portapapeles
+<table>
+    <tr>
+        <th>Nombre del API</th>
+        <th>Descripción de la función</th>
+    </tr>
+    <tr>
+        <td>[my.getClipboard](/)</td>
+        <td>Obtenga los datos del portapapeles.</td>
+    </tr>
+    <tr>
+        <td>[my.setClipboard](/)</td>
+        <td>Establezca los datos del portapapeles.</td>
+    </tr>
+</table>
+
+### Mira Shake
+<table>
+    <tr>
+        <th>Nombre del API</th>
+        <th>Descripción de la función</th>
+    </tr>
+    <tr>
+        <td>[my.watchShake](/)</td>
+        <td>La función de los WatchShake.</td>
+    </tr>
+</table>
+
+### Acelerómetro
+<table>
+    <tr>
+        <th>Nombre del API</th>
+        <th>Descripción de la función</th>
+    </tr>
+    <tr>
+        <td>[my.onAccelerometerChange](/)</td>
+        <td>Indica el evento de datos de aceleración.</td>
+    </tr>
+    <tr>
+        <td>[my.offAccelerometerChange](/)</td>
+        <td>No se indica al evento de datos de aceleración.</td>
+    </tr>
+</table>
+
 ### Compass
+
+<table>
+    <tr>
+        <th>Nombre del API</th>
+        <th>Descripción de la función</th>
+    </tr>
+    <tr>
+        <th></th>
+        <th></th>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+    </tr>
+</table>
+
 ### Vibrate 
+<table>
+    <tr>
+        <th>Nombre del API</th>
+        <th>Descripción de la función</th>
+    </tr>
+    <tr>
+        <th></th>
+        <th></th>
+    </tr>
+</table>
+
 ### Make Phone Call
+<table>
+    <tr>
+        <th>Nombre del API</th>
+        <th>Descripción de la función</th>
+    </tr>
+    <tr>
+        <th></th>
+        <th></th>
+    </tr>
+</table>
+
 ### Get Server Time
+<table>
+    <tr>
+        <th>Nombre del API</th>
+        <th>Descripción de la función</th>
+    </tr>
+    <tr>
+        <th></th>
+        <th></th>
+    </tr>
+</table>
+
 ### Capture Screen
+<table>
+    <tr>
+        <th>Nombre del API</th>
+        <th>Descripción de la función</th>
+    </tr>
+    <tr>
+        <th></th>
+        <th></th>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+    </tr>
+</table>
+
 ### Screen Brightness
 ### Screen Orientation
+<table>
+    <tr>
+        <th>Nombre del API</th>
+        <th>Descripción de la función</th>
+    </tr>
+    <tr>
+        <th></th>
+        <th></th>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+    </tr>
+</table>
+
 ### Settings
+<table>
+    <tr>
+        <th>Nombre del API</th>
+        <th>Descripción de la función</th>
+    </tr>
+    <tr>
+        <th></th>
+        <th></th>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+    </tr>
+</table>
+
 ### Add Phone Contact
+<table>
+    <tr>
+        <th>Nombre del API</th>
+        <th>Descripción de la función</th>
+    </tr>
+    <tr>
+        <th></th>
+        <th></th>
+    </tr>
+</table>
+
 ### Permission Guide
+<table>
+    <tr>
+        <th>Nombre del API</th>
+        <th>Descripción de la función</th>
+    </tr>
+    <tr>
+        <th></th>
+        <th></th>
+    </tr>
+</table>
+
 ### Scan
+<table>
+    <tr>
+        <th>Nombre del API</th>
+        <th>Descripción de la función</th>
+    </tr>
+    <tr>
+        <th></th>
+        <th></th>
+    </tr>
+</table>
+
 ### Memory Warning
+<table>
+    <tr>
+        <th>Nombre del API</th>
+        <th>Descripción de la función</th>
+    </tr>
+    <tr>
+        <th></th>
+        <th></th>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+    </tr>
+</table>
+
 ### Battery Information
+<table>
+    <tr>
+        <th>Nombre del API</th>
+        <th>Descripción de la función</th>
+    </tr>
+    <tr>
+        <th></th>
+        <th></th>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+    </tr>
+</table>
+
 ### Bluetooth
 #### Reference
 #### BLE
