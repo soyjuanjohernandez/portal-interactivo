@@ -90,7 +90,7 @@ public class DemoLocalPermissionNoticeDialog implements LocalPermissionDialog {
 
 Para obtener más información sobre esta interfaz, consulte ```LocalPermissionDialog```.
 
-##Paso 2: implementar GriverLocalAuthDialogExtension
+## Paso 2: implementar GriverLocalAuthDialogExtension
 Cree una clase que implementa la interfaz ```GriverLocalAuthDialogExtension``` para crear una vista que se define en el paso anterior. Consulte el siguiente código de muestra para la implementaciónn:
 
   ```js
@@ -146,7 +146,7 @@ Como podemos ver en la definición, esta interfaz proporciona los siguientes cua
             setDialogContent
         </td>
         <td>
-        La super aplicación utiliza este método para obtener la información en una vista predeterminada y personalizar la visualización de una vista de autorización de usuario.Para obtener más información, consulte SetDialogContent.
+        La super aplicación utiliza este método para obtener la información en una vista predeterminada y personalizar la visualización de una vista de autorización de usuario.Para obtener más información, consulte [```SetDialogContent```](/).
         </td>
         <td>
             M
@@ -157,7 +157,7 @@ Como podemos ver en la definición, esta interfaz proporciona los siguientes cua
             setDialogExtraData
         </td>
         <td>
-           La super aplicación utiliza este método para obtener la información que podría ser necesaria para una vista de autorización del usuario.Para obtener más información, consulte SetDialogExtradata.
+           La super aplicación utiliza este método para obtener la información que podría ser necesaria para una vista de autorización del usuario.Para obtener más información, consulte [```SetDialogExtradata```](/).
         </td>
         <td>
             O
@@ -168,7 +168,7 @@ Como podemos ver en la definición, esta interfaz proporciona los siguientes cua
             setPermissionPermitListener
         </td>
         <td>
-          La super aplicación utiliza este método para establecer un oyente para manejar la respuesta del usuario sobre si aprueba o niega la autorización.Para obtener más información, consulte SetPermissionPermitListener.
+          La super aplicación utiliza este método para establecer un oyente para manejar la respuesta del usuario sobre si aprueba o niega la autorización.Para obtener más información, consulte [```SetPermissionPermitListener```](/).
         </td>
         <td>
             M
@@ -179,7 +179,7 @@ Como podemos ver en la definición, esta interfaz proporciona los siguientes cua
             show
         </td>
         <td>
-           El SDK llama a este método para mostrar la vista personalizada en la página actual cuando se activa el JSAPI.Para obtener cómo especificar su parámetro, consulte Show.
+           El SDK llama a este método para mostrar la vista personalizada en la página actual cuando se activa el JSAPI.Para obtener cómo especificar su parámetro, consulte [```Show```](/).
         </td>
         <td>
             M
@@ -216,7 +216,7 @@ El método ```SetDialogContent``` tiene los siguientes parámetros de entrada cu
             String
         </td>
         <td>
-            La descripción del alcance en la vista predeterminada. Para una ilustración visual, consulte la ilustración de la vista de autorización del usuario.
+            La descripción del alcance en la vista predeterminada. Para una ilustración visual, consulte la [ilustración de la vista de autorización del usuario](/).
         </td>
         <td>
             M
@@ -230,7 +230,7 @@ El método ```SetDialogContent``` tiene los siguientes parámetros de entrada cu
             String
         </td>
         <td>
-          El mensaje de permiso en la vista predeterminada. Para una ilustración visual, consulte la ilustración de la vista de autorización del usuario.
+          El mensaje de permiso en la vista predeterminada. Para una ilustración visual, consulte la [ilustración de la vista de autorización del usuario](/).
         </td>
         <td>
             M
@@ -244,7 +244,7 @@ El método ```SetDialogContent``` tiene los siguientes parámetros de entrada cu
             String
         </td>
         <td>
-           La URL del icono en la vista predeterminada.Para una ilustración visual, consulte la ilustración de la vista de autorización del usuario.
+           La URL del icono en la vista predeterminada.Para una ilustración visual, consulte la [ilustración de la vista de autorización del usuario](/).
         </td>
         <td>
             M
@@ -302,6 +302,7 @@ Required
             </ul>
         </td>
         <td>
+        M
         </td>
     </tr>
 </table>
@@ -427,13 +428,13 @@ Como podemos ver en la definición, esta interfaz proporciona el siguiente méto
 <table>
     <tr>
         <th>
-            Method
+            Método
         </th>
         <th>
-            Description
+            Descripción
         </th>
         <th>
-            Required
+            Requerida
         </th>
     </tr>
     <tr>
@@ -441,7 +442,7 @@ Como podemos ver en la definición, esta interfaz proporciona el siguiente méto
             createDialog
         </td>
         <td>
-            The SDK calls this method to create a user authorization view that is defined by the LocalPermissionDialog interface. For more information, refer to createDialog.
+           El SDK llama a este método para crear una vista de autorización del usuario que define la interfaz ```LocalPermissionDialog```.Para obtener más información, consulte [```createialog```](/).
         </td>
         <td>
             M
@@ -453,7 +454,7 @@ Como podemos ver en la definición, esta interfaz proporciona el siguiente méto
 
 ## createDialog
 
-El método createDialog tiene el siguiente parámetro de entrada cuyo valor pasa por el SDK:
+El método ```createDialog``` tiene el siguiente parámetro de entrada cuyo valor pasa por el SDK:
 
 
 <table>
@@ -504,29 +505,35 @@ IApminiprogram SDK especifica el parámetro de ámbitos de acuerdo con los ámbi
     </tr>
     <tr>
         <td>
-            Ubicación JSAPIs (e.g., my.getLocation)
+           Location JSAPIs (e.g., my.getLocation)
         </td>
         <td>
-            scope.location
-        </td>
-    </tr>
-    <tr>
-        <td>
-            Imagen JSAPIs (e.g., my.chooseImage)
-        </td>
-        <td>
-            scope.album, scope.camera
+     scope.location
         </td>
     </tr>
     <tr>
         <td>
-            video JSAPIs (e.g., my.chooseVideo)
+         Image JSAPIs (e.g., my.chooseImage)
         </td>
         <td>
-            scope.album, scope.camera
+       scope.album, scope.camera
+        </td>
+    </tr>
+    <tr>
+        <td>
+Video JSAPIs (e.g., my.chooseVideo)
+        </td>
+        <td>
+         scope.album, scope.camera
         </td>
     </tr>
 </table>
+
+
+
+
+
+
 
 
 ## Ilustración de la vista de autorización del usuario
