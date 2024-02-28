@@ -251,6 +251,7 @@ Nota: Para las preguntas frecuentes de la barra de pestañas, ver [Preguntas fre
     </tr>
   </tbody>
 </table>
+
 ### Seleccione Datos
 <table>
   <thead>
@@ -266,6 +267,7 @@ Nota: Para las preguntas frecuentes de la barra de pestañas, ver [Preguntas fre
     </tr>
   </tbody>
 </table>
+
 ### Animación
 <table>
   <thead>
@@ -400,10 +402,103 @@ Para obtener más información sobre contexto de Canvas, ver [Contexto Canvas De
 ## Media
 
 ### Image
+<table>
+  <thead>
+    <tr>
+      <th>Nombre del API</th>
+      <th>Descripción de la función</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>[my.chooseImage](/)</td>
+      <td>Elige una imagen de la cámara o del álbum del móvil.</td>
+    </tr>
+    <tr>
+      <td>[my.previewImage](/)</td>
+      <td>Vista previa de la imagen.</td>
+    </tr>
+    <tr>
+      <td>[my.saveImage](/)</td>
+      <td>Guarda las imágenes en línea en el álbum del móvil.</td>
+    </tr>
+    <tr>
+      <td>[my.getImageInfo](/)</td>
+      <td>Obtener la información de la imagen.</td>
+    </tr>
+    <tr>
+      <td>[my.compressImage](/)</td>
+      <td>Comprime imágenes grandes para cumplir las restricciones de tamaño de algunos miniprogramas.</td>
+    </tr>
+  </tbody>
+</table>
+
 ### Video
+
+<table>
+  <thead>
+    <tr>
+      <th>Nombre del API</th>
+      <th>Descripción de la función</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>[my.chooseVideo](/)</td>
+      <td>Graba un vídeo o elige un vídeo del álbum.</td>
+    </tr>
+  </tbody>
+</table>
+
 ### Lottie
 
+<table>
+  <thead>
+    <tr>
+      <th>Nombre del API</th>
+      <th>Descripción de la función</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>[my.createLottieContext](/)</td>
+      <td>Crea y devuelve un objeto de contexto Lottie [lottieContext](/).</td>
+    </tr>
+  </tbody>
+</table>
+
 ## Storage
+
+<table>
+  <thead>
+    <tr>
+      <th>Nombre del API</th>
+      <th>Descripción de la función</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>[](/)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>[](/)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>[](/)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>[](/)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>[](/)</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
 
 ## File
 
