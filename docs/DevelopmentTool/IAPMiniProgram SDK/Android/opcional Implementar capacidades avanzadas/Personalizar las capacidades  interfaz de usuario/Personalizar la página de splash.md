@@ -423,26 +423,3 @@ La siguiente tabla enumera los detalles de los errores que pueden ocurrir cuando
     </tr>
 </table>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
