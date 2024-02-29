@@ -5,7 +5,7 @@ sidebar_position: 3
 
 # fetchApps
 
-La API de FetchApps es llamado por la aplicación Super para ejecutar una consulta con [FetchAppRequestVO](/) para obtener una lista asincrónica de mini programas que se lanzan a su aplicación. Esta API proporciona una capacidad de paginación para devolver los datos.
+La API de FetchApps es llamado por la aplicación Super para ejecutar una consulta con [FetchAppRequestVO](/) para obtener una lista asincrónica de mini programs que se lanzan a su aplicación. Esta API proporciona una capacidad de paginación para devolver los datos.
 
 
 ## Firma de método
@@ -26,7 +26,7 @@ void fetchApps(FetchAppRequestVO fetchAppRequestVO, OnRpcResultListener<FetchApp
     <tr>
         <td>fetchAppRequestVO</td>
         <td>FetchAppRequestVO</td>
-        <td>Un objeto que se utiliza para establecer las condiciones de consulta de los mini programas.</td>
+        <td>Un objeto que se utiliza para establecer las condiciones de consulta de los mini programs.</td>
         <td>M</td>
     </tr>
     <tr>
@@ -34,7 +34,7 @@ void fetchApps(FetchAppRequestVO fetchAppRequestVO, OnRpcResultListener<FetchApp
         <td>OnRpcResultListener ```<FetchAppsResult>```</td>
         <td>
         La función de devolución de llamada que se utiliza para devolver el resultado de la consulta.
-        - Si la consulta es exitosa, devuelve una lista de mini programas que coinciden con las condiciones de consulta especificadas. Ver FetchAppSresult para más detalles.
+        - Si la consulta es exitosa, devuelve una lista de mini programs que coinciden con las condiciones de consulta especificadas. Ver FetchAppSresult para más detalles.
         - Si la consulta falla, devuelve el código de error y el mensaje de error. Vea el error para obtener más detalles.
         </td>
         <td>M</td>
@@ -55,7 +55,7 @@ void fetchApps(FetchAppRequestVO fetchAppRequestVO, OnRpcResultListener<FetchApp
     <tr>
         <td>result</td>
         <td>FetchAppsResult</td>
-        <td>La lista de programas de mini que se devuelve cuando la consulta es exitosa.</td>
+        <td>La lista de mini programs que se devuelve cuando la consulta es exitosa.</td>
         <td>O</td>
     </tr>
     <tr>
@@ -109,7 +109,7 @@ fetchAppRequestVO.setCategory(category)
 fetchAppRequestVO.setRelatedEnv(relatedEnv)
 Griver.fetchApps(fetchAppRequestVO,  object : OnRpcResultListener<FetchAppsResult?>() {
       fun onResultSuccess(result: FetchAppsResult?) {
-          //Devuelve la Lista de Mini Programas
+          //Devuelve la Lista de Mini Programs
       }
       fun onResultFailed(errorCode: Int, errorMessage: String?) {
           //devolver el código de error y el mensaje de error
@@ -127,7 +127,7 @@ Griver.fetchApps(fetchAppRequestVO,
       new OnRpcResultListener<FetchAppsResult>() {
           @Override
           public void onResultSuccess(FetchAppsResult result) {
-               //Devuelve la Lista de Mini Programas
+               //Devuelve la Lista de Mini Programs
           }
 
           @Override

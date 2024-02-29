@@ -1,5 +1,5 @@
 ---
-sidebar_position: 1
+sidebar_position: 2
 ---
 
 
@@ -70,11 +70,11 @@ sidebar_position: 1
     </tr>
     <tr>
       <td>[my.offUnhandledRejection](/)</td>
-      <td>No se indica para el evento de detección de no control.</td>
+      <td>No se indica para el evento de *unhandledrejection*.</td>
     </tr>
     <tr>
       <td>[my.onUnhandledRejection](/)</td>
-      <td>Indica el evento de revisión de no control.</td>
+      <td>Indica el evento de *unhandledrejection*.</td>
     </tr>
   </tbody>
 </table>
@@ -462,7 +462,7 @@ Para obtener más información sobre contexto de Canvas, ver [Contexto Canvas De
   <tbody>
     <tr>
       <td>[my.createLottieContext](/)</td>
-      <td>Crea y devuelve un objeto de contexto Lottie [lottieContext](/).</td>
+      <td>Crea y devuelve un objeto de contexto Lottie [*lottieContext*](/).</td>
     </tr>
   </tbody>
 </table>
@@ -718,7 +718,7 @@ Para obtener más información sobre contexto de Canvas, ver [Contexto Canvas De
     </tr>
 </table>
 
-### Compass
+### Brújula
 
 <table>
     <tr>
@@ -726,175 +726,417 @@ Para obtener más información sobre contexto de Canvas, ver [Contexto Canvas De
         <th>Descripción de la función</th>
     </tr>
     <tr>
-        <th></th>
-        <th></th>
+        <td>[my.onCompassChange](/)</td>
+        <td>Escucha el evento de cambio de datos de la brújula.</td>
     </tr>
     <tr>
-        <td></td>
-        <td></td>
+        <td>[my.offCompassChange](/)</td>
+        <td>Desactiva la escucha del evento de cambio de datos de la brújula.</td>
     </tr>
 </table>
 
-### Vibrate 
+### Vibrar
 <table>
     <tr>
         <th>Nombre del API</th>
         <th>Descripción de la función</th>
     </tr>
     <tr>
-        <th></th>
-        <th></th>
+        <td>[my.vibrate](/)</td>
+        <td>Invoca la capacidad de vibración del dispositivo.</td>
     </tr>
 </table>
 
-### Make Phone Call
+### Hacer una llamada telefónica
 <table>
     <tr>
         <th>Nombre del API</th>
         <th>Descripción de la función</th>
     </tr>
     <tr>
-        <th></th>
-        <th></th>
+        <td>[my.makePhoneCall](/)</td>
+        <td>Hacer una llamada telefónica.</td>
     </tr>
 </table>
 
-### Get Server Time
+### Obtener tiempo de servidor
 <table>
     <tr>
         <th>Nombre del API</th>
         <th>Descripción de la función</th>
     </tr>
     <tr>
-        <th></th>
-        <th></th>
+        <td>[my.getServerTime](/)</td>
+        <td>Obtiene el tiempo del servidor.</td>
     </tr>
 </table>
 
-### Capture Screen
+### Captura de pantalla
 <table>
     <tr>
         <th>Nombre del API</th>
         <th>Descripción de la función</th>
     </tr>
     <tr>
-        <th></th>
-        <th></th>
+        <td>[my.onUserCaptureScreen](/)</td>
+        <td>Escucha el evento de captura de pantalla por los usuarios.</td>
     </tr>
     <tr>
-        <td></td>
-        <td></td>
+        <td>[my.offUserCaptureScreen](/)</td>
+        <td>Cancela la escucha del evento de captura de pantalla por los usuarios.</td>
     </tr>
 </table>
 
-### Screen Brightness
-### Screen Orientation
+### Brillo de la pantalla
 <table>
     <tr>
         <th>Nombre del API</th>
         <th>Descripción de la función</th>
     </tr>
     <tr>
-        <th></th>
-        <th></th>
+        <td>[my.setKeepScreenOn](/)</td>
+        <td>Establece si la pantalla se mantiene despierta.</td>
     </tr>
     <tr>
-        <td></td>
-        <td></td>
+        <td>[my.getScreenBrightness](/)</td>
+        <td>Obtiente el brillo de la pantalla.</td>
+    </tr>
+    <tr>
+        <td>[my.setScreenBrightness](/)</td>
+        <td>Establece el brillo de la pantalla.</td>
     </tr>
 </table>
 
-### Settings
+### Orientación de la pantalla
 <table>
     <tr>
         <th>Nombre del API</th>
         <th>Descripción de la función</th>
     </tr>
     <tr>
-        <th></th>
-        <th></th>
+        <td>[my.getScreenOrientation](/)</td>
+        <td>Obtiene orientación a la pantalla</td>
     </tr>
     <tr>
-        <td></td>
-        <td></td>
+        <td>[my.setScreenOrientation](/)</td>
+        <td>Establece orientación de pantalla</td>
     </tr>
 </table>
 
-### Add Phone Contact
+### Ajustes
 <table>
     <tr>
         <th>Nombre del API</th>
         <th>Descripción de la función</th>
     </tr>
     <tr>
-        <th></th>
-        <th></th>
+        <td>[my.openSetting](/)</td>
+        <td>Abre la página de configuración del mini programa.</td>
+    </tr>
+    <tr>
+        <td>[my.getSetting](/)</td>
+        <td>Obtiene la configuración actual del usuario.</td>
     </tr>
 </table>
 
-### Permission Guide
+### Agregar contacto telefónico
 <table>
     <tr>
         <th>Nombre del API</th>
         <th>Descripción de la función</th>
     </tr>
     <tr>
-        <th></th>
-        <th></th>
+        <td>[my.addPhoneContact](/)</td>
+        <td>Agrega el contacto al contacto telefónico.</td>
     </tr>
 </table>
 
-### Scan
+### Guía de permiso
 <table>
     <tr>
         <th>Nombre del API</th>
         <th>Descripción de la función</th>
     </tr>
     <tr>
-        <th></th>
-        <th></th>
+        <td>[my.showAuthGuide](/)</td>
+        <td>Guía al usuario para otorgar la autorización cuando el permiso sea necesario.</td>
     </tr>
 </table>
 
-### Memory Warning
+### Escanear
 <table>
     <tr>
         <th>Nombre del API</th>
         <th>Descripción de la función</th>
     </tr>
     <tr>
-        <th></th>
-        <th></th>
-    </tr>
-    <tr>
-        <td></td>
-        <td></td>
+        <td>[my.scan](/)</td>
+        <td>Llama a la función de código de escaneo QR.</td>
     </tr>
 </table>
 
-### Battery Information
+### Advertencia de memoria
 <table>
     <tr>
         <th>Nombre del API</th>
         <th>Descripción de la función</th>
     </tr>
     <tr>
-        <th></th>
-        <th></th>
+        <td>[my.onMemoryWarning](/)</td>
+        <td>Escucha el evento de alarma de memoria insuficiente.</td>
     </tr>
     <tr>
-        <td></td>
-        <td></td>
+        <td>[my.offMemoryWarning](/)</td>
+        <td>Desactiva la alarma de memoria insuficiente.</td>
+    </tr>
+</table>
+
+### Información de la batería
+<table>
+    <tr>
+        <th>Nombre del API</th>
+        <th>Descripción de la función</th>
+    </tr>
+    <tr>
+        <td>[my.getBatteryInfo](/)</td>
+        <td>Obtiene el nivel de batería y el estado de carga del dispositivo actual asincrónicamente.</td>
+    </tr>
+    <tr>
+        <td>[my.getBatteryInfoSync](/)</td>
+        <td>Obtiene el nivel de batería y el estado de carga del dispositivo actual sincrónicamente.</td>
     </tr>
 </table>
 
 ### Bluetooth
-#### Reference
+
+#### Referencia
+<table>
+    <tr>
+        <th>Nombre del API</th>
+        <th>Descripción de la función</th>
+    </tr>
+    <tr>
+        <td>[Bluetooth API Overview](/)</td>
+        <td>Proporciona el requisito del sistema y el flujo del proceso sobre cómo funcionan las API Bluetooth.</td>
+    </tr>
+    <tr>
+        <td>[Bluetooth API Error Codes](/)</td>
+        <td>Enumera el código de error normal y las soluciones relativas.</td>
+    </tr>
+    <tr>
+        <td>[Bluetooth API FAQ](/)</td>
+        <td>Preguntas frecuentes sobre el uso de la API Bluetooth.</td>
+    </tr>
+</table>
+
 #### BLE
+<table>
+    <tr>
+        <th>Nombre del API</th>
+        <th>Descripción de la función</th>
+    </tr>
+    <tr>
+        <td>[my.connectBLEDevice](/)</td>
+        <td>Conecta a dispositivos Bluetooth de baja energía.</td>
+    </tr>
+    <tr>
+        <td>[my.disconnectBLEDevice](/)</td>
+        <td>Desconecta los dispositivos Bluetooth de baja energía.</td>
+    </tr>
+    <tr>
+        <td>[my.getBLEDeviceCharacteristics](/)</td>
+        <td>Obtiene las características de los dispositivos Bluetooth de baja energía.</td>
+    </tr>
+    <tr>
+        <td>[my.getBLEDeviceServices](/)</td>
+        <td>Obtiene todos los dispositivos Bluetooth de baja energía que se descubran, incluidos los dispositivos conectados.</td>
+    </tr>
+    <tr>
+        <td>[my.notifyBLECharacteristicValueChange](/)</td>
+        <td>Habilita la función para notificar los cambios al valor característico.</td>
+    </tr>
+    <tr>
+        <td>[my.offBLECharacteristicValueChange](/)</td>
+        <td>Deshabilita la función para notificar los cambios al valor característico.</td>
+    </tr>
+    <tr>
+        <td>[my.offBLEConnectionStateChanged](/)</td>
+        <td>Deshabilita el oyente del evento para el estado de conexión.</td>
+    </tr>
+    <tr>
+        <td>[my.onBLECharacteristicValueChange](/)</td>
+        <td>Habilita al oyente de eventos para los cambios en el valor característico.</td>
+    </tr>
+    <tr>
+        <td>[my.onBLEConnectionStateChanged](/)</td>
+        <td>Habilita al oyente de eventos para los cambios en el estado de conexión, como el dispositivo perdido y desconectado del dispositivo.</td>
+    </tr>
+    <tr>
+        <td>[my.readBLECharacteristicValue](/)</td>
+        <td>Lea el valor característico.</td>
+    </tr>
+    <tr>
+        <td>[my.writeBLECharacteristicValue](/)</td>
+        <td>Escriba datos al valor característico.</td>
+    </tr>
+</table>
+
 #### Bluetooth
-### Biometric authentication
-## Sharing
-## Update
-## web-view
-## Alipay Connect
-## Open Capabilities
+<table>
+    <tr>
+        <th>Nombre del API</th>
+        <th>Descripción de la función</th>
+    </tr>
+    <tr>
+        <td>[my.closeBluetoothAdapter](/)</td>
+        <td>Cierra el módulo Bluetooth en el mini programa.</td>
+    </tr>
+    <tr>
+        <td>[my.openBluetoothAdapter](/)</td>
+        <td>Inicializa el módulo Bluetooth en el mini programa.</td>
+    </tr>
+    <tr>
+        <td>[my.getBluetoothAdapterState](/)</td>
+        <td>Verifica el estado del adaptador Bluetooth en el mini programa.</td>
+    </tr>
+    <tr>
+        <td>[my.startBluetoothDevicesDiscovery](/)</td>
+        <td>Comienza a descubrir dispositivos Bluetooth.</td>
+    </tr>
+    <tr>
+        <td>[my.stopBluetoothDevicesDiscovery](/)</td>
+        <td>Deja de descubrir dispositivos Bluetooth.</td>
+    </tr>
+    <tr>
+        <td>[my.getBluetoothDevices](/)</td>
+        <td>Obtiene todos los dispositivos Bluetooth que se descubren, incluidos los que están conectados al dispositivo actual.</td>
+    </tr>
+    <tr>
+        <td>[my.getConnectedBluetoothDevices](/)</td>
+        <td>Obtiene los dispositivos Bluetooth que están conectados.</td>
+    </tr>
+    <tr>
+        <td>[my.onBluetoothDeviceFound](/)</td>
+        <td>Usa esta API cuando se encuentre un nuevo dispositivo Bluetooth.</td>
+    </tr>
+    <tr>
+        <td>[my.offBluetoothDeviceFound](/)</td>
+        <td>Retira los dispositivos Bluetooth que se encuentran.</td>
+    </tr>
+    <tr>
+        <td>[my.onBluetoothAdapterStateChange](/)</td>
+        <td>Monitorea los cambios en el estado del adaptador Bluetooth.</td>
+    </tr>
+    <tr>
+        <td>[my.offBluetoothAdapterStateChange](/)</td>
+        <td>Retira el adaptador Bluetooth con un cambio de estado.</td>
+    </tr>
+</table>
+
+### Autenticación biométrica
+
+<table>
+    <tr>
+        <th>Nombre del API</th>
+        <th>Descripción de la función</th>
+    </tr>
+    <tr>
+        <td>[my.checkLocalBioAuthSupported](/)</td>
+        <td>Verifica la disponibilidad de autenticación biométrica en el dispositivo del usuario.</td>
+    </tr>
+    <tr>
+        <td>[my.startLocalBioAuth](/)</td>
+        <td>Inicia un proceso de autenticación biométrica en el dispositivo del usuario.</td>
+    </tr>
+</table> 
+
+## Intercambio
+<table>
+    <tr>
+        <th>Nombre del API</th>
+        <th>Descripción de la función</th>
+    </tr>
+    <tr>
+        <td>[my.showSharePanel](/)</td>
+        <td>Activa el intercambio.</td>
+    </tr>
+</table> 
+
+## Actualizar
+<table>
+    <tr>
+        <th>Nombre del API</th>
+        <th>Descripción de la función</th>
+    </tr>
+    <tr>
+        <td>[my.getUpdateManager](/)</td>
+        <td>Create an [*UpdateManager*](/) object.</td>
+    </tr>
+</table> 
+
+## Vista web
+<table>
+    <tr>
+        <th>Nombre del API</th>
+        <th>Descripción de la función</th>
+    </tr>
+    <tr>
+        <td>[my.createWebViewContext](/)</td>
+        <td>Al crear ```WebViewContext```, Mini Program puede enviar un mensaje a ```Web-View```. Esta API creará una instancia de ```WebViewContext```.</td>
+    </tr>
+</table> 
+
+## Conectar con Alipay
+<table>
+    <tr>
+        <th>Nombre del API</th>
+        <th>Descripción de la función</th>
+    </tr>
+    <tr>
+        <td>[my.getSiteInfo](/)</td>
+        <td>Obtiene la información del sitio asignado por Alipay Connect.</td>
+    </tr>
+</table> 
+
+
+## Capacidades abiertas
+<table>
+    <tr>
+        <th>Nombre del API</th>
+        <th>Descripción de la función</th>
+    </tr>
+    <tr>
+        <td>[my.navigateToMiniProgram](/)</td>
+        <td>Salta a otro mini programa.</td>
+    </tr>
+    <tr>
+        <td>[my.navigateBackMiniProgram](/)</td>
+        <td>Regresa al mini programa anterior, solo cuando otro mini programa salta al mini programa actual.</td>
+    </tr>
+    <tr>
+        <td>[my.getAuthCode](/)</td>
+        <td>Obtiene código de autenticación.</td>
+    </tr>
+    <tr>
+        <td>[my.getOpenUserInfo](/)</td>
+        <td>Obtiene información básica sobre el usuario.</td>
+    </tr>
+    <tr>
+        <td>[my.tradePay](/)</td>
+        <td>Empienza a pagar.</td>
+    </tr>
+    <tr>
+        <td>[my.signContract](/)</td>
+        <td>Firma el contrato de retención.</td>
+    </tr>
+</table> 
+
+
+
+
+
+
+
+
+
+

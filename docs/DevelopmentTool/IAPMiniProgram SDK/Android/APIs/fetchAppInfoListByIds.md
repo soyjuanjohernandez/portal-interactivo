@@ -24,7 +24,7 @@ void fetchAppInfoListByIds(FetchAppsByIdsRequest request,OnRpcResultListener<App
     <tr>
         <td>request</td>
         <td>[FetchAppsByIdsRequest](/)</td>
-        <td>Un objeto que se utiliza para establecer las condiciones de consulta de los mini programas.</td>
+        <td>Un objeto que se utiliza para establecer las condiciones de consulta de los mini programs.</td>
         <td>M</td>
     </tr>
     <tr>
@@ -32,7 +32,7 @@ void fetchAppInfoListByIds(FetchAppsByIdsRequest request,OnRpcResultListener<App
         <td>OnRpcResultListener[```<AppInfosResult>```](/)</td>
         <td>
         La función de devolución de llamada que se utiliza para devolver el resultado de la consulta.
-        - Si la consulta es exitosa, devuelve una lista de mini programas que coinciden con las condiciones de consulta especificadas.Ver [AppInfosResult](/) para más detalles.
+        - Si la consulta es exitosa, devuelve una lista de mini programs que coinciden con las condiciones de consulta especificadas.Ver [AppInfosResult](/) para más detalles.
         - Si la consulta falla, devuelve el código de error y el mensaje de error.Vea [Error](/) para obtener más detalles.   
         </td>
         <td>M</td>
@@ -52,7 +52,7 @@ void fetchAppInfoListByIds(FetchAppsByIdsRequest request,OnRpcResultListener<App
     <tr>
         <td>onResultSuccess</td>
         <td>AppInfosResult</td>
-        <td>La lista de programas de mini que se devuelve cuando la consulta es exitosa.</td>
+        <td>La lista de mini programs que se devuelve cuando la consulta es exitosa.</td>
         <td>O</td>
     </tr>
     <tr>
@@ -106,7 +106,7 @@ fetchAppsByIdsRequest.setCategory(category)
 fetchAppsByIdsRequest.setRelatedEnv(relatedEnv)
 Griver.fetchAppInfoListByIds(fetchAppsByIdsRequest, object : OnRpcResultListener<AppInfosResult?>() {
       fun onResultSuccess(result: AppInfosResult?) {
-          //Devuelve la Lista de Mini Programas
+          //Devuelve la Lista de Mini Programs
       }
       
       fun onResultFailed(errorCode: Int, errorMessage: String?) {
@@ -126,7 +126,7 @@ fetchAppsByIdsRequest.setRelatedEnv(relatedEnv);
 Griver.fetchAppInfoListByIds(fetchAppsByIdsRequest, new OnRpcResultListener<AppInfosResult>() {
      @Override
      public void onResultSuccess(final AppInfosResult result) {
-         //Devuelve la Lista de Mini Programas
+         //Devuelve la Lista de Mini Programs
      }
 
     @Override

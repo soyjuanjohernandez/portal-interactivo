@@ -4,7 +4,7 @@ sidebar_position: 2
 
 # openUrl
 
-La API de OpenUrl es llamada por la super aplicación para abrir Mini Programas con URL, la URL del Mini Programa.
+La API de OpenUrl es llamada por la super aplicación para abrir Mini Programs con URL, la URL del Mini Programa.
 
 ## Firma de método
 ```js
@@ -38,7 +38,7 @@ void openUrl(Context context, String url, Bundle extraParams, GriverContainerAPI
         <td>extraParams</td>
         <td>Bundle</td>
         <td>
-        Este parámetro se utiliza para pasar los parámetros de inicio al SDK del programa IAPMini para personalizar el comportamiento de un mini programa durante el inicio.Los parámetros aprobados deben incluirse en la definición de ````{@linkgriverparams.launchParams}````.Para obtener cómo especificar los parámetros de inicio, consulte los [parámetros de inicio](/).
+        Este parámetro se utiliza para pasar los parámetros de inicio al SDK del IAPMiniprogram para personalizar el comportamiento de un mini programa durante el inicio.Los parámetros aprobados deben incluirse en la definición de ````{@linkgriverparams.launchParams}````.Para obtener cómo especificar los parámetros de inicio, consulte los [parámetros de inicio](/).
         </td>
         <td>O</td>
     </tr>
@@ -102,7 +102,7 @@ val bundle = Bundle()
 bundle.putString("query", "a=b&c=d")
 Griver.openUrl(context, url, bundle,
                GriverContainerAPICallBack { errorCode, errorMessage ->
-                   //devuelve el código de error y el mensaje de error si el lanzamiento del programa mini falla
+                   //devuelve el código de error y el mensaje de error si el lanzamiento del mini program falla
                })
 ```
 
@@ -114,7 +114,7 @@ bundle.putString("query", "a=b&c=d");
 Griver.openUrl(context, appId, bundle, new GriverContainerAPICallBack() {
     @Override
     public void error(int errorCode, String errorMessage) {
-        //devuelve el código de error y el mensaje de error si el lanzamiento del programa mini falla
+        //devuelve el código de error y el mensaje de error si el lanzamiento del mini program falla
     }
 });
 ```

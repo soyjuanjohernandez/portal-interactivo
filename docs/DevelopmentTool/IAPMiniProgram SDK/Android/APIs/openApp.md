@@ -5,7 +5,7 @@ sidebar_position: 1
 
 # openApp
 
-La API de openApp es llamada por la super aplicación para abrir Mini Programas con *appId*, la ID único del Mini Program.
+La API de openApp es llamada por la super aplicación para abrir Mini Programs con *appId*, la ID único del Mini Program.
 
 ## Firma del método
 
@@ -32,7 +32,7 @@ void openApp(Context context, String appId, Bundle extraParams, GriverContainerA
         <td>appId</td>
         <td>String</td>
         <td>
-        La ID única asignada por Mini Program Platform para identificar un mini programa.Puede obtener la identificación de la consola de la plataforma Mini del programa o obteniendo información de mini del programa con la API [fetchApps](/).
+        La ID única asignada por Mini Program Platform para identificar un mini program. Puede obtener la identificación de la consola de la plataforma Mini del program o obteniendo información del mini program con la API [fetchApps](/).
         </td>
         <td>M</td>
     </tr>
@@ -40,14 +40,14 @@ void openApp(Context context, String appId, Bundle extraParams, GriverContainerA
         <td>extraParams</td>
         <td>Bundle</td>
         <td>
-        Este parámetro se utiliza para pasar los parámetros de inicio al SDK del programa IAPMini para personalizar el comportamiento de un mini programa durante el inicio.Los parámetros aprobados deben incluirse en la definición de ```{@linkgriverparams.launchParams}```. Para obtener cómo especificar los parámetros de inicio, consulte los [Startup parameters](/).
+        Este parámetro se utiliza para pasar los parámetros de inicio al SDK del IAPMiniprograma para personalizar el comportamiento de un mini program durante el inicio.Los parámetros aprobados deben incluirse en la definición de ```{@linkgriverparams.launchParams}```. Para obtener cómo especificar los parámetros de inicio, consulte los [Startup parameters](/).
         </td>
         <td>O</td>
     </tr>
     <tr>
         <td>callBack</td>
         <td>[GriverContainerAPICallBack](/)</td>
-        <td>La callBack que se utiliza para escuchar las fallas de lanzamiento de mini del program.</td>
+        <td>La callBack que se utiliza para escuchar las fallas de lanzamiento del mini program.</td>
         <td>O</td>
     </tr>
 </table>
@@ -108,7 +108,7 @@ val bundle = Bundle()
 bundle.putString("query", "a=b&c=d")
 Griver.openApp(context, appId, bundle,
                GriverContainerAPICallBack { errorCode, errorMessage ->
-                   //devuelve el código de error y el mensaje de error si el lanzamiento del programa mini falla
+                   //devuelve el código de error y el mensaje de error si el lanzamiento del mini programa falla
                })
 ```
 
@@ -120,7 +120,7 @@ bundle.putString("query", "a=b&c=d");
 Griver.openApp(context, appId, bundle, new GriverContainerAPICallBack() {
     @Override
     public void error(int errorCode, String errorMessage) {
-        //devuelve el código de error y el mensaje de error si el lanzamiento del programa mini falla
+        //devuelve el código de error y el mensaje de error si el lanzamiento del mini programa falla
     }
 });
 ```
