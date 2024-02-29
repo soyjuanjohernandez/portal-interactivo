@@ -1,5 +1,5 @@
 ---
-sidebar_position: 1
+sidebar_position: 2
 ---
 
 
@@ -70,11 +70,11 @@ sidebar_position: 1
     </tr>
     <tr>
       <td>[my.offUnhandledRejection](/)</td>
-      <td>No se indica para el evento de detección de no control.</td>
+      <td>No se indica para el evento de *unhandledrejection*.</td>
     </tr>
     <tr>
       <td>[my.onUnhandledRejection](/)</td>
-      <td>Indica el evento de revisión de no control.</td>
+      <td>Indica el evento de *unhandledrejection*.</td>
     </tr>
   </tbody>
 </table>
@@ -149,7 +149,7 @@ Nota: Para las preguntas frecuentes de la barra de pestañas, ver [Preguntas fre
     <tr>
       <td>[my.navigateTo](/)</td>
       <td>Mantenga la página actual y salte a la página especificada dentro de la aplicación. Use 
-      my.navigateback para volver a la página original.</td>
+      ```my.navigateback``` para volver a la página original.</td>
     </tr>
     <tr>
       <td>[my.navigateBack](/)</td>
@@ -401,7 +401,7 @@ Para obtener más información sobre contexto de Canvas, ver [Contexto Canvas De
 
 ## Media
 
-### Image
+### Imagen
 <table>
   <thead>
     <tr>
@@ -462,12 +462,12 @@ Para obtener más información sobre contexto de Canvas, ver [Contexto Canvas De
   <tbody>
     <tr>
       <td>[my.createLottieContext](/)</td>
-      <td>Crea y devuelve un objeto de contexto Lottie [lottieContext](/).</td>
+      <td>Crea y devuelve un objeto de contexto Lottie [*lottieContext*](/).</td>
     </tr>
   </tbody>
 </table>
 
-## Storage
+## Almacenamiento
 
 <table>
   <thead>
@@ -478,63 +478,665 @@ Para obtener más información sobre contexto de Canvas, ver [Contexto Canvas De
   </thead>
   <tbody>
     <tr>
-      <td>[](/)</td>
-      <td></td>
+      <td>[my.getStorage](/)</td>
+      <td>Obtener datos en caché.</td>
     </tr>
     <tr>
-      <td>[](/)</td>
-      <td></td>
+      <td>[my.getStorageSync](/)</td>
+      <td>Obtener datos en caché de forma sincrónica.</td>
     </tr>
     <tr>
-      <td>[](/)</td>
-      <td></td>
+      <td>[my.setStorage](/)</td>
+      <td>Almacena los datos de la clave especificada en la caché local, que se superponen a los datos originales correspondientes a la clave.</td>
     </tr>
     <tr>
-      <td>[](/)</td>
-      <td></td>
+      <td>[my.setStorageSync](/)</td>
+      <td>Almacena los datos de la clave especificada en la caché local, que se superponen a los datos originales correspondientes a la clave.</td>
     </tr>
     <tr>
-      <td>[](/)</td>
-      <td></td>
+      <td>[my.removeStorage](/)</td>
+      <td>Eliminar los datos almacenados en caché.</td>
+    </tr>
+    <tr>
+      <td>[my.removeStorageSync](/)</td>
+      <td>Eliminar datos en caché de forma sincrónica</td>
+    </tr>
+    <tr>
+      <td>[my.clearStorage](/)</td>
+      <td>Borra la caché de datos local.</td>
+    </tr>
+    <tr>
+      <td>[my.clearStorageSync](/)</td>
+      <td>Borra la caché de datos local de forma sincrónica.</td>
     </tr>
   </tbody>
 </table>
 
-## File
+## Archivo
+<table>
+    <tr>
+      <th>Nombre del API</th>
+      <th>Descripción de la función</th>
+    </tr>
+    <tr>
+      <td>[my.saveFile](/)</td>
+      <td>Guarda el archivo en el dispositivo.</td>
+    </tr>
+    <tr>
+      <td>[my.getFileInfo](/)</td>
+      <td>Obtener la información del archivo.</td>
+    </tr>
+    <tr>
+      <td>[my.getSavedFileInfo](/)</td>
+      <td>Obtiene la información del archivo guardado.</td>
+    </tr>
+    <tr>
+      <td>[my.getSavedFileList](/)</td>
+      <td>Obtiene la información de todos los archivos guardados.</td>
+    </tr>
+    <tr>
+      <td>[my.removeSavedFile](/)</td>
+      <td>Elimina el archivo guardado.</td>
+    </tr>
+     <tr>
+      <td>[my.chooseFileFromDisk](/)</td>
+      <td>Elegir un archivo para cargar.</td>
+    </tr>
+    <tr>
+      <td>[my.openDocument](/)</td>
+      <td>Permite a los usuarios previsualizar un archivo PDF dentro del miniprograma.</td>
+    </tr>
+</table>
 
-## Location
+## Ubicación
+<table>
+    <tr>
+      <th>Nombre del API</th>
+      <th>Descripción de la función</th>
+    </tr>
+    <tr>
+      <td>[my.getLocation](/)</td>
+      <td>Obtenga la ubicación geográfica actual del usuario.</td>
+    </tr>
+    <tr>
+      <td>[my.openLocation](/)</td>
+      <td>Vea la ubicación en el mapa incorporado.</td>
+    </tr>
+    <tr>
+      <td>[my.chooseLocation](/)</td>
+      <td>Abra el mapa incorporado para elegir una ubicación.</td>
+    </tr>
+</table>
 
-## Map
+## Mapa
+<table>
+    <tr>
+        <th>Nombre del API</th>
+        <th>Descripción de la función</th>
+    </tr>
+    <tr>
+        <td>[my.createMapContext](/)</td>
+        <td>Crea y devuelve un objeto de contexto de mapa mapContext.</td>
+    </tr>
+    <tr>
+        <td>[my.calculateRoute](/)</td>
+        <td>Calcula la ruta.</td>
+    </tr>
+</table>
 
-## Network
+## Red
+<table>
+    <tr>
+        <th>Nombre del API</th>
+        <th>Descripción de la función</th>
+    </tr>
+    <tr>
+        <td>[my.request](/)</td>
+        <td>Solicitud de red.</td>
+    </tr>
+    <tr>
+        <td>[my.uploadFile](/)</td>
+        <td>Cargue el recurso local al servidor de desarrolladores.</td>
+    </tr>
+    <tr>
+        <td>[my.downloadFile](/)</td>
+        <td>Descargue el recurso de archivo a la ubicación local.</td>
+    </tr>
+    <tr>
+        <td>[my.connectSocket](/)</td>
+        <td>Crea una conexión WebSocket.</td>
+    </tr>
+    <tr>
+        <td>[my.onSocketOpen](/)</td>
+        <td>Escuche el evento de habilitar la conexión WebSocket.</td>
+    </tr>
+    <tr>
+        <td>[my.offSocketOpen](/)</td>
+        <td>No se indique el evento de habilitar la conexión WebSocket.</td>
+    </tr>
+    <tr>
+        <td>[my.onSocketError](/)</td>
+        <td>Escuche los eventos de error de WebSocket.</td>
+    </tr>
+    <tr>
+        <td>[my.offSocketError](/)</td>
+        <td>No se deja a WebSocket Eventos de error.</td>
+    </tr>
+    <tr>
+        <td>[my.sendSocketMessage](/)</td>
+        <td>Enviar datos a través de la conexión WebSocket.</td>
+    </tr>
+    <tr>
+        <td>[my.onSocketMessage](/)</td>
+        <td>Escuche el evento de recibir mensajes del servidor por WebSocket.</td>
+    </tr>
+    <tr>
+        <td>[my.offSocketMessage](/)</td>
+        <td>No se indique el evento de recibir mensajes del servidor por WebSocket.</td>
+    </tr>
+    <tr>
+        <td>[my.closeSocket](/)</td>
+        <td>Cierre la conexión WebSocket.</td>
+    </tr>
+    <tr>
+        <td>[my.onSocketClose](/)</td>
+        <td>Escuche el evento de cerrar la conexión WebSocket.</td>
+    </tr>
+    <tr>
+        <td>[my.offSocketClose](/)</td>
+        <td>No se indique el caso de cerrar la conexión WebSocket.</td>
+    </tr>
+</table>
 
-## Device
+## Dispositivo
+### Información del sistema
 
-### System Information
-### Network Status
-### Clipboard
-### Whatch Shake
-### Accelerometer
-### Compass
-### Vibrate 
-### Make Phone Call
-### Get Server Time
-### Capture Screen
-### Screen Brightness
-### Screen Orientation
-### Settings
-### Add Phone Contact
-### Permission Guide
-### Scan
-### Memory Warning
-### Battery Information
+<table>
+    <tr>
+        <th>Nombre del API</th>
+        <th>Descripción de la función</th>
+    </tr>
+    <tr>
+        <td>[my.getSystemInfo](/)</td>
+        <td>Obtener información del sistema.</td>
+    </tr>
+</table>
+
+### Estado de la red
+<table>
+    <tr>
+        <th>Nombre del API</th>
+        <th>Descripción de la función</th>
+    </tr>
+    <tr>
+        <td>[my.getNetworkType](/)</td>
+        <td>Obtener el estado actual de la red.</td>
+    </tr>
+</table>
+
+### Portapapeles
+<table>
+    <tr>
+        <th>Nombre del API</th>
+        <th>Descripción de la función</th>
+    </tr>
+    <tr>
+        <td>[my.getClipboard](/)</td>
+        <td>Obtenga los datos del portapapeles.</td>
+    </tr>
+    <tr>
+        <td>[my.setClipboard](/)</td>
+        <td>Establezca los datos del portapapeles.</td>
+    </tr>
+</table>
+
+### Mira Shake
+<table>
+    <tr>
+        <th>Nombre del API</th>
+        <th>Descripción de la función</th>
+    </tr>
+    <tr>
+        <td>[my.watchShake](/)</td>
+        <td>La función de los WatchShake.</td>
+    </tr>
+</table>
+
+### Acelerómetro
+<table>
+    <tr>
+        <th>Nombre del API</th>
+        <th>Descripción de la función</th>
+    </tr>
+    <tr>
+        <td>[my.onAccelerometerChange](/)</td>
+        <td>Indica el evento de datos de aceleración.</td>
+    </tr>
+    <tr>
+        <td>[my.offAccelerometerChange](/)</td>
+        <td>No se indica al evento de datos de aceleración.</td>
+    </tr>
+</table>
+
+### Brújula
+
+<table>
+    <tr>
+        <th>Nombre del API</th>
+        <th>Descripción de la función</th>
+    </tr>
+    <tr>
+        <td>[my.onCompassChange](/)</td>
+        <td>Escucha el evento de cambio de datos de la brújula.</td>
+    </tr>
+    <tr>
+        <td>[my.offCompassChange](/)</td>
+        <td>Desactiva la escucha del evento de cambio de datos de la brújula.</td>
+    </tr>
+</table>
+
+### Vibrar
+<table>
+    <tr>
+        <th>Nombre del API</th>
+        <th>Descripción de la función</th>
+    </tr>
+    <tr>
+        <td>[my.vibrate](/)</td>
+        <td>Invoca la capacidad de vibración del dispositivo.</td>
+    </tr>
+</table>
+
+### Hacer una llamada telefónica
+<table>
+    <tr>
+        <th>Nombre del API</th>
+        <th>Descripción de la función</th>
+    </tr>
+    <tr>
+        <td>[my.makePhoneCall](/)</td>
+        <td>Hacer una llamada telefónica.</td>
+    </tr>
+</table>
+
+### Obtener tiempo de servidor
+<table>
+    <tr>
+        <th>Nombre del API</th>
+        <th>Descripción de la función</th>
+    </tr>
+    <tr>
+        <td>[my.getServerTime](/)</td>
+        <td>Obtiene el tiempo del servidor.</td>
+    </tr>
+</table>
+
+### Captura de pantalla
+<table>
+    <tr>
+        <th>Nombre del API</th>
+        <th>Descripción de la función</th>
+    </tr>
+    <tr>
+        <td>[my.onUserCaptureScreen](/)</td>
+        <td>Escucha el evento de captura de pantalla por los usuarios.</td>
+    </tr>
+    <tr>
+        <td>[my.offUserCaptureScreen](/)</td>
+        <td>Cancela la escucha del evento de captura de pantalla por los usuarios.</td>
+    </tr>
+</table>
+
+### Brillo de la pantalla
+<table>
+    <tr>
+        <th>Nombre del API</th>
+        <th>Descripción de la función</th>
+    </tr>
+    <tr>
+        <td>[my.setKeepScreenOn](/)</td>
+        <td>Establece si la pantalla se mantiene despierta.</td>
+    </tr>
+    <tr>
+        <td>[my.getScreenBrightness](/)</td>
+        <td>Obtiente el brillo de la pantalla.</td>
+    </tr>
+    <tr>
+        <td>[my.setScreenBrightness](/)</td>
+        <td>Establece el brillo de la pantalla.</td>
+    </tr>
+</table>
+
+### Orientación de la pantalla
+<table>
+    <tr>
+        <th>Nombre del API</th>
+        <th>Descripción de la función</th>
+    </tr>
+    <tr>
+        <td>[my.getScreenOrientation](/)</td>
+        <td>Obtiene orientación a la pantalla</td>
+    </tr>
+    <tr>
+        <td>[my.setScreenOrientation](/)</td>
+        <td>Establece orientación de pantalla</td>
+    </tr>
+</table>
+
+### Ajustes
+<table>
+    <tr>
+        <th>Nombre del API</th>
+        <th>Descripción de la función</th>
+    </tr>
+    <tr>
+        <td>[my.openSetting](/)</td>
+        <td>Abre la página de configuración del mini programa.</td>
+    </tr>
+    <tr>
+        <td>[my.getSetting](/)</td>
+        <td>Obtiene la configuración actual del usuario.</td>
+    </tr>
+</table>
+
+### Agregar contacto telefónico
+<table>
+    <tr>
+        <th>Nombre del API</th>
+        <th>Descripción de la función</th>
+    </tr>
+    <tr>
+        <td>[my.addPhoneContact](/)</td>
+        <td>Agrega el contacto al contacto telefónico.</td>
+    </tr>
+</table>
+
+### Guía de permiso
+<table>
+    <tr>
+        <th>Nombre del API</th>
+        <th>Descripción de la función</th>
+    </tr>
+    <tr>
+        <td>[my.showAuthGuide](/)</td>
+        <td>Guía al usuario para otorgar la autorización cuando el permiso sea necesario.</td>
+    </tr>
+</table>
+
+### Escanear
+<table>
+    <tr>
+        <th>Nombre del API</th>
+        <th>Descripción de la función</th>
+    </tr>
+    <tr>
+        <td>[my.scan](/)</td>
+        <td>Llama a la función de código de escaneo QR.</td>
+    </tr>
+</table>
+
+### Advertencia de memoria
+<table>
+    <tr>
+        <th>Nombre del API</th>
+        <th>Descripción de la función</th>
+    </tr>
+    <tr>
+        <td>[my.onMemoryWarning](/)</td>
+        <td>Escucha el evento de alarma de memoria insuficiente.</td>
+    </tr>
+    <tr>
+        <td>[my.offMemoryWarning](/)</td>
+        <td>Desactiva la alarma de memoria insuficiente.</td>
+    </tr>
+</table>
+
+### Información de la batería
+<table>
+    <tr>
+        <th>Nombre del API</th>
+        <th>Descripción de la función</th>
+    </tr>
+    <tr>
+        <td>[my.getBatteryInfo](/)</td>
+        <td>Obtiene el nivel de batería y el estado de carga del dispositivo actual asincrónicamente.</td>
+    </tr>
+    <tr>
+        <td>[my.getBatteryInfoSync](/)</td>
+        <td>Obtiene el nivel de batería y el estado de carga del dispositivo actual sincrónicamente.</td>
+    </tr>
+</table>
+
 ### Bluetooth
-#### Reference
+
+#### Referencia
+<table>
+    <tr>
+        <th>Nombre del API</th>
+        <th>Descripción de la función</th>
+    </tr>
+    <tr>
+        <td>[Bluetooth API Overview](/)</td>
+        <td>Proporciona el requisito del sistema y el flujo del proceso sobre cómo funcionan las API Bluetooth.</td>
+    </tr>
+    <tr>
+        <td>[Bluetooth API Error Codes](/)</td>
+        <td>Enumera el código de error normal y las soluciones relativas.</td>
+    </tr>
+    <tr>
+        <td>[Bluetooth API FAQ](/)</td>
+        <td>Preguntas frecuentes sobre el uso de la API Bluetooth.</td>
+    </tr>
+</table>
+
 #### BLE
+<table>
+    <tr>
+        <th>Nombre del API</th>
+        <th>Descripción de la función</th>
+    </tr>
+    <tr>
+        <td>[my.connectBLEDevice](/)</td>
+        <td>Conecta a dispositivos Bluetooth de baja energía.</td>
+    </tr>
+    <tr>
+        <td>[my.disconnectBLEDevice](/)</td>
+        <td>Desconecta los dispositivos Bluetooth de baja energía.</td>
+    </tr>
+    <tr>
+        <td>[my.getBLEDeviceCharacteristics](/)</td>
+        <td>Obtiene las características de los dispositivos Bluetooth de baja energía.</td>
+    </tr>
+    <tr>
+        <td>[my.getBLEDeviceServices](/)</td>
+        <td>Obtiene todos los dispositivos Bluetooth de baja energía que se descubran, incluidos los dispositivos conectados.</td>
+    </tr>
+    <tr>
+        <td>[my.notifyBLECharacteristicValueChange](/)</td>
+        <td>Habilita la función para notificar los cambios al valor característico.</td>
+    </tr>
+    <tr>
+        <td>[my.offBLECharacteristicValueChange](/)</td>
+        <td>Deshabilita la función para notificar los cambios al valor característico.</td>
+    </tr>
+    <tr>
+        <td>[my.offBLEConnectionStateChanged](/)</td>
+        <td>Deshabilita el oyente del evento para el estado de conexión.</td>
+    </tr>
+    <tr>
+        <td>[my.onBLECharacteristicValueChange](/)</td>
+        <td>Habilita al oyente de eventos para los cambios en el valor característico.</td>
+    </tr>
+    <tr>
+        <td>[my.onBLEConnectionStateChanged](/)</td>
+        <td>Habilita al oyente de eventos para los cambios en el estado de conexión, como el dispositivo perdido y desconectado del dispositivo.</td>
+    </tr>
+    <tr>
+        <td>[my.readBLECharacteristicValue](/)</td>
+        <td>Lea el valor característico.</td>
+    </tr>
+    <tr>
+        <td>[my.writeBLECharacteristicValue](/)</td>
+        <td>Escriba datos al valor característico.</td>
+    </tr>
+</table>
+
 #### Bluetooth
-### Biometric authentication
-## Sharing
-## Update
-## web-view
-## Alipay Connect
-## Open Capabilities
+<table>
+    <tr>
+        <th>Nombre del API</th>
+        <th>Descripción de la función</th>
+    </tr>
+    <tr>
+        <td>[my.closeBluetoothAdapter](/)</td>
+        <td>Cierra el módulo Bluetooth en el mini programa.</td>
+    </tr>
+    <tr>
+        <td>[my.openBluetoothAdapter](/)</td>
+        <td>Inicializa el módulo Bluetooth en el mini programa.</td>
+    </tr>
+    <tr>
+        <td>[my.getBluetoothAdapterState](/)</td>
+        <td>Verifica el estado del adaptador Bluetooth en el mini programa.</td>
+    </tr>
+    <tr>
+        <td>[my.startBluetoothDevicesDiscovery](/)</td>
+        <td>Comienza a descubrir dispositivos Bluetooth.</td>
+    </tr>
+    <tr>
+        <td>[my.stopBluetoothDevicesDiscovery](/)</td>
+        <td>Deja de descubrir dispositivos Bluetooth.</td>
+    </tr>
+    <tr>
+        <td>[my.getBluetoothDevices](/)</td>
+        <td>Obtiene todos los dispositivos Bluetooth que se descubren, incluidos los que están conectados al dispositivo actual.</td>
+    </tr>
+    <tr>
+        <td>[my.getConnectedBluetoothDevices](/)</td>
+        <td>Obtiene los dispositivos Bluetooth que están conectados.</td>
+    </tr>
+    <tr>
+        <td>[my.onBluetoothDeviceFound](/)</td>
+        <td>Usa esta API cuando se encuentre un nuevo dispositivo Bluetooth.</td>
+    </tr>
+    <tr>
+        <td>[my.offBluetoothDeviceFound](/)</td>
+        <td>Retira los dispositivos Bluetooth que se encuentran.</td>
+    </tr>
+    <tr>
+        <td>[my.onBluetoothAdapterStateChange](/)</td>
+        <td>Monitorea los cambios en el estado del adaptador Bluetooth.</td>
+    </tr>
+    <tr>
+        <td>[my.offBluetoothAdapterStateChange](/)</td>
+        <td>Retira el adaptador Bluetooth con un cambio de estado.</td>
+    </tr>
+</table>
+
+### Autenticación biométrica
+
+<table>
+    <tr>
+        <th>Nombre del API</th>
+        <th>Descripción de la función</th>
+    </tr>
+    <tr>
+        <td>[my.checkLocalBioAuthSupported](/)</td>
+        <td>Verifica la disponibilidad de autenticación biométrica en el dispositivo del usuario.</td>
+    </tr>
+    <tr>
+        <td>[my.startLocalBioAuth](/)</td>
+        <td>Inicia un proceso de autenticación biométrica en el dispositivo del usuario.</td>
+    </tr>
+</table> 
+
+## Intercambio
+<table>
+    <tr>
+        <th>Nombre del API</th>
+        <th>Descripción de la función</th>
+    </tr>
+    <tr>
+        <td>[my.showSharePanel](/)</td>
+        <td>Activa el intercambio.</td>
+    </tr>
+</table> 
+
+## Actualizar
+<table>
+    <tr>
+        <th>Nombre del API</th>
+        <th>Descripción de la función</th>
+    </tr>
+    <tr>
+        <td>[my.getUpdateManager](/)</td>
+        <td>Create an [*UpdateManager*](/) object.</td>
+    </tr>
+</table> 
+
+## Vista web
+<table>
+    <tr>
+        <th>Nombre del API</th>
+        <th>Descripción de la función</th>
+    </tr>
+    <tr>
+        <td>[my.createWebViewContext](/)</td>
+        <td>Al crear ```WebViewContext```, Mini Program puede enviar un mensaje a ```Web-View```. Esta API creará una instancia de ```WebViewContext```.</td>
+    </tr>
+</table> 
+
+## Conectar con Alipay
+<table>
+    <tr>
+        <th>Nombre del API</th>
+        <th>Descripción de la función</th>
+    </tr>
+    <tr>
+        <td>[my.getSiteInfo](/)</td>
+        <td>Obtiene la información del sitio asignado por Alipay Connect.</td>
+    </tr>
+</table> 
+
+
+## Capacidades abiertas
+<table>
+    <tr>
+        <th>Nombre del API</th>
+        <th>Descripción de la función</th>
+    </tr>
+    <tr>
+        <td>[my.navigateToMiniProgram](/)</td>
+        <td>Salta a otro mini programa.</td>
+    </tr>
+    <tr>
+        <td>[my.navigateBackMiniProgram](/)</td>
+        <td>Regresa al mini programa anterior, solo cuando otro mini programa salta al mini programa actual.</td>
+    </tr>
+    <tr>
+        <td>[my.getAuthCode](/)</td>
+        <td>Obtiene código de autenticación.</td>
+    </tr>
+    <tr>
+        <td>[my.getOpenUserInfo](/)</td>
+        <td>Obtiene información básica sobre el usuario.</td>
+    </tr>
+    <tr>
+        <td>[my.tradePay](/)</td>
+        <td>Empienza a pagar.</td>
+    </tr>
+    <tr>
+        <td>[my.signContract](/)</td>
+        <td>Firma el contrato de retención.</td>
+    </tr>
+</table> 
+
+
+
+
+
+
+
+
+
+
