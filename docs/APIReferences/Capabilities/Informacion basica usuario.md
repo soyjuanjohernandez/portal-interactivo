@@ -18,27 +18,29 @@ Cuando se obtenga información básica del usuario, los desarrolladores del mini
 
 Para obtener la información básica del usuario en el mini program, los desarrolladores del mini program deben completar los siguientes pasos:
 
-### Paso 1: Create a mini program
+### Paso 1: Crear un mini program
 
 Solicite una cuenta y cree un mini programa en la plataforma de Mini Program
 
-### Paso 2: Añada la caracteristica
+### Paso 2: Agregar la caracteristica
 
-Ingrese el mini programa que acaba de crear. Haga clic en la pestaña "Características", luego "Agregar función" para que aparezca la lista de funciones.Marque "Obtenga información básica para miembros" y haga clic en el botón "Confirmar" para activar la función.
+Ingrese el mini programa que acaba de crear. Haga clic en la pestaña "**Features**", luego "**Add Feature**" para que aparezca la lista de funciones. Marque "Obtenga información básica para miembros" y haga clic en el botón "Confirmar" para activar la caracteristica.
 
-### Paso 3: Llama al jsapi
+![cuadro caracteristicas](./img/addFeature.png)
+
+### Paso 3: Llamar al jsapi
 
 Llame al my.getOpenUserInfo JSAPI para obtener la información básica del usuario.
 
-<b>Nota:</b>
+**Nota:**
 
-Los desarrolladores deben considerar la posibilidad de que los usuarios rechazen autorizar el programa MINI para recopilar su información.En tales casos, los desarrolladores deben tener soluciones correspondientes, como guiar a los usuarios a completar o cargar manualmente su información.
+Los desarrolladores deben considerar la posibilidad de que los usuarios rechazen autorizar el Mini Program para recopilar su información.En tales casos, los desarrolladores deben tener soluciones correspondientes, como guiar a los usuarios a completar o cargar manualmente su información.
 
-### Mostrar el modal de autorización
+#### Mostrar el modal de autorización
 
 En el componente del botón, establezca el valor de Open-Type como GetAuthorize y establezca el valor del alcance como UserInfo.
 
-<b>Código de muestra:</b>
+**Código de muestra:**
 
 ```js
 <!-- .axml -->
@@ -50,7 +52,7 @@ En el componente del botón, establezca el valor de Open-Type como GetAuthorize 
 </button>
 ```
 
-<b>Button properties</b>
+**Button properties**
 
 <table>
     <tr>
@@ -79,7 +81,7 @@ En el componente del botón, establezca el valor de Open-Type como GetAuthorize 
 
 Después de que el usuario otorga la autorización, el Mini Program puede llamar al my.getOpenuserInfo JSAPI para obtener información básica del usuario.
 
-<b>Código de muestra:</b>
+**Código de muestra:**
 
 ```js
 // .js 
@@ -94,7 +96,7 @@ onGetAuthorize(res) {
 }
 ```
 
-<b>Muestra de un formato de mensaje devuelto correctamente:</b>
+**Muestra de un formato de mensaje devuelto correctamente:**
 
 ```js
 {
@@ -132,32 +134,30 @@ onGetAuthorize(res) {
 
 ## Preguntas frecuentes
 
-<ol>
+**1. ¿Se puede utilizar la función de obtener información básica del usuario para obtener el ID de usuario de la billetera?**
 
-<li><b>¿Se puede utilizar la función de obtener información básica del usuario para obtener el ID de usuario de la billetera? </b></li>
+No. Si los mini programas deben obtener la ID de usuario, consulte la [autorización del usuario](/) para obtener detalles y llame a [My.getAuthCode](/) para obtener la ID de usuario.
 
-No. Si los mini programas deben obtener la ID de usuario, consulte la autorización del usuario para obtener detalles y llame a My.getAuthCode para obtener la ID de usuario.
-
-<li><b>¿Pueden los mini programas obtener el número de teléfono móvil del usuario, el avatar, el apodo y otra información pública al mismo tiempo?</b></li>
+**2. ¿Pueden los mini programas obtener el número de teléfono móvil del usuario, el avatar, el apodo y otra información pública al mismo tiempo?**
 
 No. Los mini programs no pueden obtener el número de teléfono móvil del usuario, Avatar, apodo al mismo tiempo en el mismo modal.
 
-La siguiente información pública del usuario se puede obtener con my.getOpenUserInfo:
+La siguiente información pública del usuario se puede obtener con [my.getOpenUserInfo](/):
 
-- Avatar
-- Alias
-- Género
-- País
+* Avatar
+* Alias
+* Género
+* País
 
-La siguiente información de usuario privado se puede obtener con my.getAuthCode:
+La siguiente información de usuario privado se puede obtener con [my.getAuthCode](/):
 
-- User ID
-- Phone number
+* User ID
+* Phone number
 
-<li><b>¿Pueden los mini programas obtener ID de usuario, nombre real e información privada a través de la función de obtener información básica del usuario?</b></li>
+
+**3. ¿Pueden los mini programas obtener ID de usuario, nombre real e información privada a través de la función de obtener información básica del usuario?**
 
 No. A través de la función de obtener información básica del usuario, los mini programas solo pueden obtener avatar de usuario, apodo, género, ubicación y otra información pública.
-</ol>
 
 
 
