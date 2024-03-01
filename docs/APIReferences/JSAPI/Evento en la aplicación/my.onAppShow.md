@@ -1,9 +1,9 @@
 ---
-sidebar_position: 2
+sidebar_position: 4
 ---
 
-# my.offAppShow
-No se indique el evento de que el mini Programa se cambia a primer plano desde el fondo.
+# my.onAppShow
+Escuche el evento de que el mini programa se cambie a fondo desde primer plano.El tiempo desencadenado de la API es el mismo con el del método(/) [```onShow()```](/). Para no admitir el evento de que el mini programa se cambia a fondo desde primer plano, ver [my.offAppShow](/).
 
 ## Código de muestra
 
@@ -21,11 +21,11 @@ No se indique el evento de que el mini Programa se cambia a primer plano desde e
 onLoad() {
     my.onAppShow(this.onAppShowHandler)
 },
-//El método de escuchar el evento de que el mini programa se cambie a primer plano desde el fondo
+//El método indica el evento de que el mini programa se cambie a primer plano desde el fondo
 onAppShowHandler() {
     console.log('The mini program is switched to foreground from background')
 },
-//El método de no apalancamiento para el evento de que el mini programa se cambie a primer plano desde el fondo
+//El método no indica el evento que el mini programa se cambie a primer plano desde el fondo
 offAppShowHanlder() {
     my.offAppShow(this.onAppShowHandler)
 },
@@ -46,6 +46,6 @@ El parámetro está en tipo de objeto y tiene la siguiente propiedad:
      <tr>
         <td>callback</td>
         <td>Función</td>
-        <td>La función devolución de llamada para el caso de que el miniprograma pase a primer plano.</td>
+        <td>La función de devolución de llamada para el evento de que el mini  programa se cambie a primer plano desde el fondo. Para obtener más información sobre los parámetros de devolución de llamada, mira [metodo](/) [```onShow()```](/).</td>
      </tr>
 </table>
