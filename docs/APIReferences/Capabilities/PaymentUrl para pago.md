@@ -1,3 +1,7 @@
+---
+sidebar_position: 6
+---
+
 # Utilice PaymentUrl para pagar
 
 Los usuarios pueden usar la aplicación de billetera para pagar el pedido realizado en el programa mini si la aplicación de billetera proporciona el servicio de pago.Este documento presenta el pago llamando a la API My.Tradepay con PaymentUrl.Tanto los procesos de integración para los desarrolladores de mini programas como la experiencia del usuario para los usuarios son similares a los del pago por Tradeno.

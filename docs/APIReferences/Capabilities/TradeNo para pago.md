@@ -1,4 +1,8 @@
-# Uso de TradeNO para el pago
+---
+sidebar_position: 4
+---
+
+# Uso de TradeNO para pagos
 
 Los usuarios pueden usar la aplicación de billetera para pagar el pedido realizado en el mini program si la aplicación de billetera proporciona el servicio de pago.Este documento presenta el pago llamando a la API [My.Tradepay](/) con ```tradeNo```.
 

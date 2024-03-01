@@ -1,3 +1,7 @@
+---
+sidebar_position: 8
+---
+
 # Capacidad de la información del usuario
 
 Toda la información del usuario en la plataforma de los mini program requiere la autorización del usuario.Según el mecanismo de autorización estándar de la industria OAuth2.0, los desarrolladores de mini programas pueden obtener la autorización del usuario para obtener información del usuario.

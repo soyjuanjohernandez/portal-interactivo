@@ -1,4 +1,8 @@
-# Obtain basic user information
+---
+sidebar_position: 3
+---
+
+# Obtener información básica del usuario
 
 El Mini programa puede obtener información básica de los usuarios billetera. Este es un servicio abierto que captura la información básica del usuario como Avatar, Apodo, Género y Región después de obtener la autorización del usuario.
 

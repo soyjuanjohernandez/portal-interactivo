@@ -1,3 +1,7 @@
+---
+sidebar_position: 5
+---
+
 # Uso de OrderStr para pagos
 
 Los usuarios pueden usar la aplicación de billetera para pagar el pedido realizado en el mini program si la aplicación de billetera proporciona el servicio de pago.Este documento presenta el pago llamando a la API My.Tradepay con OrderStr.Se admiten los siguientes dos tipos de pago:

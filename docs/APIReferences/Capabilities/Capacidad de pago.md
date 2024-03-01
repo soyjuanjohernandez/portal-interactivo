@@ -1,3 +1,7 @@
+---
+sidebar_position: 7
+---
+
 # Capacidad de pago
 
 Los usuarios pueden activar la página de billetera en un mini programa.El proceso de pago y la experiencia del usuario en el programa MINI son similares a los de la aplicación nativa.
