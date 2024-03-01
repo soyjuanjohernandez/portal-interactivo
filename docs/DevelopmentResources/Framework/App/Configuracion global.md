@@ -119,7 +119,7 @@ Códigos de muestra:
       <td>allowsBounceVertical</td>
       <td>String</td>
       <td>NO</td>
-      <td>Permite el rebote vertical o no SÍ por defecto, compatible con SÍ / NO.</td>
+      <td>Permite el rebote vertical o no SÍ por defecto, compatible con ```YES / NO```.</td>
       <td>-</td>
     </tr>
     <tr>
@@ -133,14 +133,14 @@ Códigos de muestra:
       <td>titlePenetrate</td>
       <td>String</td>
       <td>NO</td>
-      <td>Permite el clic a través de la barra de navegación o no No por defecto, compatible con SÍ / NO.</td>
+      <td>Permite el clic a través de la barra de navegación o no No por defecto, compatible con ```YES / NO```.</td>
       <td>-</td>
     </tr>
     <tr>
       <td>showTitleLoading</td>
       <td>String</td>
       <td>NO</td>
-      <td>Mostrar carga de la barra de navegación o no al entrar No por defecto, compatible con SÍ / NO.</td>
+      <td>Mostrar carga de la barra de navegación o no al entrar No por defecto, compatible con ```YES / NO```.</td>
       <td>-</td>
     </tr>
     <tr>
@@ -182,22 +182,127 @@ Códigos de muestra:
       <td>gestureBack</td>
       <td>String</td>
       <td>NO</td>
-      <td>Solo para iOS, compatible con el retorno de gestos o no No por defecto, compatible con SÍ / NO.</td>
+      <td>Solo para iOS, compatible con el retorno de gestos o no No por defecto, compatible con ```YES / NO```.</td>
       <td>-</td>
     </tr>
     <tr>
       <td>enableScrollBar</td>
       <td>Boolean</td>
       <td>NO</td>
-      <td>Solo para Android, muestra la barra de desplazamiento del WebView o no SÍ por defecto, compatible con SÍ / NO.</td>
+      <td>Solo para Android, muestra la barra de desplazamiento del WebView o no SÍ por defecto, compatible con ```YES / NO```.</td>
       <td>-</td>
     </tr>
     <tr>
       <td>onReachBottomDistance</td>
       <td>Número</td>
       <td>NO</td>
-      <td>Distancia al fondo de la página para activar el agotamiento durante el desplazamiento hacia arriba, en px. Documentos relacionados con el manejador de eventos de página. Actualmente, iOS no admite configuraciones en el page.json, y solo se admiten configuraciones globales.</td>
-      <td>-</td>
+      <td>Distancia al fondo de la página para activar el agotamiento durante el desplazamiento hacia arriba, en px. Documentos relacionados con el [manejador de eventos de página](/). </td>
+      <td>Actualmente, ```iOS``` no admite configuraciones en el ```page.json```, y solo se admiten configuraciones globales.</td>
     </tr>
   </tbody>
 </table>
+
+## tabBar
+
+Si el Mini Program es una aplicación múlti pestaña (páginas conmutables en la barra inferior de la ventana del cliente), el elemento de configuración ```TabBar``` 'se puede utilizar para especificar el patrón de presentación de pestaña y la página correspondiente en caso de pestañacambiar.
+
+**Nota:**:
+
+* En la página de destino a través de salto de página ([my.navigateTo](/)) o redirección de la página ([my.redirectTo](/)), la barra de pestaña inferior no se muestra incluso cuando la página se define en la configuración de TabBar.
+
+El TabBar tiene los siguientes elementos de configuración:
+
+<table>
+    <tr>
+      <th>Propiedad</th>
+      <th>Tipo</th>
+      <th>Requerido</th>
+      <th>Descripción</th>
+    </tr>
+    <tr>
+      <td>textColor</td>
+      <td>HexColor</td>
+      <td>NO</td>
+      <td>Color del texto.</td>
+    </tr>
+    <tr>
+      <td>selectedColor</td>
+      <td>HexColor</td>
+      <td>NO</td>
+      <td>Color del texto resaltado.</td>
+    </tr>
+    <tr>
+      <td>backgroundColor</td>
+      <td>HexColor</td>
+      <td>NO</td>
+      <td>Color de fondo.</td>
+    </tr>
+    <tr>
+      <td>items</td>
+      <td>Array</td>
+      <td>Yes</td>
+      <td>Cada configuración de pestaña.</td>
+    </tr>
+</table>
+
+Cada item de configuración:
+
+<table>
+  <thead>
+    <tr>
+      <th>Propiedad</th>
+      <th>Tipo</th>
+      <th>Requerido</th>
+      <th>Descripción</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>pagePath</td>
+      <td>String</td>
+      <td>Yes</td>
+      <td>Establece la ruta de la página.</td>
+    </tr>
+    <tr>
+      <td>name</td>
+      <td>String</td>
+      <td>Yes</td>
+      <td>Nombre.</td>
+    </tr>
+    <tr>
+      <td>icon</td>
+      <td>String</td>
+      <td>NO</td>
+      <td>Ruta común del icono.</td>
+    </tr>
+    <tr>
+      <td>activeIcon</td>
+      <td>String</td>
+      <td>NO</td>
+      <td>Ruta del icono resaltado.</td>
+    </tr>
+  </tbody>
+</table>
+
+El tamaño recomendado del icono es 60 × 60 px. Las imágenes que no están en el tamaño recomendado se estirarán o escalarán en una proporción desigual.
+Código de ejemplo:
+
+```js
+{
+  "tabBar": {
+    "textColor": "#dddddd",
+    "selectedColor": "#49a9ee",
+    "backgroundColor": "#ffffff",
+    "items": [
+      {
+        "pagePath": "pages/index/index",
+        "name": "Home"
+      },
+      {
+        "pagePath": "pages/logs/logs",
+        "name": "Log"
+      }
+    ]
+  }
+}
+```
