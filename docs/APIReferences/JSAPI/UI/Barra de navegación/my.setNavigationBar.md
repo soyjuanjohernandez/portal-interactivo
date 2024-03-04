@@ -33,7 +33,7 @@ my.setNavigationBar({
         <th>Descripción</th>
     </tr>
      <tr>
-        <td>título</td>
+        <td>title</td>
         <td>String</td>
         <td>No</td>
         <td>Título de la barra de navegación.</td>
@@ -70,13 +70,13 @@ my.setNavigationBar({
      </tr>
      <tr>
         <td>fail</td>
-        <td>Function</td>
+        <td>Función</td>
         <td>No</td>
         <td>Función de devolución de llamada tras falla de llamada.</td>
      </tr>
      <tr>
         <td>complete</td>
-         <td>Function</td>
+         <td>Función</td>
         <td>No</td>
         <td>Función de devolución de llamada al finalizar la llamada (para ser ejecutado en el éxito de la llamada o el fracaso).</td>
      </tr>
