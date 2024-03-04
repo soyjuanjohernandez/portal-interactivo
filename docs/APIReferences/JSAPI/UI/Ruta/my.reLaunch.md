@@ -10,10 +10,12 @@ Cierre las pilas de página y salte a la página especificada dentro de la aplic
 
 ```js
 my.reLaunch({
-  url: '/page/index'
-})
+  url: "/page/index",
+});
 ```
+
 ## Parámetros
+
 <table>
     <tr>
         <th>Propiedad</th>
@@ -25,14 +27,22 @@ my.reLaunch({
         <td>url</td>
         <td>String</td>
         <td>Si</td>
-        <td>
-            Ruta de la página Si la página no es una página TabBar, la ruta puede ser seguida por los parámetros.Reglas para los parámetros: la ruta y el parámetro están separados con
+        <td className="p-no-margin">
+            Ruta de la página Si la página no es una página TabBar, la ruta puede ser seguida por los parámetros.Reglas para los parámetros: la ruta y el parámetro están separados con:
+            
             ```?```
-            ,la tecla de parámetro y el [valor](/) del parámetro están conectados con 
+            
+            , la tecla de parámetro y el [valor](/) del parámetro están conectados con 
+            
             ```=```
+            
             , ay los parámetros diferentes deben estar separados con
+            
             ```&```
-            ,como ```path?key1=value1&key2=value2```
+            
+            , como 
+            
+            ```path?key1=value1&key2=value2```
          </td>
      </tr>
      <tr>
