@@ -71,10 +71,3 @@ navigationBarItemDidClickedWithType
         <td>M</td>
     </tr>
 </table>
-
-
-
-
-
-
-

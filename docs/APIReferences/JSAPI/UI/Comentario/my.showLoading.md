@@ -1,23 +1,17 @@
 ---
-sidebar_position: 1
+sidebar_position: 4
 ---
 
-# my.alert 
+# my.showLoading
 
-Caja de alerta
+Muestre el diálogo de carga.
 
 ## Código de muestra
 
 ```js
-my.alert({
-  title: 'Tips',
-  content: 'Your bill for this month has been released',
-  buttonText: 'Show',
-  success: () => {
-    my.alert({
-      title: 'Click「Show」',
-    });
-  },
+my.showLoading({
+  content: 'loading...',
+  delay: 1000,
 });
 ```
 ## Parámetros
@@ -29,22 +23,16 @@ my.alert({
         <th>Descripción</th>
     </tr>
      <tr>
-        <td>title</td>
-        <td>String</td>
-        <td>No</td>
-        <td>Título del cuadro de alerta.</td>
-     </tr>
-     <tr>
         <td>content</td>
         <td>String</td>
         <td>No</td>
-        <td>Contenido del cuadro de alerta.</td>
+        <td>Contenido de texto de carga.</td>
      </tr>
      <tr>
-        <td>buttonText</td>
-        <td>String</td>
+        <td>delay</td>
+        <td>Número</td>
         <td>No</td>
-        <td>Texto del botón, que está bien de forma predeterminada.</td>
+        <td>Retraso de visualización, en ms, 0 por defecto Si my.hideLoading fue llamado antes de este tiempo, no se muestra.</td>
      </tr>
      <tr>
         <td>success</td>
