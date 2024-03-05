@@ -1,3 +1,7 @@
+---
+sidebar_position: 3
+---
+
 # Estructura de Page
 
 La estructura de la página se define mediante el archivo ```.axml``` en el directorio de ```pages```, el contenido debe seguir la sintaxis de AXML.

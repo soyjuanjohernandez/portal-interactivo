@@ -4,14 +4,21 @@ sidebar_position: 1
 
 # my.alert 
 
-Cierre la página actual y salte a la página especificada dentro de la aplicación.
+Caja de alerta
 
 ## Código de muestra
 
 ```js
-my.redirectTo({
-  url: 'new_page?count=100'
-})
+my.alert({
+  title: 'Tips',
+  content: 'Your bill for this month has been released',
+  buttonText: 'Show',
+  success: () => {
+    my.alert({
+      title: 'Click「Show」',
+    });
+  },
+});
 ```
 ## Parámetros
 <table>
@@ -22,10 +29,22 @@ my.redirectTo({
         <th>Descripción</th>
     </tr>
      <tr>
-        <td>url</td>
+        <td>title</td>
         <td>String</td>
-        <td>Si</td>
-        <td>La aplicación para el salto no incluye la ruta de la página de destino del TabBar.La ruta puede ser seguida por parámetros. Reglas para los parámetros: la ruta y el parámetro se separan con?, La clave del parámetro y el valor del parámetro están conectados con =, y diferentes parámetros deben separarse con &, como ruta? Key1 = value1 & key2 = value2.</td>
+        <td>No</td>
+        <td>Título del cuadro de alerta.</td>
+     </tr>
+     <tr>
+        <td>content</td>
+        <td>String</td>
+        <td>No</td>
+        <td>Contenido del cuadro de alerta.</td>
+     </tr>
+     <tr>
+        <td>buttonText</td>
+        <td>String</td>
+        <td>No</td>
+        <td>Texto del botón, que está bien de forma predeterminada.</td>
      </tr>
      <tr>
         <td>success</td>

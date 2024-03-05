@@ -1,3 +1,7 @@
+---
+sidebar_position: 4
+---
+
 # Estilo de Page
 
 El estilo de página se define mediante el archivo ```.acss``` en el directorio ```/pages```.

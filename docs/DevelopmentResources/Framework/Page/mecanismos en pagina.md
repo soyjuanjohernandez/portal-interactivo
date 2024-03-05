@@ -1,3 +1,7 @@
+---
+sidebar_position: 5
+---
+
 # Mecanismos de Page
 
 ## Page(object: Object)
@@ -585,7 +589,7 @@ A continuación se muestra la lista de funciones de eventos respaldadas por even
   </tr>
 </table>
 
-Código de muestra:
+Ejemplo del código:
 
 ```js
 // Detección de características
@@ -659,7 +663,7 @@ Los siguientes puntos son dignos de atención en su uso:
 - Trate de no establecer demasiados datos a la vez.
 - No establezca ningún valor en los datos como indefinido, de lo contrario, ese elemento no se establecerá y puede surgir un problema potencial.
 
-Código de muestra:
+Ejemplo del código:
 
 ```js
 <view>{{text}}</view>
@@ -811,7 +815,7 @@ Descripción del parámetro:
 
 Datos de actualización por lotes.
 
-**Nota:** ```$BatchedUpdates``` es compatible desde la versión 1.14.0.Themy.Caniuse ('Page.$ BatchedUpdates') se puede utilizar para el procesamiento de compatibilidad.
+**Nota:** ```$batchedUpdates``` es compatible desde la versión 1.14.0.Themy.Caniuse ('Page.$ BatchedUpdates') se puede utilizar para el procesamiento de compatibilidad.
 
 Descripción de parámetros:
 
@@ -828,7 +832,7 @@ Descripción de parámetros:
   </tr>
 </table>
 
-Sample code:
+Ejemplo del código:
 
 ```js
 // pages/index/index.js
@@ -857,7 +861,6 @@ Page({
 <button onTap="plus">+2</button>
 ```
 
-
 1. En este ejemplo, el ```counter``` de la página (page) agrega 2 en cada botón haciendo clic.
 
 2. El ```setData``` se coloca dentro de esto. $ BatchedUpdates.Por lo tanto, solo una transferencia de datos ocurre a pesar de los múltiples ```setData```.
@@ -871,7 +874,7 @@ Este es un atributo de solo lectura.
 ```js
 Page({
   onShow() {
-    // Map the path value configured in app.json
+    // Asigne el valor de ruta configurado en app.json
     console.log(this.route)
   }
 })
