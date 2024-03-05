@@ -1,21 +1,21 @@
 ---
-sidebar_position: 1
+sidebar_position: 6
 ---
 
-# my.alert 
+# my.showToast
 
-Caja de alerta
+Muestra el diálogo Toast, que desaparece con la duración especificada.
 
 ## Código de muestra
 
 ```js
-my.alert({
-  title: 'Tips',
-  content: 'Your bill for this month has been released',
-  buttonText: 'Show',
+my.showToast({
+  type: 'success',
+  content: 'Success',
+  duration: 3000,
   success: () => {
     my.alert({
-      title: 'Click「Show」',
+      title: 'toast is missing',
     });
   },
 });
@@ -29,22 +29,22 @@ my.alert({
         <th>Descripción</th>
     </tr>
      <tr>
-        <td>title</td>
-        <td>String</td>
-        <td>No</td>
-        <td>Título del cuadro de alerta.</td>
-     </tr>
-     <tr>
         <td>content</td>
         <td>String</td>
         <td>No</td>
-        <td>Contenido del cuadro de alerta.</td>
+        <td>Contenido del texto.</td>
      </tr>
      <tr>
-        <td>buttonText</td>
+        <td>type</td>
         <td>String</td>
         <td>No</td>
-        <td>Texto del botón, que está bien de forma predeterminada.</td>
+        <td>Tipo de toast, que muestra el icono relacionado, ninguno de forma predeterminada, admite éxito/fallas/excepción/ninguno aquí. Si es una excepción, el contenido es obligatorio.</td>
+     </tr>
+      <tr>
+        <td>duration</td>
+        <td>Número</td>
+        <td>No</td>
+        <td>Mostrando duración, en MS, 2000 de forma predeterminada.</td>
      </tr>
      <tr>
         <td>success</td>
