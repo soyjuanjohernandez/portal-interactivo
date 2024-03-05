@@ -17,23 +17,20 @@ Esta sección proporciona un ejemplo de una página de error predeterminada e in
 
 ## Experiencia de usuario predeterminada
 
-Para los errores de red o servidor, el SDK muestra una página de error predeterminada de la siguiente manera, mientras que el mensaje de error y el código de error (que no está conectado a Internet -6 en el ejemplo) puede variar según el error específico encontrado.
+Para errores de red o servidor, el SDK muestra una página de error predeterminada de la siguiente manera mientras el mensaje de error y el código de error (which is Failed to open this page -1001 En el ejemplo) puede variar según el error específico encontrado.
 
-<center>
 ![Experiencia de usuario predeterminada](./img/error1.png)
-</center>
+
 ## Procedimientos
 Tome los siguientes tres pasos para personalizar una página de error para errores de red o servidor:
 
-## Paso 1: Cree su página de error personalizado
-
+### Paso 1: Cree su página de error personalizado
 Cree un nuevo archivo HTML para personalizar su propia página de error.Puede incorporar el siguiente código esquemático para recibir y procesar la información necesaria para la personalización:
-
-```js
+```
 error.html?a=b
 ```
-
 La siguiente tabla muestra la información que se pasa cada vez que el usuario encuentra un error de red o servidor y se accede a su página de error personalizado:
+
 
 <table>
     <tr>
@@ -46,8 +43,8 @@ La siguiente tabla muestra la información que se pasa cada vez que el usuario e
         <td>String</td>
         <td>
            El código de estado del error.Los códigos caen en los siguientes dos tipos:
-            - Las constantes ```Error_*``` del WebView error. Para obtener más información, consulte la documentación de Android en [WebViewClient](/).
-            * El código de estado de error HTTP dentro del rango de [400, 599].
+            - Los códigos de error de red o servidor definidos por la documentación oficial de iOS. Para obtener más información, consulte  [CFNetworkErrors](/).
+            - El código de estado de error HTTP dentro de los rangos [400, 599].    
         </td>
     </tr>
     <tr>
@@ -71,61 +68,43 @@ La siguiente tabla muestra la información que se pasa cada vez que el usuario e
     </tr>
 </table>
 
-## Paso 2: Ponga la página de error en su directorio de activos
+### Paso 2: Ponga la página de error en su proyecto iOS
+Coloque su página de error personalizado en su proyecto iOS como se muestra en el siguiente ejemplo:
 
-Coloque su página de error personalizado en la carpeta de activos como se muestra en el siguiente ejemplo:
-
-![Ponga la página de error en su directorio de activos](./img/error2.png)
+![ Ponga la página de error en su proyecto iOS](./img/error2.png)
 
 :::info[Nota]
-
 Para errores de red o servidor, no puede almacenar la página de error de forma remota debido a los posibles errores de conexión de red.
-
 :::
 
-## Paso 3: Configurar GriverPageConfiguration
-
-Antes de la lógica de inicialización de SDK, configure la clase `GriverPageConfiguration` con el siguiente código de muestra:
+### Step 3: Configure GRVExtensionDelegate
+Before the SDK initialization logic, configure the GRVExtensionDelegate extension with the following sample code:
 
 ```js
-//Antes de inicializar el SDK
-GriverPageConfiguration pageConfiguration = new GriverPageConfiguration();
-pageConfiguration.errorPageURL = "errorPage/custom_page_error.html";
-IAPGriverConfig.getInstance().setPageConfiguration(pageConfiguration);
-// Inicializar el SDK
-IAPConnect.init(context, initConfig, callback)
+let extensionDelegate = GRVExtensionDelegate()
+//Designe su propia ruta de página de error.
+extensionDelegate.uiProvider.errorPageURL = Bundle.main.path(forResource: "error", ofType: "html")
+config.riverExtensionDelegate = extensionDelegate
 ```
-
-Para obtener más información sobre la clase, consulte [`GriverPageConfiguration`](/) .
 
 ## Personalizar la página de error para los errores de estado
-
-Esta sección proporciona un ejemplo de una página de error predeterminada e instrucciones para personalizar la página de error para los errores de estado.
+Esta sección proporciona un ejemplo de una página de error predeterminada e instrucciones para personalizar la página de error para errores de estado.
 
 ### Experiencia de usuario predeterminada
+Para errores de estado, el SDK muestra una página de error predeterminada de la siguiente manera mientras el mensaje de error (que es **The app has been removed**.en el Ejemplo) puede variar según el error específico encontrado.Para obtener más información sobre el mensaje de error predeterminado, consulte los [errores de estado](/).
 
-Para los errores de estado, el SDK muestra una página de error predeterminada de la siguiente manera, mientras que el mensaje de error (que es el mini programa no existe. En el ejemplo) puede variar según el error específico encontrado.Para obtener más información sobre el mensaje de error predeterminado, consulte los [estados de error](/).
+![Experiencia de usuario predeterminada](./img/error3.png)
 
-<center>
-    <img
-    src={require('./img/error3.png').default}
-    alt="el mini programa no existe"
-    width="50%"
-    />
-</center>
-
-## Procedimientos
-
+### Procedimientos
 Tome los siguientes tres pasos para personalizar una página de error para los errores de estado:
 
-### Paso 1: Cree su página de error personalizado
 
+### Paso 1: Cree su página de error personalizado
 Cree un nuevo archivo HTML para personalizar su propia página de error.Puede incorporar el siguiente código esquemático para recibir y procesar la información necesaria para la personalización:
 
-```js
-status.error.html?a=b
 ```
-
+status.error.html?a=b
+``` 
 La siguiente tabla muestra la información que se pasa cada vez que el usuario encuentra un error de estado y se accede a su página de error personalizado:
 
 <table>
@@ -176,79 +155,30 @@ La siguiente tabla muestra la información que se pasa cada vez que el usuario e
 </table>
 
 ### Paso 2: Agregue la página de error
+- Agregue la página de error personalizado a través de cualquiera de los siguientes dos métodos:
 
-Agregue la página de error personalizado a través de cualquiera de los siguientes dos métodos:
-
-- Coloque la página en la carpeta de activos como se muestra en el siguiente ejemplo:
+- Coloque la página en su proyecto iOS como se muestra en el siguiente ejemplo:
 
 ![Agregue la página de error](./img/error4.png)
 
-Aloje la página en el servicio CDN. Asegúrese de que la URL de acceso use un esquema HTTPS de la siguiente manera:
-
-
-```js
+Aloje la página en el servicio CDN.Asegúrese de que la URL de acceso use un esquema HTTPS de la siguiente manera:
+```
 https://your-server-status_error.html
 ```
 
-### Paso 3: Configurar GriverPageConfiguration
 
-Antes de la lógica de inicialización de SDK, configure la clase GriverPageConfiguration con el siguiente código de muestra:
-
+### Paso 3: Configurar GRVExtensionDelegate
+Antes de la lógica de inicialización de SDK, configure la extensión GRVExtensionDelegate con la siguiente muestra Code:
 ```js
-// Antes de inicializar el SDK
-GriverPageConfiguration pageConfiguration = new GriverPageConfiguration();
-pageConfiguration.statusPageURL = "file:///android_asset/errorPage/status_error.html";
-IAPGriverConfig.getInstance().setPageConfiguration(pageConfiguration);
-// Inicializar el SDK
-IAPConnect.init(context, initConfig, callback)
+let config = IAPConnectInitConfig()
+let extensionDelegate = GRVExtensionDelegate()
+// Designe su propia ruta de página de error de estado.
+extensionDelegate.uiProvider.statusPageURL = Bundle.main.path(forResource: "status_error", ofType: "html")
+config.riverExtensionDelegate = extensionDelegate
 ```
 
-Para obtener más información sobre la clase, consulte [`GriverPageConfiguration`](/).
-
-## Appendices
-
-### GriverPageConfiguration
-
-El siguiente código muestra la definición de la clase GriverPageConfiguration:
-
-```js
-public class GriverPageConfiguration {
-    public String statusPageURL;
-    public String errorPageURL;
-}
-```
-
-Como podemos ver en la definición, esta clase tiene las siguientes dos variables:
-
-<table>
-    <tr>
-        <th>Campo</th>
-        <th>Tipo de datos</th>
-        <th>Descripción</th>
-        <th>Requerido</th>
-    </tr>
-    <tr>
-        <td>statusPageURL</td>
-        <td>String</td>
-        <td>
-       Especifique su valor correctamente de acuerdo con donde se almacena la página de error:
-        - Si se almacena localmente en la carpeta de activos, la ruta comienza con ```file:///android_asset/```.
-        - Si se almacena de forma remota en un servicio CDN, la ruta sigue el esquema HTTPS.
-        </td>
-        <td>O</td>
-    </tr>
-    <tr>
-        <td>errorPageURL</td>
-        <td>String</td>
-        <td>Especifique su valor con una ruta relativa a la carpeta de activos.</td>
-        <td>O</td>
-    </tr>
-</table>
-
-
-## Estados de error
+## Apéndice
 La siguiente tabla muestra los detalles de los errores de estado en un mini programa:
-
 
 <table>
     <tr>
