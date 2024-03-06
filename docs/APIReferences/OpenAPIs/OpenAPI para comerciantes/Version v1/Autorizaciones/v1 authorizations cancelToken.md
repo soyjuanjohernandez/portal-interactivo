@@ -1,3 +1,6 @@
+---
+sidebar_position: 3
+---
 
 POST /v1/authorizations/cancelToken
 
@@ -138,7 +141,7 @@ Para diferentes resultados de solicitud, se deben realizar diferentes acciones.C
 
 Puede cancelar la autorización.Después de la cancelación, el Refresh_Token no se puede usar incluso si es válido.
 
-[CancelToken](../img/Au_CancelToken.png)
+[CancelToken](../../img/Au_CancelToken.png)
 
 
 Cuando el usuario cancela el token de acceso desde el programa mini,

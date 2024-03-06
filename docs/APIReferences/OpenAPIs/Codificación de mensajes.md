@@ -1,5 +1,5 @@
 ---
-sidebar_position: 1
+sidebar_position: 3
 ---
 Para evitar errores o ambigüedad causadas por caracteres especiales encerrados en un mensaje, debe codificar correctamente el mensaje antes de que se transmita el mensaje.
 

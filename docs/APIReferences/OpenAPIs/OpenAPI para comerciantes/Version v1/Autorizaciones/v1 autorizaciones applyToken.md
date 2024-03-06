@@ -239,7 +239,7 @@ Para diferentes resultados de solicitud, se deben realizar diferentes acciones. 
 
 La aplicación Token de autorización se utiliza para intercambiar el token de acceso en función del código de autenticación después de obtener el código de autenticación.
 
-![ApplyToken](../img/Au_applytoken.png)
+![ApplyToken](../../img/Au_applytoken.png)
 
    1. El programa MINI llama a la interfaz ```my.getAuthCode``` para obtener el código de autorización de E Wallet.(Paso 1)
    2. E-Wallet Devuelve el código de autorización al programa MINI (Paso 7)

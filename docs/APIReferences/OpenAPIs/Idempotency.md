@@ -1,5 +1,5 @@
 ---
-sidebar_position: 1
+sidebar_position: 2
 ---
 
 Si se produce un error de tiempo de espera de solicitud cuando llama a una API, puede intentar reenviar la solicitud. En este caso, puede configurar los campos de Idempotency especificados en la solicitud para ayudar a evitar la duplicación no deseada en caso de fallas y reintentos.
