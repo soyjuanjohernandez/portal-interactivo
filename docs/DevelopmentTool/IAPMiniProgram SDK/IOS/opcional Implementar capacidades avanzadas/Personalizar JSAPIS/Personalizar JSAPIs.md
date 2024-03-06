@@ -175,4 +175,63 @@ Para una función de mini programa, cuando todos los programas Mini pueden ver e
 3. **Click + Share with** para seleccionar mini programas para compartir. Todos los mini programas del espacio de trabajo del inquilino y los espacios de trabajo del desarrollador se enumeran en el panel izquierdo. Buscar y marcar los mini programas de destino y click en ＞ sign Para agregarlos. Verifique los mini programas agregados que aparecen en el panel derecho y luego click **Confirm**.
 
 ## Próximos pasos
-Después de personalizar JSAPIS, Super Apps necesita instruir a los desarrolladores de mini programas para que utilicen estos JSAPI. Para obtener más información, consulte [Guía Mini Programas para llamar a JSAPIS personalizados](/).
+Después de personalizar JSAPIS, Super Apps necesita instruir a los desarrolladores de mini programas para que utilicen estos JSAPI. Para obtener más *información*, consulte [Guía Mini Programas para llamar a JSAPIS personalizados](/).
+
+
+
+
+
+<table>
+    <tr>
+        <th>Field</th>
+        <th>Data type</th>
+        <th>Description</th>
+        <th>Required</th>
+    </tr>
+    <tr>
+        <td>identifier</td>
+        <td>NSString *</td>
+        <td>
+        Un identificador que la superpción [especifica](/) para **representar** al *encriptador*. El SDK pasa a este identificador al SDK al método ```decrypt:identifier:``` para [```indicar```](/) que los datos están encriptados y determinar si ejecutar la lógica de descifrado.
+        </td>
+        <td>M</td>
+    </tr>
+</table>
+
+<table>
+    <tr>
+        <th></th>
+        <th></th>
+        <th></th>
+        <th></th>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+</table>
+
+
+
+
+
