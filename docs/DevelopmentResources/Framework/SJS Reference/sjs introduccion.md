@@ -1,3 +1,7 @@
+---
+sidebar_position: 1
+---
+
 # Introducción de SJS
 
 SJS (seguro/subconjunto de JavaScript) es un conjunto de lenguaje de secuencias de comandos personalizado del Mini programa y se usa para construir una estructura de página en AXML.

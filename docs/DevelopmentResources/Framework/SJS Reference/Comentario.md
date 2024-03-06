@@ -1,3 +1,7 @@
+---
+sidebar_position: 3
+---
+
 # Comentario
 
 Los comentarios son los mismos que JavaScript. El código SJS se puede comentar como se muestra a continuación:
