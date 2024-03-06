@@ -156,7 +156,7 @@ El método ```encrypt``` tiene el siguiente parámetro de entrada:
         <td>Datos para estar encriptadosed.</td>
         <td>M</td>
     </tr>
-</table
+</table>
 
 
 ## decrypt:identifier:
