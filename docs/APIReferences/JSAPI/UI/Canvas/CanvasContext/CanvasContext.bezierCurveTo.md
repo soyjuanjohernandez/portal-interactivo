@@ -12,7 +12,7 @@ Es tipo de objeto.
 
 <table>
     <tr>
-        <th>Nombre</th>
+        <th>Propiedad</th>
         <th>Tipo</th>
         <th>Descripción</th>
     </tr>

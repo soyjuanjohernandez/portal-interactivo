@@ -1,15 +1,18 @@
 ---
-sidebar_position: 7
+sidebar_position: 15
 ---
 
-# CanvasContext.clearRect
+# CanvasContext.fillRect
 
-Borra el contenido del rectángulo.
+Llena el rectángulo.
+```setFillStyle()``` se usa para establecer el color del relleno, por defecto, su color es negro.
 
 ## Parámetros
+
 Es tipo de objeto.
+
 <table>
-<tr>
+    <tr>
         <th>Propiedad</th>
         <th>Tipo</th>
         <th>Descripción</th>
@@ -27,7 +30,7 @@ Es tipo de objeto.
      <tr>
         <td>width</td>
         <td>Number</td>
-        <td>La anchura del rectángulo.</td>
+        <td>El ancho del rectángulo.</td>
      </tr>
      <tr>
         <td>height</td>
@@ -39,16 +42,10 @@ Es tipo de objeto.
 ## Código de muestra
 
 ```js
-<!-- .axml -->
-<canvas id="awesomeCanvas" style="border: 1px solid; background: red;"/>
-```
-```js
-// .js
+//.js
 const ctx = my.createCanvasContext('awesomeCanvas')
+ctx.fillRect(20, 20, 250, 80)
 ctx.setFillStyle('blue')
-ctx.fillRect(250, 10, 250, 200)
-ctx.setFillStyle('yellow')
-ctx.fillRect(0, 0, 150, 200)
-ctx.clearRect(10, 10, 150, 75)
 ctx.draw()
 ```
+

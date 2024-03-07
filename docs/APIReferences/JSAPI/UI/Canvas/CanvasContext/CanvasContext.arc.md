@@ -10,7 +10,7 @@ Para crear un círculo, puede especificar el arco de inicio a 0 usando ```arc()`
 ## Parámetros
 <table>
     <tr>
-        <th>Nombre</th>
+        <th>Propiedad</th>
         <th>Tipo</th>
         <th>Descripción</th>
     </tr>

@@ -9,7 +9,7 @@ Agregue un punto de gradiente circular.
 ## Parámetros
 <table>
     <tr>
-        <th>Nombre</th>
+        <th>Propiedad</th>
         <th>Tipo</th>
         <th>Descripción</th>
     </tr>

@@ -1,10 +1,10 @@
 ---
-sidebar_position: 10
+sidebar_position: 11
 ---
 
-# CanvasContext.createCircularGradient
+# CanvasContext.createLinearGradient
 
-Cree un punto de gradiente circular, el punto de inicio es el centro del círculo y el punto final es el anillo.Se debe llamar a ```addColorStop()```  para especificar el punto de gradiente y se deben especificar al menos dos puntos.
+Crear un gradiente lineal. Se debe llamar a ```addColorStop()``` para especificar el punto de gradiente y se deben especificar al menos dos puntos.
 
 ## Parámetros
 
@@ -17,31 +17,36 @@ Es tipo de objeto.
         <th>Descripción</th>
     </tr>
      <tr>
-        <td>x</td>
+        <td>x0</td>
         <td>Number</td>
         <td>La coordenada x del punto original.</td>
      </tr>
      <tr>
-        <td>x</td>
+        <td>y0</td>
         <td>Number</td>
         <td>La coordenada y del punto original.</td>
      </tr>
      <tr>
-        <td>z</td>
+        <td>x1</td>
         <td>Number</td>
-        <td>El radio.</td>
+        <td>La coordenada x del punto final.</td>
+     </tr>
+     <tr>
+        <td>y1</td>
+        <td>Number</td>
+        <td>La coordenada y del punto final.</td>
      </tr>
 </table>
 
 ## Código de muestra
 
 ```js
- //.js
+//.js
 const ctx = my.createCanvasContext('awesomeCanvas')
 
-const grd = ctx.createCircularGradient(90, 60, 60)
-grd.addColorStop(0, 'blue')
-grd.addColorStop(1, 'red')
+const grd = ctx.createLinearGradient(10, 10, 150, 10)
+grd.addColorStop(0, 'yellow')
+grd.addColorStop(1, 'blue')
 
 ctx.setFillStyle(grd)
 ctx.fillRect(20, 20, 250, 180)
