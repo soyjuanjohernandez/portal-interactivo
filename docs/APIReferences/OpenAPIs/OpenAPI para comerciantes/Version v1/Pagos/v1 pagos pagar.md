@@ -375,3 +375,62 @@ Por ejemplo, un usuario compra una mercancía de 100 USD en el merchant/partner(
   6. Cuando el pago alcanza el estado final, E Wallet Server notifica el resultado del pago al servidor comercial con ```paymentNotifyUrl```  proporcionado en el Paso 2 (Paso 8).
   7. También la aplicación de billetera electrónica devuelve el resultado del pago al programa MINI (Paso 9).
 
+### Request
+
+```js
+{
+    "partnerId": "P000000000000001xxxx",
+    "paymentRequestId": "2019112719074101000700000077771xxxx",
+    "paymentOrderTitle": "SHOES",
+    "productCode": "PC_5800000001",
+    "mcc": "4399",
+    "paymentAmount": {
+        "currency": "USD",
+        "value": "10000"
+    },
+    "paymentFactor": {
+        "isCashierPayment": true
+    },
+    "paymentReturnUrl":"https://www.merchant.com/redirectxxx",
+    "paymentNotifyUrl":"https://www.merchant.com/paymentNotifyxxx",
+    "extraParams": {
+        "ORDER": "{\"referenceOrderId\":\"ID_000001\",\"orderAmount\":\"{\\\"currency\\\":\\\"USD\\\",\\\"value\\\":\\\"10000\\\"}\"}"
+    },
+    "extendInfo": "{\"customerBelongsTo\":\"siteNameExample\"}", 
+    "envInfo": {
+        "osType": "IOS",
+        "terminalType": "APP"
+    }
+}
+```
+
+  *  **partnerId** es el identificador de unmerchant/partner, asignado por billetera.
+  *  **paymentRequestId** se genera por merchant/partner, uniquely identifies the payment. Wallet must make use of paymentRequestId and partnerId for idempotent control. For example, if a payment with paymentRequestId== 2019112719074101000700000077771xxxx and partnerId==P000000000000001xxxx  hcomo ha sido procesado con éxito por la billetera, cuando merchant/partner Utiliza el mismo PaymentRquestid y PartnerID para el pago, la billetera responderá con un pago exitoso.
+  *  **productCode** Definido por la billetera, la billetera usará ProductCode para obtener la configuración del contrato que incluye tarifa, limita la información.
+  *  **paymentFactor** En el escenario de mini programa, el **```PaymentFactor```** solo tiene el valor fijo: ```isCashierPayment = true```
+  *  **paymentReturnUrl** ¿Está la URL definida pormerchant/partner.  En el escenario de pago del cajero, después de que el usuario terminó el pago en la página de la billetera, la billetera dirigirá a la base de comerciante en esta URL.
+  *  **paymentNotifyUrl** ¿Está la URL definida por merchant/partner.  En el escenario de pago del cajero, después de que el usuario terminó el pago en la página de la billetera, la billetera notificará a que el comerciante la base del resultado del pago en esta URL.
+  *  **paymentAmount** describes the amount of 100 USD to be collected by Wallet from user account for this payment.
+  *  **extraParams**, Solo incluye 1 clave: [ORDER](/docs/APIReferences/OpenAPIs/OpenAPI%20para%20comerciantes/Version%20v1/Diccionario%20de%20datos%20para%20v1.md) ahora. El pedido describe los detalles del pedido de la compra de la mercancía de 100 USD por parte del usuario del comerciante.Como el comerciante, el comprador, los bienes, etc. se incluyen en orden.La información en el pedido solo se usa para mostrar la página de resultados de pago del usuario y el historial de transacciones, los informes de regulación, etc. No utilizará el monto en el pedido de operación del fondo.
+  * **extendInfo**, includes key - customerBelongsTo the e-wallet that the customer uses. Corresponding to the field 'siteName' el obtenido de la API 'my.getSiteInfo', En el mini escenario del programa, esto es obligatorio.
+
+###  Response 
+
+```js
+{
+ "result": {
+    "resultCode":"ACCEPT",
+    "resultStatus":"A",
+    "resultMessage":"accept"
+ },
+ "paymentId": "string",
+ "actionForm":{
+    "actionFormType":"REDIRECTION",
+    "redirectionUrl":"http://www.merchant.com/cashier?orderId=xxxxxxx"
+ }
+}
+```
+
+  *  **result.resultStatus ==A** muestra que el pago es aceptar el éxito.Después de que el usuario finalice el pago en la página del cajero, el pago cambiará al éxito.
+  *  **paymentId** se genera por billetera, identifica de manera única el pago.
+  *  **actionForm** devolverá la página de la página del cajero al comerciante/socio, después merchant/partner Recibido de aceptación del resultado, redirigirá a esta URL.
