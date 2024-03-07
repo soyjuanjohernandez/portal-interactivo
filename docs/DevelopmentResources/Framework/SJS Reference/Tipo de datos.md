@@ -1,4 +1,8 @@
-# Tipo de datos
+---
+sidebar_position: 6
+---
+
+# Tipos de datos
 
 El SJS actualmente admite los siguientes tipos de datos:
 
@@ -271,7 +275,6 @@ true
 
 ## array
 
-
 ### Sintaxis
 
 ```js
@@ -280,4 +283,162 @@ a = [5,"5",{},function(){}];  // Matriz no vacía, el elemento de matriz puede s
 const [b, , c, d = 5] = [1,2,3]; //Asignación de destrucción de matriz y predeterminado
 const [e, ...other] = [1,2,3]; // Asignación de destrucción de matrices
 const f = [...other]; // Destructación de la matriz
+```
+
+### Attribute
+
+* ```Constructor```: valor de retorno ```"Array"```
+* ```length```
+
+Para los significados específicos de los atributos además del constructor, consulte el estándar ES5.
+
+Método
+
+- toString
+- concat
+- join
+- pop
+- push
+- reverse
+- shift
+- slice
+- sort
+- splice
+- unshift
+- indexOf
+- lastIndexOf
+- every
+- some
+- forEach
+- map
+- filter
+- reduce
+- reduceRight
+
+Para un uso específico, consulte el estándar ES5.
+
+## date
+
+### Sintaxis
+
+Para generar un objeto de fecha, se requiere la función ```getDate```, que devuelve un objeto de la hora actual.
+
+```js
+getDate()
+getDate(milliseconds)
+getDate(datestring)
+getDate(year, month[, date[, hours[, minutes[, seconds[, milliseconds]]]]])
+```
+
+### Parámetro
+
+- ```milliseconds```: milisegundos desde 00:00:00 UTC del 1 de enero de 1970
+- ```datestring```: Cadena de fecha, formato: "Día de mes, año Horas: Actas: segundos"
+
+Atributo
+
+- ```constructor```: Valor de retorno ```"Date"```
+
+### Método
+
+- toString
+- toDateString
+- toTimeString
+- toLocaleString
+- toLocaleDateString
+- toLocaleTimeString
+- valueOf
+- getTime
+- getFullYear
+- getUTCFullYear
+- getMonth
+- getUTCMonth
+- getDate
+- getUTCDate
+- getDay
+- getUTCDay
+- getHours
+- getUTCHours
+- getMinutes
+- getUTCMinutes
+- getSeconds
+- getUTCSeconds
+- getMilliseconds
+- getUTCMilliseconds
+- getTimezoneOffset
+- setTime
+- setMilliseconds
+- setUTCMilliseconds
+- setSeconds
+- setUTCSeconds
+- setMinutes
+- setUTCMinutes
+- setHours
+- setUTCHours
+- setDate
+- setUTCDate
+- setMonth
+- setUTCMonth
+- setFullYear
+- setUTCFullYear
+- toUTCString
+- toISOString
+- toJSON
+
+Para un uso específico, consulte el estándar ES5.
+
+### Ejemplo
+
+```js
+let date = getDate(); // devolver el objeto de hora actual
+date = getDate(1500000000000);
+date = getDate('2016-6-29');
+date = getDate(2017, 6, 14, 10, 40, 0, 0);
+```
+
+## regexp
+
+### Sintaxis
+
+Para generar un objeto regexp, se requiere la función getRegExp.
+
+```
+getRegExp(pattern[, flags])
+```
+
+### Parámetros
+
+* pattern: Contenido de la expresión regular
+* flags: el modificador puede contener solo los siguientes caracteres:
+* ```g```: global
+* ```i```: ignoreCase
+* ```m```: multiline
+
+### Atributo
+
+- Constructor: Return string ```"RegExp"```
+- global
+- ignoreCase
+- lastIndex
+- multiline
+- source
+
+Para los significados específicos de los atributos además del constructor, consulte el estándar ES5.
+
+### Método
+
+- exec
+- test
+- toString
+
+Para un uso específico, consulte el Standar ES5d.
+
+Ejemplo
+
+```js
+var reg = getRegExp("name", "img");
+console.log("name" === reg.source);
+console.log(true === reg.global);
+console.log(true === reg.ignoreCase);
+console.log(true === reg.multiline);
 ```
