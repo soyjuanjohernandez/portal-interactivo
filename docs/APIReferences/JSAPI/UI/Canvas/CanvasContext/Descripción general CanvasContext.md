@@ -77,5 +77,53 @@ sidebar_position: 2
         <td>[CanvasContext.measureText](/portal-interactivo/docs/APIReferences/JSAPI/UI/Canvas/CanvasContext/CanvasContext.measureText)</td>
         <td>Mida el tamaño del texto, la corriente solo se devuelve la bruja, y es una interfaz sincrónica.</td>
      </tr>
+     <tr>
+        <td>[CanvasContext.moveTo](/portal-interactivo/docs/APIReferences/JSAPI/UI/Canvas/CanvasContext/CanvasContext.moveTo)</td>
+        <td>Mueva la ruta al punto especificado, la línea no se creará.</td>
+     </tr>
+     <tr>
+        <td>[CanvasContext.putImageData](/portal-interactivo/docs/APIReferences/JSAPI/UI/Canvas/CanvasContext/CanvasContext.putImageData)</td>
+        <td>Dibuje los datos de píxeles en canvas.</td>
+     </tr>
+     <tr>
+        <td>[CanvasContext.quadraticCurveTo](/portal-interactivo/docs/APIReferences/JSAPI/UI/Canvas/CanvasContext/CanvasContext.quadraticCurveTo)</td>
+        <td>Cree una ruta de curva bezier cúbica cuadrática.</td>
+     </tr>
+     <tr>
+        <td>[CanvasContext.rect](/portal-interactivo/docs/APIReferences/JSAPI/UI/Canvas/CanvasContext/CanvasContext.rect)</td>
+        <td>Dibuja un rectángulo.</td>
+     </tr>
+     <tr>
+        <td>[CanvasContext.restore](/portal-interactivo/docs/APIReferences/JSAPI/UI/Canvas/CanvasContext/CanvasContext.restore)</td>
+        <td>Restaurar el contexto guardado.</td>
+     </tr>
+     <tr>
+        <td>[CanvasContext.rotate](/portal-interactivo/docs/APIReferences/JSAPI/UI/Canvas/CanvasContext/CanvasContext.rotate)</td>
+        <td>Establezca el punto original como el centro, gire la coordenada en el sentido de las agujas del reloj. El ángulo se agregará si gira se invoca varias veces.</td>
+     </tr>
+     <tr>
+        <td>[CanvasContext.save](/portal-interactivo/docs/APIReferences/JSAPI/UI/Canvas/CanvasContext/CanvasContext.save)</td>
+        <td>Guardar el contexto de canvas.</td>
+     </tr>
+     <tr>
+        <td>[CanvasContext.scale](/portal-interactivo/docs/APIReferences/JSAPI/UI/Canvas/CanvasContext/CanvasContext.scale)</td>
+        <td>Después de invoca la escala, la coordenada horizontal y vertical de la ruta creada posteriormente se escalará. La escala se multiplicará si la escala se invoca varias veces.</td>
+     </tr>
+     <tr>
+        <td>[CanvasContext.setFillStyle](/portal-interactivo/docs/APIReferences/JSAPI/UI/Canvas/CanvasContext/CanvasContext.setFillStyle)</td>
+        <td>Establezca el color del relleno.</td>
+     </tr>
+     <tr>
+        <td>[CanvasContext.setFontSize](/portal-interactivo/docs/APIReferences/JSAPI/UI/Canvas/CanvasContext/CanvasContext.setFontSize)</td>
+        <td>Establezca el tamaño de fuente.</td>
+     </tr>
+     <tr>
+        <td>[CanvasContext.setGlobalAlpha](/portal-interactivo/docs/APIReferences/JSAPI/UI/Canvas/CanvasContext/CanvasContext.setGlobalAlpha)</td>
+        <td>Establezca el alfa de Global Brush.</td>
+     </tr>
+     <tr>
+        <td>[CanvasContext.setLineCap](/portal-interactivo/docs/APIReferences/JSAPI/UI/Canvas/CanvasContext/CanvasContext.setLineCap)</td>
+        <td>Establezca el estilo de punto final de una línea.</td>
+     </tr>
 </table>
 

@@ -42,12 +42,6 @@ Es tipo de objeto.
         <td>La altura del área rectangular de la imagen que debe ser obtenida.</td>
      </tr>
      <tr>
-        <td>height</td>
-        <td>Number</td>
-        <td>Si</td>
-        <td>La altura del área rectangular de la imagen que debe ser obtenida.</td>
-     </tr>
-     <tr>
         <td>success</td>
         <td>Función</td>
         <td>No</td>
