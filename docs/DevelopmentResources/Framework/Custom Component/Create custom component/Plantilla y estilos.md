@@ -2,10 +2,9 @@
 sidebar_position: 4
 ---
 
-# Template and Style
-*Fecha:* 2021-07-06 06:36
+# Plantilla y estilos
 
-Similar to a page, a custom component has its own axml template and acss style.
+Similar a una página, un componente personalizado tiene su propia plantilla AXML y estilo ACSS.
 
 ## axml
 El axml es la parte obligatoria del componente personalizado. 
