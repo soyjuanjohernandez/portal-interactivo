@@ -1,3 +1,7 @@
+---
+sidebar_position: 9
+---
+
 #  Mecanismos de operación del Mini program
 
 ## Descarga
