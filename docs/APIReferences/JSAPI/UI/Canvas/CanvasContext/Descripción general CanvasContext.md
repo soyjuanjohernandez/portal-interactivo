@@ -125,5 +125,65 @@ sidebar_position: 2
         <td>[CanvasContext.setLineCap](/portal-interactivo/docs/APIReferences/JSAPI/UI/Canvas/CanvasContext/CanvasContext.setLineCap)</td>
         <td>Establezca el estilo de punto final de una línea.</td>
      </tr>
+     <tr>
+        <td>[CanvasContext.setLineDash](/portal-interactivo/docs/APIReferences/JSAPI/UI/Canvas/CanvasContext/CanvasContext.setLineDash)</td>
+        <td>Establezca el estilo de la línea de tablero.</td>
+     </tr>
+     <tr>
+        <td>[CanvasContext.setLineJoin](/portal-interactivo/docs/APIReferences/JSAPI/UI/Canvas/CanvasContext/CanvasContext.setLineJoin)</td>
+        <td>Establezca el estilo de la junta de las líneas.</td>
+     </tr>
+     <tr>
+        <td>[CanvasContext.setLineWidth](/portal-interactivo/docs/APIReferences/JSAPI/UI/Canvas/CanvasContext/CanvasContext.setLineWidth)</td>
+        <td>Establezca el ancho de la línea.</td>
+     </tr>
+     <tr>
+        <td>[CanvasContext.setMiterLimit](/portal-interactivo/docs/APIReferences/JSAPI/UI/Canvas/CanvasContext/CanvasContext.setMiterLimit)</td>
+        <td>Establezca la longitud máxima de inglete.</td>
+     </tr>
+     <tr>
+        <td>[CanvasContext.setShadow](/portal-interactivo/docs/APIReferences/JSAPI/UI/Canvas/CanvasContext/CanvasContext.setShadow)</td>
+        <td>Establezca el estilo de sombra.</td>
+     </tr>
+     <tr>
+        <td>[CanvasContext.setStrokeStyle](/portal-interactivo/docs/APIReferences/JSAPI/UI/Canvas/CanvasContext/CanvasContext.setStrokeStyle)</td>
+        <td>Establezca el estilo de trazo.</td>
+     </tr>
+     <tr>
+        <td>[CanvasContext.setTextAlign](/portal-interactivo/docs/APIReferences/JSAPI/UI/Canvas/CanvasContext/CanvasContext.setTextAlign)</td>
+        <td>El texto Alinee la propiedad utilizada para describir el texto en la API de Canvas 2D.</td>
+     </tr>
+     <tr>
+        <td>[CanvasContext.setTextBaseline](/portal-interactivo/docs/APIReferences/JSAPI/UI/Canvas/CanvasContext/CanvasContext.setTextBaseline)</td>
+        <td>La línea de base del texto actual utilizado para describir el texto en la API de Canvas 2D.</td>
+     </tr>
+     <tr>
+        <td>[CanvasContext.setTransform](/portal-interactivo/docs/APIReferences/JSAPI/UI/Canvas/CanvasContext/CanvasContext.setTransform)</td>
+        <td>Restablecer la transformación e invocar la transformación por matriz unitaria, la transformación se describe por la variable del método.</td>
+     </tr>
+     <tr>
+        <td>[CanvasContext.stroke](/portal-interactivo/docs/APIReferences/JSAPI/UI/Canvas/CanvasContext/CanvasContext.stroke)</td>
+        <td>Dibuja el trazo, por defecto es```negro```.</td>
+     </tr>
+     <tr>
+        <td>[CanvasContext.strokeRect](/portal-interactivo/docs/APIReferences/JSAPI/UI/Canvas/CanvasContext/CanvasContext.strokeRect)</td>
+        <td>Dibuja un rectángulo sin relleno.</td>
+     </tr>
+     <tr>
+        <td>[CanvasContext.toDataURL](/portal-interactivo/docs/APIReferences/JSAPI/UI/Canvas/CanvasContext/CanvasContext.toDataURL)</td>
+        <td>Obtenga la URL de datos del área especificada del lienzo.</td>
+     </tr>
+      <tr>
+        <td>[CanvasContext.toTempFilePath](/portal-interactivo/docs/APIReferences/JSAPI/UI/Canvas/CanvasContext/CanvasContext.toTempFilePath)</td>
+        <td>Exporte el lienzo a una imagen y devuelva la ruta del archivo.</td>
+     </tr>
+     <tr>
+        <td>[CanvasContext.transform](/portal-interactivo/docs/APIReferences/JSAPI/UI/Canvas/CanvasContext/CanvasContext.transform)</td>
+        <td>Un método en el que una matriz se superpone varias veces en la transformación actual, y la matriz se describe mediante los parámetros del método. Puede escalar, rotar, mover e inclinar el contexto.</td>
+     </tr>
+     <tr>
+        <td>[CanvasContext.translate](/portal-interactivo/docs/APIReferences/JSAPI/UI/Canvas/CanvasContext/CanvasContext.translate)</td>
+        <td>Traslada el punto original de la coordenada. El punto original por defecto es la esquina superior izquierda.</td>
+     </tr>
 </table>
 
