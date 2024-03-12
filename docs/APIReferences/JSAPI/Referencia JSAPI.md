@@ -2,7 +2,6 @@
 sidebar_position: 2
 ---
 
-
 # Referencia de JSAPI
 
 ## Básica
