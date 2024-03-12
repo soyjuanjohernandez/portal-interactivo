@@ -1,3 +1,7 @@
+---
+sidebar_position: 2
+---
+
 # swiper
 
 Contenedor de vista de Swiper

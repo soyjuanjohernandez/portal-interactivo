@@ -1,3 +1,7 @@
+---
+sidebar_position: 5
+---
+
 ## movable-view
 
 Puede arrastrar y deslizar movable-view en la página. El componente movable-view debe estar dentro del componente [movable-area](/) y debe ser un nodo hijo directo. De lo contrario, el componente no puede moverse.

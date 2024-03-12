@@ -1,3 +1,7 @@
+---
+sidebar_position: 4
+---
+
 # cover-view
 
 El componente ```cover-view``` permite a los desarrolladores de mini programas superponer vistas de texto sobre componentes nativos para proporcionar textos informativos. Puedes personalizar la vista de texto a través de CSS (Hoja de estilo en cascada) y agregarla a los siguientes componentes nativos:
