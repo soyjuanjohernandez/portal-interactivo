@@ -366,7 +366,7 @@ Para obtener más información sobre SelectorQuery, consulte [Descripción gener
   </thead>
   <tbody>
     <tr>
-      <td>[my.multiLevelSelect](/)</td>
+      <td>[my.multiLevelSelect](/portal-interactivo/docs/APIReferences/JSAPI/UI/Selección%20de%20varios%20niveles/my.multiLevelSelect)</td>
       <td>Selector de varios niveles, utilizado para la selección asociada con varios niveles.</td>
     </tr>
   </tbody>
@@ -382,7 +382,7 @@ Para obtener más información sobre SelectorQuery, consulte [Descripción gener
   </thead>
   <tbody>
     <tr>
-      <td>[my.setBackgroundColor](/)</td>
+      <td>[my.setBackgroundColor](/portal-interactivo/docs/APIReferences/JSAPI/UI/Definir%20fondo/my.setBackgroundColor)</td>
       <td>Establece el color de fondo.</td>
     </tr>
   </tbody>
@@ -398,7 +398,7 @@ Para obtener más información sobre SelectorQuery, consulte [Descripción gener
   </thead>
   <tbody>
     <tr>
-      <td>[my.setCanPullDown](/)</td>
+      <td>[my.setCanPullDown](/portal-interactivo/docs/APIReferences/JSAPI/UI/Establecer%20página%20desplegable/my.setCanPullDown)</td>
       <td>Establece si la página puede soportar desplegables.</td>
     </tr>
   </tbody>
@@ -483,35 +483,35 @@ Para obtener más información sobre SelectorQuery, consulte [Descripción gener
   </thead>
   <tbody>
     <tr>
-      <td>[my.getStorage](/)</td>
+      <td>[my.getStorage](/portal-interactivo/docs/APIReferences/JSAPI/Almacenamiento/my.getStorage)</td>
       <td>Obtener datos en caché.</td>
     </tr>
     <tr>
-      <td>[my.getStorageSync](/)</td>
+      <td>[my.getStorageSync](/portal-interactivo/docs/APIReferences/JSAPI/Almacenamiento/my.getStorageSync)</td>
       <td>Obtener datos en caché de forma sincrónica.</td>
     </tr>
     <tr>
-      <td>[my.setStorage](/)</td>
+      <td>[my.setStorage](/portal-interactivo/docs/APIReferences/JSAPI/Almacenamiento/my.setStorage)</td>
       <td>Almacena los datos de la clave especificada en la caché local, que se superponen a los datos originales correspondientes a la clave.</td>
     </tr>
     <tr>
-      <td>[my.setStorageSync](/)</td>
+      <td>[my.setStorageSync](/portal-interactivo/docs/APIReferences/JSAPI/Almacenamiento/my.setStorageSync)</td>
       <td>Almacena los datos de la clave especificada en la caché local, que se superponen a los datos originales correspondientes a la clave.</td>
     </tr>
     <tr>
-      <td>[my.removeStorage](/)</td>
+      <td>[my.removeStorage](/portal-interactivo/docs/APIReferences/JSAPI/Almacenamiento/my.removeStorage)</td>
       <td>Eliminar los datos almacenados en caché.</td>
     </tr>
     <tr>
-      <td>[my.removeStorageSync](/)</td>
+      <td>[my.removeStorageSync](/portal-interactivo/docs/APIReferences/JSAPI/Almacenamiento/my.removeStorageSync)</td>
       <td>Eliminar datos en caché de forma sincrónica</td>
     </tr>
     <tr>
-      <td>[my.clearStorage](/)</td>
+      <td>[my.clearStorage](/portal-interactivo/docs/APIReferences/JSAPI/Almacenamiento/my.clearStorage)</td>
       <td>Borra la caché de datos local.</td>
     </tr>
     <tr>
-      <td>[my.clearStorageSync](/)</td>
+      <td>[my.clearStorageSync](/portal-interactivo/docs/APIReferences/JSAPI/Almacenamiento/my.clearStorageSync)</td>
       <td>Borra la caché de datos local de forma sincrónica.</td>
     </tr>
   </tbody>
