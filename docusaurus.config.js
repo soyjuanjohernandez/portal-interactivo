@@ -17,6 +17,7 @@ const config = {
   favicon: 'img/favicon.ico',
   organizationName: 'soyjuanjohernandez', 
   deploymentBranch: 'gh-pages',
+  projectName: 'portal-interactivo',
 
   i18n: {
     defaultLocale: 'es',
