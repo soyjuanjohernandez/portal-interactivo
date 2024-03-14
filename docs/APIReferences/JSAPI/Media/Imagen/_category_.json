@@ -1,8 +1,8 @@
 {
-    "label": "Image",
+    "label": "Imagen",
     "position": 1,
     "link": {
       "type": "generated-index",
-      "description": "Image"
+      "description": "Imagen"
     }
 }
