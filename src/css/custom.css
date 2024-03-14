@@ -39,7 +39,7 @@ h1{
 .navbar{
   font-size:16px
 }
-.menu_node_modules-\@docusaurus-theme-classic-lib-theme-DocSidebar-Desktop-Content-styles-module{
+.menu__link{
   font-size: 15px;
   font-weight: 400
 }
@@ -57,11 +57,9 @@ h1{
   border-top-right-radius:0;
   border-bottom-right-radius:0;
   border-bottom-left-radius:0;
-  /* color: #717171 */
 }
 .menu__link.menu__link--sublist{
   font-weight: 600;
-  /* color:#606770 */
 }
 .p-no-margin > p{
   margin: initial
