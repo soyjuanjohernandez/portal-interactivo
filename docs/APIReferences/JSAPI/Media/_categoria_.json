@@ -1,10 +1,8 @@
 {
-    "label": "Media",
-    "position": 6,
-    "link": {
-      "type": "generated-index",
-      "description": "Media"
-    }
+  "label": "Media",
+  "position": 7,
+  "link": {
+    "type": "generated-index",
+    "description": "Media"
   }
-  
-  
+}
