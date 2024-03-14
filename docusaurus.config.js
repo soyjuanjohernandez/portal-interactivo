@@ -44,6 +44,12 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       // Replace with your project's social card
+      docs: {
+        sidebar: {
+          autoCollapseCategories: true,
+          hideable: true,
+        },
+      },
       image: 'img/claro.svg',
       navbar: {
         title: 'Portal interactivo',
@@ -76,6 +82,7 @@ const config = {
         theme: prismThemes.github,
         darkTheme: prismThemes.dracula,
       },
+     
     }),
 };
 
