@@ -10,26 +10,14 @@ import {themes as prismThemes} from 'prism-react-renderer';
 const config = {
   title: 'Portal interactivo',
   tagline: 'Miniprogram documentación',
-  favicon: 'img/favicon.ico',
-
-  // Set the production url of your site here
-  url: 'https://soyjuanjohernandez.github.io',
-  // Set the /<baseUrl>/ pathname under which your site is served
-  // For GitHub pages deployment, it is often '/<projectName>/'
+  url: 'https://github.com',
   baseUrl: '/portal-interactivo/',
-
-  // GitHub pages deployment config.
-  // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'soyjuanjohernandez', 
-  // Usually your GitHub org/user name.
-  projectName: 'portal-interactivo', // Usually your repo name.
-
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
+  favicon: 'img/favicon.ico',
+  organizationName: 'soyjuanjohernandez', 
+  deploymentBranch: 'gh-pages',
 
-  // Even if you don't use internationalization, you can use this field to set
-  // useful metadata like html lang. For example, if your site is Chinese, you
-  // may want to replace "en" with "zh-Hans".
   i18n: {
     defaultLocale: 'es',
     locales: ['es'],
@@ -42,10 +30,7 @@ const config = {
       ({
         docs: {
           sidebarPath: './sidebars.js',
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          // editUrl:
-          //   'https://github.com/soyjuanjohernandez/portal-interactivo',
+
         },
         blog: false,
         theme: {

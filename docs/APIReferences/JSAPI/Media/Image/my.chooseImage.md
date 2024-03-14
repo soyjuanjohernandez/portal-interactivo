@@ -7,11 +7,11 @@ Elija una imagen de la cámara o galería de un dispositivo.
 ## Código de muestra
 
 ```js title="js"
-    my.chooseImage({
-        success: (res) => {
-            img.src = res.apFilePaths[0];
-        },
-    });  
+my.chooseImage({
+    success: (res) => {
+        img.src = res.apFilePaths[0];
+    },
+});  
 ```
 
 ## Parámetros

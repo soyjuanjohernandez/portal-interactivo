@@ -15,19 +15,19 @@ sidebar_position: 2
   </thead>
   <tbody>
     <tr>
-      <td>[my.canIUse](/portal-interactivo/docs/APIReferences/JSAPI/Básica/my.canIUse)</td>
+      <td>[my.canIUse](./Básica/my.canIUse)</td>
       <td>Juzga si la API del programa MINI actual, el parámetro entrante o el valor de retorno, el componente, el atributo, etc. son compatibles con la versión actual.</td>
     </tr>
     <tr>
-      <td>[my.SDKVersion](/portal-interactivo/docs/APIReferences/JSAPI/Básica/my.SDKVersion)</td>
+      <td>[my.SDKVersion](./Básica/my.SDKVersion)</td>
       <td>Obtiene la versión SDK.</td>
     </tr>
     <tr>
-      <td>[my.getAppIdSync](/portal-interactivo/docs/APIReferences/JSAPI/Básica/my.getAppIdSync)</td>
+      <td>[my.getAppIdSync](./Básica/my.getAppIdSync)</td>
       <td>Obtiene la ID de la aplicación mini programa sincrónicamente.</td>
     </tr>
     <tr>
-      <td>[my.getRunScene](/portal-interactivo/docs/APIReferences/JSAPI/Básica/my.getRunScene)</td>
+      <td>[my.getRunScene](./Básica/my.getRunScene)</td>
       <td>Obtiene la versión en ejecución del mini programa actual.</td>
     </tr>
   </tbody>
@@ -44,35 +44,35 @@ sidebar_position: 2
   </thead>
   <tbody>
     <tr>
-      <td>[my.offAppHide](/portal-interactivo/docs/APIReferences/JSAPI/Evento%20en%20la%20aplicación/my.offAppHide)</td>
+      <td>[my.offAppHide](./Evento%20en%20la%20aplicación/my.offAppHide)</td>
       <td>No se indica el evento de que el Mini Programa se cambia a fondo desde primer plano.</td>
     </tr>
     <tr>
-      <td>[my.offAppShow](/portal-interactivo/docs/APIReferences/JSAPI/Evento%20en%20la%20aplicación/my.offAppShow)</td>
+      <td>[my.offAppShow](./Evento%20en%20la%20aplicación/my.offAppShow)</td>
       <td>No se indica el evento de que el Mini Programa se cambia a primer plano desde el fondo.</td>
     </tr>
     <tr>
-      <td>[my.onAppHide](/portal-interactivo/docs/APIReferences/JSAPI/Evento%20en%20la%20aplicación/my.onAppHide)</td>
+      <td>[my.onAppHide](./Evento%20en%20la%20aplicación/my.onAppHide)</td>
       <td>Indica el evento de que el mini programa se cambie a fondo desde primer plano.</td>
     </tr>
     <tr>
-      <td>[my.onAppShow](/portal-interactivo/docs/APIReferences/JSAPI/Evento%20en%20la%20aplicación/my.onAppShow)</td>
+      <td>[my.onAppShow](./Evento%20en%20la%20aplicación/my.onAppShow)</td>
       <td>Indica el evento de que el mini programa se cambie a primer plano desde el fondo.</td>
     </tr>
      <tr>
-      <td>[my.offError](/portal-interactivo/docs/APIReferences/JSAPI/Evento%20en%20la%20aplicación/my.offError)</td>
+      <td>[my.offError](./Evento%20en%20la%20aplicación/my.offError)</td>
       <td>No se indica el evento de que los errores de JS ocurran en el mini programa.</td>
     </tr>
     <tr>
-      <td>[my.onError](/portal-interactivo/docs/APIReferences/JSAPI/Evento%20en%20la%20aplicación/my.onError)</td>
+      <td>[my.onError](./Evento%20en%20la%20aplicación/my.onError)</td>
       <td>Indica el evento de que ocurran errores en el mini programa.</td>
     </tr>
     <tr>
-      <td>[my.offUnhandledRejection](/portal-interactivo/docs/APIReferences/JSAPI/Evento%20en%20la%20aplicación/my.offUnhandledRejection)</td>
+      <td>[my.offUnhandledRejection](./Evento%20en%20la%20aplicación/my.offUnhandledRejection)</td>
       <td>No se indica para el evento de *unhandledrejection*.</td>
     </tr>
     <tr>
-      <td>[my.onUnhandledRejection](/portal-interactivo/docs/APIReferences/JSAPI/Evento%20en%20la%20aplicación/my.onUnhandledRejection)</td>
+      <td>[my.onUnhandledRejection](./Evento%20en%20la%20aplicación/my.onUnhandledRejection)</td>
       <td>Indica el evento de *unhandledrejection*.</td>
     </tr>
   </tbody>
@@ -91,19 +91,19 @@ sidebar_position: 2
   </thead>
   <tbody>
     <tr>
-      <td>[my.hideBackHome](/portal-interactivo/docs/APIReferences/JSAPI/UI/Barra%20de%20navegación/my.hideBackHome)</td>
+      <td>[my.hideBackHome](./UI/Barra%20de%20navegación/my.hideBackHome)</td>
       <td>Esconde de nuevo al botón de inicio.</td>
     </tr>
     <tr>
-      <td>[my.showNavigationBarLoading](/portal-interactivo/docs/APIReferences/JSAPI/UI/Barra%20de%20navegación/my.showNavigationBarLoading)</td>
+      <td>[my.showNavigationBarLoading](./UI/Barra%20de%20navegación/my.showNavigationBarLoading)</td>
       <td>Mostrar carga de barra de navegación.</td>
     </tr>
     <tr>
-      <td>[my.hideNavigationBarLoading](/portal-interactivo/docs/APIReferences/JSAPI/UI/Barra%20de%20navegación/my.hideNavigationBarLoading)</td>
+      <td>[my.hideNavigationBarLoading](./UI/Barra%20de%20navegación/my.hideNavigationBarLoading)</td>
       <td>Ocultar la carga de la barra de navegación.</td>
     </tr>
     <tr>
-      <td>[my.setNavigationBar](/portal-interactivo/docs/APIReferences/JSAPI/UI/Barra%20de%20navegación/my.setNavigationBar)</td>
+      <td>[my.setNavigationBar](./UI/Barra%20de%20navegación/my.setNavigationBar)</td>
       <td>Establezca el texto y el estilo de la barra de navegación.</td>
     </tr>
   </tbody>
@@ -120,17 +120,17 @@ sidebar_position: 2
   </thead>
   <tbody>
     <tr>
-      <td>[my.hideTabBar](/portal-interactivo/docs/APIReferences/JSAPI/UI/Barra%20de%20pestañas/my.hideTabBar)</td>
+      <td>[my.hideTabBar](./UI/Barra%20de%20pestañas/my.hideTabBar)</td>
       <td>Oculta la barra de pestañas.</td>
     </tr>
     <tr>
-      <td>[my.setTabBarStyle](/portal-interactivo/docs/APIReferences/JSAPI/UI/Barra%20de%20pestañas/my.setTabBarStyle)</td>
+      <td>[my.setTabBarStyle](./UI/Barra%20de%20pestañas/my.setTabBarStyle)</td>
       <td>Establezca el estilo de la barra de tabulación.</td>
     </tr>
   </tbody>
 </table>
 :::info[NOTA] 
-Para las preguntas frecuentes de la barra de pestañas, ver [Preguntas frecuentes de barra de pestañas](/portal-interactivo/docs/APIReferences/JSAPI/UI/Barra%20de%20pestañas/TabBar%20FAQs).
+Para las preguntas frecuentes de la barra de pestañas, ver [Preguntas frecuentes de barra de pestañas](./UI/Barra%20de%20pestañas/TabBar%20FAQs).
 :::
 
 ### Ruta
@@ -144,24 +144,24 @@ Para las preguntas frecuentes de la barra de pestañas, ver [Preguntas frecuente
   </thead>
   <tbody>
     <tr>
-      <td>[my.switchTab](/portal-interactivo/docs/APIReferences/JSAPI/UI/Ruta/my.switchTab)</td>
+      <td>[my.switchTab](./UI/Ruta/my.switchTab)</td>
       <td>Salta a la página de TabBar especificada y cierre todas las demás páginas que no son TabBar.</td>
     </tr>
     <tr>
-      <td>[my.navigateTo](/portal-interactivo/docs/APIReferences/JSAPI/UI/Ruta/my.navigateTo)</td>
+      <td>[my.navigateTo](./UI/Ruta/my.navigateTo)</td>
       <td>Mantenga la página actual y salte a la página especificada dentro de la aplicación. Use 
       ```my.navigateback``` para volver a la página original.</td>
     </tr>
     <tr>
-      <td>[my.navigateBack](/portal-interactivo/docs/APIReferences/JSAPI/UI/Ruta/my.navigateBack)</td>
+      <td>[my.navigateBack](./UI/Ruta/my.navigateBack)</td>
       <td>Cierre la página actual y vuelva a la anterior una o más páginas.</td>
     </tr>
     <tr>
-      <td>[my.redirectTo](/portal-interactivo/docs/APIReferences/JSAPI/UI/Ruta/my.redirectTo)</td>
+      <td>[my.redirectTo](./UI/Ruta/my.redirectTo)</td>
       <td>Cierre la página actual y salte a la página especificada dentro de la aplicación.</td>
     </tr>
     <tr>
-      <td>[my.reLaunch](/portal-interactivo/docs/APIReferences/JSAPI/UI/Ruta/my.reLaunch)</td>
+      <td>[my.reLaunch](./UI/Ruta/my.reLaunch)</td>
       <td>Cierre todas las páginas actuales y salte a la página especificada dentro de la aplicación.</td>
     </tr>
   </tbody>
@@ -177,35 +177,35 @@ Para las preguntas frecuentes de la barra de pestañas, ver [Preguntas frecuente
   </thead>
   <tbody>
     <tr>
-      <td>[my.alert](/portal-interactivo/docs/APIReferences/JSAPI/UI/Comentario/my.alert)</td>
+      <td>[my.alert](./UI/Comentario/my.alert)</td>
       <td>Cuadro de alerta.</td>
     </tr>
     <tr>
-      <td>[my.confirm](/portal-interactivo/docs/APIReferences/JSAPI/UI/Comentario/my.confirm)</td>
+      <td>[my.confirm](./UI/Comentario/my.confirm)</td>
       <td>Confirmar el cuadro.</td>
     </tr>
     <tr>
-      <td>[my.prompt](/portal-interactivo/docs/APIReferences/JSAPI/UI/Comentario/my.prompt)</td>
+      <td>[my.prompt](./UI/Comentario/my.prompt)</td>
       <td>Cuadro inmediato.</td>
     </tr>
     <tr>
-      <td>[my.showLoading](/portal-interactivo/docs/APIReferences/JSAPI/UI/Comentario/my.showLoading)</td>
+      <td>[my.showLoading](./UI/Comentario/my.showLoading)</td>
       <td>Muestre la indicación de carga.</td>
     </tr>
     <tr>
-      <td>[my.hideLoading](/portal-interactivo/docs/APIReferences/JSAPI/UI/Comentario/my.hideLoading)</td>
+      <td>[my.hideLoading](./UI/Comentario/my.hideLoading)</td>
       <td>Ocultar la indicación de carga.</td>
     </tr>
     <tr>
-      <td>[my.showToast](/portal-interactivo/docs/APIReferences/JSAPI/UI/Comentario/my.showToast)</td>
+      <td>[my.showToast](./UI/Comentario/my.showToast)</td>
       <td>Muestre una indicación débil, que desaparece en los segundos especificados.</td>
     </tr>
     <tr>
-      <td>[my.hideToast](/portal-interactivo/docs/APIReferences/JSAPI/UI/Comentario/my.hideToast)</td>
+      <td>[my.hideToast](./UI/Comentario/my.hideToast)</td>
       <td>Esconde la indicación débil.</td>
     </tr>
     <tr>
-      <td>[my.showActionSheet](/portal-interactivo/docs/APIReferences/JSAPI/UI/Comentario/my.showActionSheet)</td>
+      <td>[my.showActionSheet](./UI/Comentario/my.showActionSheet)</td>
       <td>Muestra un menú de operación.</td>
     </tr>
   </tbody>
@@ -222,15 +222,15 @@ Para las preguntas frecuentes de la barra de pestañas, ver [Preguntas frecuente
   </thead>
   <tbody>
     <tr>
-      <td>[my.startPullDownRefresh](/portal-interactivo/docs/APIReferences/JSAPI/UI/Desplegable/my.startPullDownRefresh)</td>
+      <td>[my.startPullDownRefresh](./UI/Desplegable/my.startPullDownRefresh)</td>
       <td>Inicie la función pull-to-refresh.</td>
     </tr>
     <tr>
-      <td>[onPullDownRefresh](/portal-interactivo/docs/APIReferences/JSAPI/UI/Desplegable/onPullDownRefresh)</td>
+      <td>[onPullDownRefresh](./UI/Desplegable/onPullDownRefresh)</td>
       <td>En la página, personaliza la función onPullDownRefresh para indicar el evento pull-to-refresh del usuario.</td>
     </tr>
     <tr>
-      <td>[my.stopPullDownRefresh](/portal-interactivo/docs/APIReferences/JSAPI/UI/Desplegable/my.stopPullDownRefresh)</td>
+      <td>[my.stopPullDownRefresh](./UI/Desplegable/my.stopPullDownRefresh)</td>
       <td>Detener el pull-to-refresh para la página actual.</td>
     </tr>
   </tbody>
@@ -247,13 +247,13 @@ Para las preguntas frecuentes de la barra de pestañas, ver [Preguntas frecuente
   </thead>
   <tbody>
     <tr>
-      <td>[my.choosePhoneContact](/portal-interactivo/docs/APIReferences/JSAPI/UI/Contacto/my.choosePhoneContact)</td>
+      <td>[my.choosePhoneContact](./UI/Contacto/my.choosePhoneContact)</td>
       <td>Seleccione un contacto del sistema.</td>
     </tr>
   </tbody>
 </table>
 
-### Seleccione Datos
+### Selector de Fecha
 <table>
   <thead>
     <tr>
@@ -263,7 +263,7 @@ Para las preguntas frecuentes de la barra de pestañas, ver [Preguntas frecuente
   </thead>
   <tbody>
     <tr>
-      <td>[my.datePicker](/portal-interactivo/docs/APIReferences/JSAPI/UI/Seleccione%20Datos/my.choosePhoneContact)</td>
+      <td>[my.datePicker](/)</td>
       <td>Abrir una lista de selección de fechas.</td>
     </tr>
   </tbody>
@@ -279,7 +279,7 @@ Para las preguntas frecuentes de la barra de pestañas, ver [Preguntas frecuente
   </thead>
   <tbody>
     <tr>
-      <td>[my.createAnimation](/portal-interactivo/docs/APIReferences/JSAPI/UI/Animaci%C3%B3n/my.createAnimation)</td>
+      <td>[my.createAnimation](./UI/Animaci%C3%B3n/my.createAnimation)</td>
       <td>Crear una instancia de animación.</td>
     </tr>
   </tbody>
@@ -296,13 +296,13 @@ Para las preguntas frecuentes de la barra de pestañas, ver [Preguntas frecuente
   </thead>
   <tbody>
     <tr>
-      <td>[my.createCanvasContext](/portal-interactivo/docs/APIReferences/JSAPI/UI/Canvas/my.createCanvasContext)</td>
+      <td>[my.createCanvasContext](./UI/Canvas/my.createCanvasContext)</td>
       <td>Crea el contexto para canvas</td>
     </tr>
   </tbody>
 </table>
 
-Para obtener más información sobre contexto de Canvas, ver [Descripción general CanvasContext](/portal-interactivo/docs/APIReferences/JSAPI/UI/Canvas/CanvasContext/Descripci%C3%B3n%20general%20CanvasContext).
+Para obtener más información sobre contexto de Canvas, ver [Descripción general CanvasContext](./UI/Canvas/CanvasContext/Descripci%C3%B3n%20general%20CanvasContext).
 
 ### Teclado
 <table>
@@ -314,7 +314,7 @@ Para obtener más información sobre contexto de Canvas, ver [Descripción gener
   </thead>
   <tbody>
     <tr>
-      <td>[my.hideKeyboard](/portal-interactivo/docs/APIReferences/JSAPI/UI/Teclado/my.hideKeyboard)</td>
+      <td>[my.hideKeyboard](./UI/Teclado/my.hideKeyboard)</td>
       <td>Ocultar teclado</td>
     </tr>
   </tbody>
@@ -330,7 +330,7 @@ Para obtener más información sobre contexto de Canvas, ver [Descripción gener
   </thead>
   <tbody>
     <tr>
-      <td>[my.pageScrollTo](/portal-interactivo/docs/APIReferences/JSAPI/UI/Desplazarse/my.pageScrollTo)</td>
+      <td>[my.pageScrollTo](./UI/Desplazarse/my.pageScrollTo)</td>
       <td>Desplácese hasta la ubicación de destino de la página.</td>
     </tr>
   </tbody>
@@ -346,14 +346,14 @@ Para obtener más información sobre contexto de Canvas, ver [Descripción gener
   </thead>
   <tbody>
     <tr>
-      <td>[my.createSelectorQuery](/portal-interactivo/docs/APIReferences/JSAPI/UI/Seleccione%20Datos/my.createSelectorQuery)</td>
+      <td>[my.createSelectorQuery](./UI/Seleccione%20Datos/my.createSelectorQuery)</td>
       <td>Crear una instancia de la consulta del selector</td>
     </tr>
   </tbody>
 </table>
 
 :::info[NOTA]
-Para obtener más información sobre SelectorQuery, consulte [Descripción general SelectorQuery](/portal-interactivo/docs/APIReferences/JSAPI/UI/Seleccione%20Datos/Objeto%20SelectorQuery/Descripción%20general%20CanvasContext).
+Para obtener más información sobre SelectorQuery, consulte [Descripción general SelectorQuery](./UI/Seleccione%20Datos/Objeto%20SelectorQuery/Descripción%20general%20CanvasContext).
 :::
 
 ### Selección de varios niveles
@@ -366,7 +366,7 @@ Para obtener más información sobre SelectorQuery, consulte [Descripción gener
   </thead>
   <tbody>
     <tr>
-      <td>[my.multiLevelSelect](/portal-interactivo/docs/APIReferences/JSAPI/UI/Selección%20de%20varios%20niveles/my.multiLevelSelect)</td>
+      <td>[my.multiLevelSelect](./UI/Selección%20de%20varios%20niveles/my.multiLevelSelect)</td>
       <td>Selector de varios niveles, utilizado para la selección asociada con varios niveles.</td>
     </tr>
   </tbody>
@@ -382,7 +382,7 @@ Para obtener más información sobre SelectorQuery, consulte [Descripción gener
   </thead>
   <tbody>
     <tr>
-      <td>[my.setBackgroundColor](/portal-interactivo/docs/APIReferences/JSAPI/UI/Definir%20fondo/my.setBackgroundColor)</td>
+      <td>[my.setBackgroundColor](./UI/Definir%20fondo/my.setBackgroundColor)</td>
       <td>Establece el color de fondo.</td>
     </tr>
   </tbody>
@@ -398,7 +398,7 @@ Para obtener más información sobre SelectorQuery, consulte [Descripción gener
   </thead>
   <tbody>
     <tr>
-      <td>[my.setCanPullDown](/portal-interactivo/docs/APIReferences/JSAPI/UI/Establecer%20página%20desplegable/my.setCanPullDown)</td>
+      <td>[my.setCanPullDown](./UI/Establecer%20página%20desplegable/my.setCanPullDown)</td>
       <td>Establece si la página puede soportar desplegables.</td>
     </tr>
   </tbody>
@@ -483,35 +483,35 @@ Para obtener más información sobre SelectorQuery, consulte [Descripción gener
   </thead>
   <tbody>
     <tr>
-      <td>[my.getStorage](/portal-interactivo/docs/APIReferences/JSAPI/Almacenamiento/my.getStorage)</td>
+      <td>[my.getStorage](./Almacenamiento/my.getStorage)</td>
       <td>Obtener datos en caché.</td>
     </tr>
     <tr>
-      <td>[my.getStorageSync](/portal-interactivo/docs/APIReferences/JSAPI/Almacenamiento/my.getStorageSync)</td>
+      <td>[my.getStorageSync](./Almacenamiento/my.getStorageSync)</td>
       <td>Obtener datos en caché de forma sincrónica.</td>
     </tr>
     <tr>
-      <td>[my.setStorage](/portal-interactivo/docs/APIReferences/JSAPI/Almacenamiento/my.setStorage)</td>
+      <td>[my.setStorage](./Almacenamiento/my.setStorage)</td>
       <td>Almacena los datos de la clave especificada en la caché local, que se superponen a los datos originales correspondientes a la clave.</td>
     </tr>
     <tr>
-      <td>[my.setStorageSync](/portal-interactivo/docs/APIReferences/JSAPI/Almacenamiento/my.setStorageSync)</td>
+      <td>[my.setStorageSync](./Almacenamiento/my.setStorageSync)</td>
       <td>Almacena los datos de la clave especificada en la caché local, que se superponen a los datos originales correspondientes a la clave.</td>
     </tr>
     <tr>
-      <td>[my.removeStorage](/portal-interactivo/docs/APIReferences/JSAPI/Almacenamiento/my.removeStorage)</td>
+      <td>[my.removeStorage](./Almacenamiento/my.removeStorage)</td>
       <td>Eliminar los datos almacenados en caché.</td>
     </tr>
     <tr>
-      <td>[my.removeStorageSync](/portal-interactivo/docs/APIReferences/JSAPI/Almacenamiento/my.removeStorageSync)</td>
+      <td>[my.removeStorageSync](./Almacenamiento/my.removeStorageSync)</td>
       <td>Eliminar datos en caché de forma sincrónica</td>
     </tr>
     <tr>
-      <td>[my.clearStorage](/portal-interactivo/docs/APIReferences/JSAPI/Almacenamiento/my.clearStorage)</td>
+      <td>[my.clearStorage](./Almacenamiento/my.clearStorage)</td>
       <td>Borra la caché de datos local.</td>
     </tr>
     <tr>
-      <td>[my.clearStorageSync](/portal-interactivo/docs/APIReferences/JSAPI/Almacenamiento/my.clearStorageSync)</td>
+      <td>[my.clearStorageSync](./Almacenamiento/my.clearStorageSync)</td>
       <td>Borra la caché de datos local de forma sincrónica.</td>
     </tr>
   </tbody>
