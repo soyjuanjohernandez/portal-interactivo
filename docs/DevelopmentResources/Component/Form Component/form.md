@@ -1,3 +1,8 @@
+---
+sidebar_position: 2
+---
+
+
 # Formulario
 
 El formulario se utiliza para enviar los componentes de entrada del usuario, como textarea, switch, input, checkbox-group, slider, radio-group, picker y otros componentes en el componente. Al hacer clic en el componente de botón con "form" como formulario y "form-type" como "submit", se envía la presentación del valor "value" en el componente de formulario. Es necesario agregar "name" en el componente de formulario como la clave.

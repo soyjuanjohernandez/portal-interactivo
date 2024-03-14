@@ -1,4 +1,10 @@
-# Cuadro de entrada
+---
+sidebar_position: 4
+---
+
+# Input
+
+campo de entrada de texto
 
 #### Propiedades
 
