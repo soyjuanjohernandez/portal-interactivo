@@ -263,7 +263,7 @@ Para las preguntas frecuentes de la barra de pestañas, ver [Preguntas frecuente
   </thead>
   <tbody>
     <tr>
-      <td>[my.datePicker](/)</td>
+      <td>[my.datePicker](./UI/Selector%20de%20Fecha/my.datePicker)</td>
       <td>Abrir una lista de selección de fechas.</td>
     </tr>
   </tbody>
@@ -416,23 +416,23 @@ Para obtener más información sobre SelectorQuery, consulte [Descripción gener
   </thead>
   <tbody>
     <tr>
-      <td>[my.chooseImage](/)</td>
+      <td>[my.chooseImage](./Media/Image/my.chooseImage)</td>
       <td>Elige una imagen de la cámara o del álbum del móvil.</td>
     </tr>
     <tr>
-      <td>[my.previewImage](/)</td>
+      <td>[my.previewImage](./Media/Image/my.previewImage)</td>
       <td>Vista previa de la imagen.</td>
     </tr>
     <tr>
-      <td>[my.saveImage](/)</td>
+      <td>[my.saveImage](./Media/Image/my.saveImage)</td>
       <td>Guarda las imágenes en línea en el álbum del móvil.</td>
     </tr>
     <tr>
-      <td>[my.getImageInfo](/)</td>
+      <td>[my.getImageInfo](./Media/Image/my.getImageInfo)</td>
       <td>Obtener la información de la imagen.</td>
     </tr>
     <tr>
-      <td>[my.compressImage](/)</td>
+      <td>[my.compressImage](./Media/Image/my.compressImage)</td>
       <td>Comprime imágenes grandes para cumplir las restricciones de tamaño de algunos miniprogramas.</td>
     </tr>
   </tbody>
@@ -449,7 +449,7 @@ Para obtener más información sobre SelectorQuery, consulte [Descripción gener
   </thead>
   <tbody>
     <tr>
-      <td>[my.chooseVideo](/)</td>
+      <td>[my.chooseVideo](./Media/Video/my.chooseVideo)</td>
       <td>Graba un vídeo o elige un vídeo del álbum.</td>
     </tr>
   </tbody>
@@ -466,8 +466,8 @@ Para obtener más información sobre SelectorQuery, consulte [Descripción gener
   </thead>
   <tbody>
     <tr>
-      <td>[my.createLottieContext](/)</td>
-      <td>Crea y devuelve un objeto de contexto Lottie [*lottieContext*](/).</td>
+      <td>[my.createLottieContext](./Media/Lottie/my.createLottieContext)</td>
+      <td>Crea y devuelve un objeto de contexto Lottie [*lottieContext*](Media/Lottie/my.createLottieContext#métodos-de-lottiecontext).</td>
     </tr>
   </tbody>
 </table>
@@ -524,31 +524,31 @@ Para obtener más información sobre SelectorQuery, consulte [Descripción gener
       <th>Descripción de la función</th>
     </tr>
     <tr>
-      <td>[my.saveFile](/)</td>
+      <td>[my.saveFile](./Archivo/my.saveFile)</td>
       <td>Guarda el archivo en el dispositivo.</td>
     </tr>
     <tr>
-      <td>[my.getFileInfo](/)</td>
+      <td>[my.getFileInfo](./Archivo/my.getFileInfo)</td>
       <td>Obtener la información del archivo.</td>
     </tr>
     <tr>
-      <td>[my.getSavedFileInfo](/)</td>
+      <td>[my.getSavedFileInfo](./Archivo/my.getSavedFileInfo)</td>
       <td>Obtiene la información del archivo guardado.</td>
     </tr>
     <tr>
-      <td>[my.getSavedFileList](/)</td>
+      <td>[my.getSavedFileList](./Archivo/my.getSavedFileList)</td>
       <td>Obtiene la información de todos los archivos guardados.</td>
     </tr>
     <tr>
-      <td>[my.removeSavedFile](/)</td>
+      <td>[my.removeSavedFile](./Archivo/my.removeSavedFile)</td>
       <td>Elimina el archivo guardado.</td>
     </tr>
      <tr>
-      <td>[my.chooseFileFromDisk](/)</td>
+      <td>[my.chooseFileFromDisk](./Archivo/my.chooseFileFromDisk)</td>
       <td>Elegir un archivo para cargar.</td>
     </tr>
     <tr>
-      <td>[my.openDocument](/)</td>
+      <td>[my.openDocument](./Archivo/my.openDocument)</td>
       <td>Permite a los usuarios previsualizar un archivo PDF dentro del miniprograma.</td>
     </tr>
 </table>
