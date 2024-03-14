@@ -253,7 +253,7 @@ Para las preguntas frecuentes de la barra de pestañas, ver [Preguntas frecuente
   </tbody>
 </table>
 
-### Seleccione Datos
+### Selector de Fecha
 <table>
   <thead>
     <tr>
