@@ -416,23 +416,23 @@ Para obtener más información sobre SelectorQuery, consulte [Descripción gener
   </thead>
   <tbody>
     <tr>
-      <td>[my.chooseImage](./Media/Image/my.chooseImage)</td>
+      <td>[my.chooseImage](./Media/Imagen/my.chooseImage)</td>
       <td>Elige una imagen de la cámara o del álbum del móvil.</td>
     </tr>
     <tr>
-      <td>[my.previewImage](./Media/Image/my.previewImage)</td>
+      <td>[my.previewImage](./Media/Imagen/my.previewImage)</td>
       <td>Vista previa de la imagen.</td>
     </tr>
     <tr>
-      <td>[my.saveImage](./Media/Image/my.saveImage)</td>
+      <td>[my.saveImage](./Media/Imagen/my.saveImage)</td>
       <td>Guarda las imágenes en línea en el álbum del móvil.</td>
     </tr>
     <tr>
-      <td>[my.getImageInfo](./Media/Image/my.getImageInfo)</td>
+      <td>[my.getImageInfo](./Media/Imagen/my.getImageInfo)</td>
       <td>Obtener la información de la imagen.</td>
     </tr>
     <tr>
-      <td>[my.compressImage](./Media/Image/my.compressImage)</td>
+      <td>[my.compressImage](./Media/Imagen/my.compressImage)</td>
       <td>Comprime imágenes grandes para cumplir las restricciones de tamaño de algunos miniprogramas.</td>
     </tr>
   </tbody>
@@ -560,15 +560,15 @@ Para obtener más información sobre SelectorQuery, consulte [Descripción gener
       <th>Descripción de la función</th>
     </tr>
     <tr>
-      <td>[my.getLocation](/)</td>
+      <td>[my.getLocation](./Ubicación/my.getLocation)</td>
       <td>Obtenga la ubicación geográfica actual del usuario.</td>
     </tr>
     <tr>
-      <td>[my.openLocation](/)</td>
+      <td>[my.openLocation](./Ubicación/my.openLocation)</td>
       <td>Vea la ubicación en el mapa incorporado.</td>
     </tr>
     <tr>
-      <td>[my.chooseLocation](/)</td>
+      <td>[my.chooseLocation](./Ubicación/my.chooseLocation)</td>
       <td>Abra el mapa incorporado para elegir una ubicación.</td>
     </tr>
 </table>
@@ -580,11 +580,11 @@ Para obtener más información sobre SelectorQuery, consulte [Descripción gener
         <th>Descripción de la función</th>
     </tr>
     <tr>
-        <td>[my.createMapContext](/)</td>
+        <td>[my.createMapContext](./Mapa/my.createMapContext)</td>
         <td>Crea y devuelve un objeto de contexto de mapa mapContext.</td>
     </tr>
     <tr>
-        <td>[my.calculateRoute](/)</td>
+        <td>[my.calculateRoute](./Mapa/my.calculateRoute)</td>
         <td>Calcula la ruta.</td>
     </tr>
 </table>
@@ -596,59 +596,59 @@ Para obtener más información sobre SelectorQuery, consulte [Descripción gener
         <th>Descripción de la función</th>
     </tr>
     <tr>
-        <td>[my.request](/)</td>
+        <td>[my.request](./Red/my.request)</td>
         <td>Solicitud de red.</td>
     </tr>
     <tr>
-        <td>[my.uploadFile](/)</td>
+        <td>[my.uploadFile](./Red/my.uploadFile)</td>
         <td>Cargue el recurso local al servidor de desarrolladores.</td>
     </tr>
     <tr>
-        <td>[my.downloadFile](/)</td>
+        <td>[my.downloadFile](./Red/my.downloadFile)</td>
         <td>Descargue el recurso de archivo a la ubicación local.</td>
     </tr>
     <tr>
-        <td>[my.connectSocket](/)</td>
+        <td>[my.connectSocket](./Red/my.connectSocket)</td>
         <td>Crea una conexión WebSocket.</td>
     </tr>
     <tr>
-        <td>[my.onSocketOpen](/)</td>
+        <td>[my.onSocketOpen](./Red/my.onSocketOpen)</td>
         <td>Escuche el evento de habilitar la conexión WebSocket.</td>
     </tr>
     <tr>
-        <td>[my.offSocketOpen](/)</td>
+        <td>[my.offSocketOpen](./Red/my.offSocketOpen)</td>
         <td>No se indique el evento de habilitar la conexión WebSocket.</td>
     </tr>
     <tr>
-        <td>[my.onSocketError](/)</td>
+        <td>[my.onSocketError](./Red/my.onSocketError)</td>
         <td>Escuche los eventos de error de WebSocket.</td>
     </tr>
     <tr>
-        <td>[my.offSocketError](/)</td>
+        <td>[my.offSocketError](./Red/my.offSocketError)</td>
         <td>No se deja a WebSocket Eventos de error.</td>
     </tr>
     <tr>
-        <td>[my.sendSocketMessage](/)</td>
+        <td>[my.sendSocketMessage](./Red/my.sendSocketMessage)</td>
         <td>Enviar datos a través de la conexión WebSocket.</td>
     </tr>
     <tr>
-        <td>[my.onSocketMessage](/)</td>
+        <td>[my.onSocketMessage](./Red/my.onSocketMessage)</td>
         <td>Escuche el evento de recibir mensajes del servidor por WebSocket.</td>
     </tr>
     <tr>
-        <td>[my.offSocketMessage](/)</td>
+        <td>[my.offSocketMessage](./Red/my.offSocketMessage)</td>
         <td>No se indique el evento de recibir mensajes del servidor por WebSocket.</td>
     </tr>
     <tr>
-        <td>[my.closeSocket](/)</td>
+        <td>[my.closeSocket](./Red/my.closeSocket)</td>
         <td>Cierre la conexión WebSocket.</td>
     </tr>
     <tr>
-        <td>[my.onSocketClose](/)</td>
+        <td>[my.onSocketClose](./Red/my.onSocketClose)</td>
         <td>Escuche el evento de cerrar la conexión WebSocket.</td>
     </tr>
     <tr>
-        <td>[my.offSocketClose](/)</td>
+        <td>[my.offSocketClose](./Red/my.offSocketClose)</td>
         <td>No se indique el caso de cerrar la conexión WebSocket.</td>
     </tr>
 </table>

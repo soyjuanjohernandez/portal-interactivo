@@ -155,7 +155,7 @@ El tipo de parámetro entrante es el objeto con los siguientes atributos:
      </tr>
 </table>
 
-## Error Code
+## Código de error
 
 <table>
     <tr>
