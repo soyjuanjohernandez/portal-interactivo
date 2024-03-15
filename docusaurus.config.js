@@ -63,7 +63,7 @@ const config = {
             type: 'docSidebar',
             sidebarId: 'docsSidebar',
             position: 'left',
-            label: 'Documetación',
+            label: 'Documentación',
           },
           // {to: '/blog', label: 'Blog', position: 'left'},
           {
