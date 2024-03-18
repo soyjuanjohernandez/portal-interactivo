@@ -1,0 +1,8 @@
+{
+  "label": "Acelerómetro",
+  "position": 5,
+  "link": {
+    "type": "generated-index",
+    "description": "Acelerómetro"
+  }
+}

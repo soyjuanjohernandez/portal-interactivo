@@ -662,7 +662,7 @@ Para obtener más información sobre SelectorQuery, consulte [Descripción gener
         <th>Descripción de la función</th>
     </tr>
     <tr>
-        <td>[my.getSystemInfo](/)</td>
+        <td>[my.getSystemInfo](./Dispositivo/Información%20del%20sistema/my.getSystemInfo)</td>
         <td>Obtener información del sistema.</td>
     </tr>
 </table>
@@ -674,7 +674,7 @@ Para obtener más información sobre SelectorQuery, consulte [Descripción gener
         <th>Descripción de la función</th>
     </tr>
     <tr>
-        <td>[my.getNetworkType](/)</td>
+        <td>[my.getNetworkType](./Dispositivo/Estado%20de%20la%20red/my.getNetworkType)</td>
         <td>Obtener el estado actual de la red.</td>
     </tr>
 </table>
@@ -686,23 +686,23 @@ Para obtener más información sobre SelectorQuery, consulte [Descripción gener
         <th>Descripción de la función</th>
     </tr>
     <tr>
-        <td>[my.getClipboard](/)</td>
+        <td>[my.getClipboard](./Dispositivo/Portapapeles/my.getClipboard)</td>
         <td>Obtenga los datos del portapapeles.</td>
     </tr>
     <tr>
-        <td>[my.setClipboard](/)</td>
+        <td>[my.setClipboard](./Dispositivo/Portapapeles/my.setClipboard)</td>
         <td>Establezca los datos del portapapeles.</td>
     </tr>
 </table>
 
-### Mira Shake
+### Watch Shake
 <table>
     <tr>
         <th>Nombre del API</th>
         <th>Descripción de la función</th>
     </tr>
     <tr>
-        <td>[my.watchShake](/)</td>
+        <td>[my.watchShake](./Dispositivo/Watch%20Shake/my.watchShake)</td>
         <td>La función de los WatchShake.</td>
     </tr>
 </table>
@@ -714,11 +714,11 @@ Para obtener más información sobre SelectorQuery, consulte [Descripción gener
         <th>Descripción de la función</th>
     </tr>
     <tr>
-        <td>[my.onAccelerometerChange](/)</td>
+        <td>[my.onAccelerometerChange](./Dispositivo/Acelerómetro/my.onAccelerometerChange)</td>
         <td>Indica el evento de datos de aceleración.</td>
     </tr>
     <tr>
-        <td>[my.offAccelerometerChange](/)</td>
+        <td>[my.offAccelerometerChange](./Dispositivo/Acelerómetro/my.offAccelerometerChange)</td>
         <td>No se indica al evento de datos de aceleración.</td>
     </tr>
 </table>
@@ -731,23 +731,23 @@ Para obtener más información sobre SelectorQuery, consulte [Descripción gener
         <th>Descripción de la función</th>
     </tr>
     <tr>
-        <td>[my.onCompassChange](/)</td>
+        <td>[my.onCompassChange](./Dispositivo/Brújula/my.onCompassChange)</td>
         <td>Escucha el evento de cambio de datos de la brújula.</td>
     </tr>
     <tr>
-        <td>[my.offCompassChange](/)</td>
+        <td>[my.offCompassChange](./Dispositivo/Brújula/my.offCompassChange)</td>
         <td>Desactiva la escucha del evento de cambio de datos de la brújula.</td>
     </tr>
 </table>
 
-### Vibrar
+### Vibración
 <table>
     <tr>
         <th>Nombre del API</th>
         <th>Descripción de la función</th>
     </tr>
     <tr>
-        <td>[my.vibrate](/)</td>
+        <td>[my.vibrate](./Dispositivo/Vibración/my.vibrate)</td>
         <td>Invoca la capacidad de vibración del dispositivo.</td>
     </tr>
 </table>
