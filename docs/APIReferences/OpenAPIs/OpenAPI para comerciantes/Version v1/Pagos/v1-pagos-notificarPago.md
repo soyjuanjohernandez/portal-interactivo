@@ -6,279 +6,158 @@ sidebar_position: 3
 
 POST ```/v1/payments/notifyPayment```
 
-The``` notifyPayment``` API is used to notify  payment result to merchant/partner.
+The``` notifyPayment``` La API se utiliza para notificar al resultado del pago a merchant/partner.
 
-Note:
+Nota:
 
-1) to notify merchant/partner the payment result when  payment processing reaches the final state (Success/Fail).
+1) notificar merchant/partner El resultado del pago cuando el procesamiento de pago alcanza el estado final (éxito/fallas).
 
-2) Not all scenario merchant/partner need receive this notify. Such as sync payment scenario(B Scan C, Agreement Pay).
+2) No todo escenario merchant/partner necesidad recibe este notificar.Tales como escenario de pago de sincronización (B Scan C, pago de acuerdo).
+
 ## Message structure
-
 
 ### Request
 
 
 <table>
     <tr>
-      <th></th>
-      <th></th>
-      <th></th>
-      <th></th>
+      <th>Propiedad</th>
+      <th>Tipo de datos</th>
+      <th>Requerido</th>
+      <th>Descripción</th>
     </tr>
      <tr>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
+      <td>partnerId</td>
+      <td>String </td>
+      <td>Yes</td>
+      <td>El socio asignado por la billetera.
+      Max.Longitud: 32 caracteres.</td>
     </tr>
     <tr>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
+      <td>paymentId</td>
+      <td>String </td>
+      <td>Yes</td>
+      <td>La identificación única de un pago generado por la billetera.Max.Longitud: 64 caracteres.
+      Max. length: 64 characters.</td>
     </tr>
     <tr>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
+      <td>paymentAmount</td>
+      <td>[Amount](../Diccionario%20de%20datos%20para%20v1.md</td>
+      <td>Yes</td>
+      <td>Monto del pedido para la visualización de registros de consumo de usuario, página de resultados de pago.</td>
     </tr>
     <tr>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
+      <td>paymentTime</td>
+      <td>String/Datetime</td>
+      <td>No</td>
+      <td>Tiempo de éxito del pago, que sigue al estándar [ISO 8601](https://www.iso.org/iso-8601-date-and-time-format.html).</td>
+    </tr>
+    <tr>
+      <td>paymentStatus</td>
+      <td>String</td>
+      <td>Yes</td>
+      <td>```SUCCESS```: el orden es sucedido.
+      ```Fallas``` - el orden fallece. </td>
+    </tr>
+    <tr>
+      <td>paymentFailReason</td>
+      <td>String </td>
+      <td>No</td>
+      <td>La orden de pago de la orden de pago cuando el pago de pagos es fallado.
+      Max.Longitud: 256 caracteres.</td>
+    </tr>
+    <tr>
+      <td>extendInfo</td>
+      <td>String </td>
+      <td>No</td>
+      <td>La información extendida, la billetera y el comerciante pueden poner información extendida aquí.
+      Max.Longitud: 4096 caracteres.</td>
     </tr>
 </table>
 
-Property
-	
 
-Data type
-	
+### Response
+
+<table>
+    <tr>
+      <th>Propiedad</th>
+      <th>Tipo de datos</th>
+      <th>Requerido</th>
+      <th>Descripción</th>
+    </tr>
+     <tr>
+      <td>result</td>
+      <td>[Result](../Diccionario%20de%20datos%20para%20v1.md)</td>
+      <td>Yes</td>
+      <td>El resultado de la solicitud, que contiene información relacionada con el resultado de la solicitud, como los códigos de estado y error.</td>
+    </tr>
+</table>
+
+### Result Process Logic
+
+    Si result.resultStatus == S, Significa que el comerciante/socio ya recibió esta notificación.
+    Si result.resultStatus == F, significa merchant/partnermanejar esta notificación falló.
+    Si result.resultStatus==U, significa merchant/partner Manejar esta notificación Ocurre una excepción desconocida, la billetera volverá a intentarlo si obtiene la respuesta.
+    Si otra respuesta (almost never occur),La billetera procesará como U.
+### Result
+
+<table>
+    <tr>
+      <th>No</th>
+      <th>Estado de resultados</th>
+      <th>código de resultado</th>
+      <th>resultado</th>
+    </tr>
+     <tr>
+      <td>1</td>
+      <td>S</td>
+      <td>SUCCESS</td>
+      <td>Éxito.</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>U</td>
+      <td>UNKNOWN_EXCEPTION</td>
+      <td>Se falló una llamada API, que es causada por razones desconocidas.</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>U</td>
+      <td>REQUEST_TRAFFIC_EXCEED_LIMIT</td>
+      <td>El tráfico de solicitud excede el límite.</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>F</td>
+      <td>REPEAT_REQ_INCONSISTENT</td>
+      <td>Envío repetido, y las solicitudes son inconsistentes.</td>
+    </tr>
+     <tr>
+      <td>5</td>
+      <td>F</td>
+      <td>PROCESS_FAIL</td>
+      <td>Se produjo una falla comercial general.No vuelva a intentarlo.</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>F</td>
+      <td>INVALID_API</td>
+      <td>La API llamada es inválida o no activa.</td>
+    </tr>
+     <tr>
+      <td>7</td>
+      <td>F</td>
+      <td>PARAM_ILLEGAL</td>
+      <td>Parámetros ilegales. Por ejemplo, entrada no numérica, fecha no válida.</td>
+    </tr>
+</table>
 
-Required
-	
-
-Description
-
-partnerId
-	
-
-String 
-	
-
-Yes
-	
-
-The partnerId allocated by wallet.
-
-Max. length: 32 characters.
-
-paymentId
-	
-
-String 
-	
-
-Yes
-	
-
-The unqiue ID of a payment generated by Wallet.
-
-Max. length: 64 characters.
-
-paymentRequestId
-	
-
-String 
-	
-
-Yes
-	
-
-The unqiue ID of a payment generated by Wallet merchants.
-
-Max. length: 64 characters.
-
-paymentAmount
-	
-
-Amount
-	
-
-Yes
-	
-
-Order amount for display of user consumption records, payment results page.
-
-paymentTime
-	
-
-String/Datetime
-	
-
-No
-	
-
-Payment success time, which follows the ISO 8601 standard.
-
-paymentStatus
-	
-
-String
-	
-
-Yes
-	
-
-SUCCESS - order is succeeded.
-
-FAIL - order is failed.
-
-paymentFailReason
-	
-
-String 
-	
-
-No
-	
-
-The fail reason of payment order when paymentStatus is FAIL.
-
-Max. length: 256 characters.
-
-extendInfo
-	
-
-String 
-	
-
-No
-	
-
-The extend information,wallet and merchant can put extend info here.
-
-Max. length: 4096 characters.
-Response
-
-Property
-	
-
-Data type
-	
-
-Required
-	
-
-Description
-
-result
-	
-
-Result
-	
-
-Yes
-	
-
-The request result, which contains information related to the request result, such as status and error codes.
-Result Process Logic
-
-    If result.resultStatus == S, Means the merchant/partner already received this notification.
-    If result.resultStatus == F, it means merchant/partner handle this notification failed.
-    If result.resultStatus==U, it means merchant/partner handle this notification occur unknown exception, wallet will retry if get U response.
-    If other response (almost never occur),wallet will process like U.
-
-Result
-
-No
-	
-
-resultStatus
-	
-
-resultCode
-	
-
-resultMessage
-
-1
-	
-
-S
-	
-
-SUCCESS
-	
-
-Success.
-
-2
-	
-
-U
-	
-
-UNKNOWN_EXCEPTION
-	
-
-An API calling is failed, which is caused by unknown reasons.
-
-3
-	
-
-U
-	
-
-REQUEST_TRAFFIC_EXCEED_LIMIT
-	
-
-The request traffic exceeds the limit.
-
-4
-	
-
-F
-	
-
-REPEAT_REQ_INCONSISTENT
-	
-
-Repeated submit, and requests are inconsistent.
-
-5
-	
-
-F
-	
-
-PROCESS_FAIL
-	
-
-A general business failure occurred. Don't retry.
-
-6
-	
-
-F
-	
-
-INVALID_API
-	
-
-The called API is invalid or not active.
-
-7
-	
-
-F
-	
-
-PARAM_ILLEGAL
-	
-
-Illegal parameters. For example, non-numeric input, invalid date.
 ### Sample
+
+![NotificaciónPago](../../img/NotificacionPago.png)
+
+1.    El programa mini llama ```my.tradePay``` interfaz para hacer el pago (paso 1).
+2.    La aplicación E-Wallet devuelve el resultado del pago al Mini Programa (Paso 5).
+3.    E-wallet notifies the payment result with paymentNotifyUrl provided by merchant (Step 4).
+
+Por ejemplo, un usuario de billetera compra una mercancía de 100 USD en un comerciante/socio, después de que el usuario termine el pago en la página de la billetera, la billetera enviará una notificación de estado de pago a merchant/partner.

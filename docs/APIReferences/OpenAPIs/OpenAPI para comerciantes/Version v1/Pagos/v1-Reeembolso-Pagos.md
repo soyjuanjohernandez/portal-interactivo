@@ -256,7 +256,7 @@ Para diferentes resultados de solicitud, se deben realizar diferentes acciones. 
 ## Sample
 
 Por ejemplo, un usuario de billetera solicita un reembolso de 100 USD de un pago exitoso en merchant/partner. Entonces merchant/partner Llamará a la API de reembolso a la billetera para reembolsar el monto al usuario.
-[Merchant_Payments](../../img/Merchant_Payments.png)
+![Merchant_Payments](../../img/Merchant_Payments.png)
 
 
   1.  User could start refund request from the Mini Program or the merchant cashier （Step 1).
