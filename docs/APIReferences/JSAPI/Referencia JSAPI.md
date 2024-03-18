@@ -346,14 +346,14 @@ Para obtener más información sobre contexto de Canvas, ver [Descripción gener
   </thead>
   <tbody>
     <tr>
-      <td>[my.createSelectorQuery](./UI/Seleccione%20Datos/my.createSelectorQuery)</td>
+      <td>[my.createSelectorQuery](./UI/Consulta%20del%20selector/my.createSelectorQuery)</td>
       <td>Crear una instancia de la consulta del selector</td>
     </tr>
   </tbody>
 </table>
 
 :::info[NOTA]
-Para obtener más información sobre SelectorQuery, consulte [Descripción general SelectorQuery](./UI/Seleccione%20Datos/Objeto%20SelectorQuery/Descripción%20general%20CanvasContext).
+Para obtener más información sobre SelectorQuery, consulte [Descripción general SelectorQuery](./UI/Consulta%20del%20selector/Objeto%20SelectorQuery/Descripción%20general%20CanvasContext).
 :::
 
 ### Selección de varios niveles
