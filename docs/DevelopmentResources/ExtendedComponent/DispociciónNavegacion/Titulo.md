@@ -2,7 +2,7 @@
 sidebar_position: 2
 ---
 
-Título
+# Title
 
 Puede usar el componente de título para mostrar el título de cada página.
 
