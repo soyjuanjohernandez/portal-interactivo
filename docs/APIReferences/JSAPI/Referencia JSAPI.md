@@ -759,7 +759,7 @@ Para obtener más información sobre SelectorQuery, consulte [Descripción gener
         <th>Descripción de la función</th>
     </tr>
     <tr>
-        <td>[my.makePhoneCall](/)</td>
+        <td>[my.makePhoneCall](./Dispositivo/Hacer%20una%20llamada%20telefónica/my.makePhoneCall)</td>
         <td>Hacer una llamada telefónica.</td>
     </tr>
 </table>
@@ -771,7 +771,7 @@ Para obtener más información sobre SelectorQuery, consulte [Descripción gener
         <th>Descripción de la función</th>
     </tr>
     <tr>
-        <td>[my.getServerTime](/)</td>
+        <td>[my.getServerTime](./Dispositivo/Obtener%20tiempo%20de%20servidor/my.getServerTime)</td>
         <td>Obtiene el tiempo del servidor.</td>
     </tr>
 </table>
@@ -783,11 +783,11 @@ Para obtener más información sobre SelectorQuery, consulte [Descripción gener
         <th>Descripción de la función</th>
     </tr>
     <tr>
-        <td>[my.onUserCaptureScreen](/)</td>
+        <td>[my.onUserCaptureScreen](./Dispositivo/Captura%20de%20pantalla/my.onUserCaptureScreen)</td>
         <td>Escucha el evento de captura de pantalla por los usuarios.</td>
     </tr>
     <tr>
-        <td>[my.offUserCaptureScreen](/)</td>
+        <td>[my.offUserCaptureScreen](./Dispositivo/Captura%20de%20pantalla/my.offUserCaptureScreen)</td>
         <td>Cancela la escucha del evento de captura de pantalla por los usuarios.</td>
     </tr>
 </table>
@@ -799,15 +799,15 @@ Para obtener más información sobre SelectorQuery, consulte [Descripción gener
         <th>Descripción de la función</th>
     </tr>
     <tr>
-        <td>[my.setKeepScreenOn](/)</td>
+        <td>[my.setKeepScreenOn](./Dispositivo/Brillo%20de%20la%20pantalla/my.setKeepScreenOn)</td>
         <td>Establece si la pantalla se mantiene despierta.</td>
     </tr>
     <tr>
-        <td>[my.getScreenBrightness](/)</td>
+        <td>[my.getScreenBrightness](./Dispositivo/Brillo%20de%20la%20pantalla/my.getScreenBrightness)</td>
         <td>Obtiente el brillo de la pantalla.</td>
     </tr>
     <tr>
-        <td>[my.setScreenBrightness](/)</td>
+        <td>[my.setScreenBrightness](./Dispositivo/Brillo%20de%20la%20pantalla/my.setScreenBrightness)</td>
         <td>Establece el brillo de la pantalla.</td>
     </tr>
 </table>
@@ -819,11 +819,11 @@ Para obtener más información sobre SelectorQuery, consulte [Descripción gener
         <th>Descripción de la función</th>
     </tr>
     <tr>
-        <td>[my.getScreenOrientation](/)</td>
+        <td>[my.getScreenOrientation](.Dispositivo/Orientación%20de%20la%20pantalla/my.getScreenOrientation)</td>
         <td>Obtiene orientación a la pantalla</td>
     </tr>
     <tr>
-        <td>[my.setScreenOrientation](/)</td>
+        <td>[my.setScreenOrientation](.Dispositivo/Orientación%20de%20la%20pantalla/my.setScreenOrientation)</td>
         <td>Establece orientación de pantalla</td>
     </tr>
 </table>
@@ -835,11 +835,11 @@ Para obtener más información sobre SelectorQuery, consulte [Descripción gener
         <th>Descripción de la función</th>
     </tr>
     <tr>
-        <td>[my.openSetting](/)</td>
+        <td>[my.openSetting](./Dispositivo/Ajustes/my.openSetting)</td>
         <td>Abre la página de configuración del mini programa.</td>
     </tr>
     <tr>
-        <td>[my.getSetting](/)</td>
+        <td>[my.getSetting](./Dispositivo/Ajustes/my.setSetting)</td>
         <td>Obtiene la configuración actual del usuario.</td>
     </tr>
 </table>
@@ -851,7 +851,7 @@ Para obtener más información sobre SelectorQuery, consulte [Descripción gener
         <th>Descripción de la función</th>
     </tr>
     <tr>
-        <td>[my.addPhoneContact](/)</td>
+        <td>[my.addPhoneContact](./Dispositivo/Agregar%20contacto%20telefónico/my.addPhoneContact)</td>
         <td>Agrega el contacto al contacto telefónico.</td>
     </tr>
 </table>

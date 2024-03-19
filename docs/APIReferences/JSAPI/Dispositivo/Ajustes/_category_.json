@@ -1,9 +1,9 @@
 {
-  "label": "Dispositivo",
+  "label": "Ajustes",
   "position": 13,
   "link": {
     "type": "generated-index",
-    "description": "Dispositivo"
+    "description": "Ajustes"
   }
 }
 
