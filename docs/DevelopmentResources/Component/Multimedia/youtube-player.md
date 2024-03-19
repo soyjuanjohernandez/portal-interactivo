@@ -1,5 +1,8 @@
+---
+sidebar_position: 3
+---
+
 # Reproductor de YouTube
-2024-01-08 21:00
 
 Lee este tema para aprender cómo reproducir videos de YouTube en mini-programas utilizando el componente `<youtube-player>`.
 

@@ -1,3 +1,7 @@
+---
+sidebar_position: 2
+---
+
 # Lottie
 
 Este tema presenta qué es Lottie y cómo usar la animación de Lottie.
