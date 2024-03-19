@@ -161,3 +161,63 @@ Nota:
 3.    E-wallet notifies the payment result with paymentNotifyUrl provided by merchant (Step 4).
 
 Por ejemplo, un usuario de billetera compra una mercancía de 100 USD en un comerciante/socio, después de que el usuario termine el pago en la página de la billetera, la billetera enviará una notificación de estado de pago a merchant/partner.
+
+### Payment
+
+**A. Request sample with payment success**
+
+```js
+{
+  "partnerId": "P000000000000001xxxx",
+  "paymentId": "201911271907410100070000009999xxxx",
+  "paymentRequestId": "2019112719074101000700000088881xxxx",
+  "paymentAmount": {
+    "currency": "USD",
+    "value": "10000"
+  },
+  "paymentTime": "2019-11-27T12:02:01+08:30",
+  "paymentStatus": "SUCCESS"
+}
+```
+
+
+ *   **partnerId** es el identificador de un merchant/partner, asignado por la billetera.
+ *   **paymentId** se genera por billetera, identifica de manera única el pago.
+ *   **paymentRequestId** se genera por merchant/partner, Identifica de forma única este pago.En el pago notificar la solicitud, paymentRequestId debería ser el paymentRequestId en la solicitud de pago de origen.
+ *   **paymentAmount** describe el monto de 100 USD ya recopilado por la billetera de la cuenta de usuario para este pago.
+ *   **paymentTime** es la fecha de éxito de esta transacción.
+ *   **paymentStatus** es el estado de pago en la billetera.El éxito significa que la transacción ya tiene éxito.
+
+**B.** 
+```js
+{
+  "partnerId": "P000000000000001xxxx",
+  "paymentId": "201911271907410100070000009999xxxx",
+  "paymentRequestId": "2019112719074101000700000088881xxxx",
+  "paymentAmount": {
+    "currency": "USD",
+    "value": "10000"
+  },
+  "paymentCreateTime": "2019-11-27T12:01:01+08:30",
+  "paymentTime": "2019-11-27T12:02:01+08:30",
+  "paymentStatus": "FAIL",
+  "paymentFailReason":"Order payment expired."
+}
+```
+
+ *   **paymentStatus** es el estado de pago en la billetera.Fail significa que esta transacción ya falló, por lo general, la falla del pago se debe a este pago ya expirado.
+ *   **paymentFailReason** Utilizado para completar el motivo de fracaso de pago, solo el estado de pago es fallido devolverá este parámetro.
+
+### Response 
+
+```js
+{
+ "result": {
+    "resultCode":"SUCCESS",
+    "resultStatus":"S",
+    "resultMessage":"success"
+  }
+ }
+```
+
+*   **result.resultStatus==S** muestra que merchant/partner ya recibí esta notificación.
