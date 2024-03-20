@@ -863,7 +863,7 @@ Para obtener más información sobre SelectorQuery, consulte [Descripción gener
         <th>Descripción de la función</th>
     </tr>
     <tr>
-        <td>[my.showAuthGuide](/)</td>
+        <td>[my.showAuthGuide](./Dispositivo/Guía%20de%20permiso/my.showAuthGuide)</td>
         <td>Guía al usuario para otorgar la autorización cuando el permiso sea necesario.</td>
     </tr>
 </table>
@@ -875,7 +875,7 @@ Para obtener más información sobre SelectorQuery, consulte [Descripción gener
         <th>Descripción de la función</th>
     </tr>
     <tr>
-        <td>[my.scan](/)</td>
+        <td>[my.scan](./Dispositivo/Escanear/my.scan)</td>
         <td>Llama a la función de código de escaneo QR.</td>
     </tr>
 </table>
@@ -887,11 +887,11 @@ Para obtener más información sobre SelectorQuery, consulte [Descripción gener
         <th>Descripción de la función</th>
     </tr>
     <tr>
-        <td>[my.onMemoryWarning](/)</td>
+        <td>[my.onMemoryWarning](./Dispositivo/Advertencia%20de%20memoria/my.onMemoryWarning)</td>
         <td>Escucha el evento de alarma de memoria insuficiente.</td>
     </tr>
     <tr>
-        <td>[my.offMemoryWarning](/)</td>
+        <td>[my.offMemoryWarning](./Dispositivo/Advertencia%20de%20memoria/my.offMemoryWarning)</td>
         <td>Desactiva la alarma de memoria insuficiente.</td>
     </tr>
 </table>
@@ -903,11 +903,11 @@ Para obtener más información sobre SelectorQuery, consulte [Descripción gener
         <th>Descripción de la función</th>
     </tr>
     <tr>
-        <td>[my.getBatteryInfo](/)</td>
+        <td>[my.getBatteryInfo](./Dispositivo/Información%20de%20la%20batería/my.getBatteryInfo)</td>
         <td>Obtiene el nivel de batería y el estado de carga del dispositivo actual asincrónicamente.</td>
     </tr>
     <tr>
-        <td>[my.getBatteryInfoSync](/)</td>
+        <td>[my.getBatteryInfoSync](./Dispositivo/Información%20de%20la%20batería/my.getBatteryInfoSync)</td>
         <td>Obtiene el nivel de batería y el estado de carga del dispositivo actual sincrónicamente.</td>
     </tr>
 </table>
@@ -921,15 +921,15 @@ Para obtener más información sobre SelectorQuery, consulte [Descripción gener
         <th>Descripción de la función</th>
     </tr>
     <tr>
-        <td>[Bluetooth API Overview](/)</td>
+        <td>[Descripción general de la API de Bluetooth](./Dispositivo/Bluetooth/Descripción%20general%20de%20la%20API%20Bluetooth)</td>
         <td>Proporciona el requisito del sistema y el flujo del proceso sobre cómo funcionan las API Bluetooth.</td>
     </tr>
     <tr>
-        <td>[Bluetooth API Error Codes](/)</td>
+        <td>[Códigos de error de la API de Bluetooth](./Dispositivo/Bluetooth/Códigos%20de%20error%20de%20la%20API%20Bluetooth)</td>
         <td>Enumera el código de error normal y las soluciones relativas.</td>
     </tr>
     <tr>
-        <td>[Bluetooth API FAQ](/)</td>
+        <td>[Bluetooth API Preguntas frecuentes](.Dispositivo/Bluetooth/Bluetooth%20API%20Preguntas%20frecuentes)</td>
         <td>Preguntas frecuentes sobre el uso de la API Bluetooth.</td>
     </tr>
 </table>
