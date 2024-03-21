@@ -1,17 +1,16 @@
 ---
-sidebar_position: 2
+sidebar_position: 8
 ---
 
-# my.disconnectBLEDevice
+# my.onBLECharacteristicValueChange
 
-Utilice esta API para desconectarse de un dispositivo Bluetooth Low Energy (BLE).
+Utilice esta API para escuchar el evento de cambio de característica del dispositivo Bluetooth Low Energy (BLE).
 
-**Instrucciones:**
+**Instrucción:**
 
-* El dispositivo Bluetooth puede desconectarse en cualquier momento. Se recomienda escuchar el evento de devolución de llamada [my.onBLEConnectionStateChanged](./my.onBLEConnectionStateChanged). Cuando el dispositivo BLE se desconecte, realice la operación de reconexión según sea necesario.
-* Después de llamar a la interfaz de lectura y escritura para un dispositivo desconectado, se devuelve el error 10006 y se recomienda la reconexión.
+Se recomienda llamar al método ```off``` y cerrar la escucha de eventos antes de llamar al método ```on``` para escuchar eventos para prevenir la situación en la que múltiples escuchas de eventos causen múltiples devoluciones de llamada de un evento.
 
-:::info[NOTA:]
+:::info[NOTA]
 Actualmente la simulación en IDE no está soportada. Por favor, depure en un entorno de producción.
 :::
 
@@ -57,7 +56,7 @@ Actualmente la simulación en IDE no está soportada. Por favor, depure en un en
     <view class="page-section-demo">
        <input class="input" onInput="bindKeyInput" type="{{text}}" placeholder="Enter the device ID of the device to connect"></input>
        <button type="primary" onTap="connectBLEDevice">Connect the device</button>
-       <button type="primary" onTap="getBLEDeviceServices">Obtain device services</button>
+       <button type="primary" onTap="getBLEDeviceServices">Get device services</button>
        <button type="primary" onTap="getBLEDeviceCharacteristics">Obtain read and write characteristics</button>
        <button type="primary" onTap="disconnectBLEDevice">Disconnect the device</button>
     </view>
@@ -79,6 +78,7 @@ Actualmente la simulación en IDE no está soportada. Por favor, depure en un en
   </view>
 </view>
 ```
+
 ```js
 // .js
 Page({
@@ -138,10 +138,12 @@ Page({
       success: () => {
         my.onBluetoothDeviceFound({
           success: res => {
+
             // my.alert({content:'Listens to new device'+JSON.stringify(res)});
             var deviceArray = res.devices;
             for (var i = deviceArray.length - 1; i >= 0; i--) {
               var deviceObj = deviceArray[i];
+
               //Pair the target device with the device name or broadcast data, and then record the device ID for later use.
               if (deviceObj.name == this.data.name) {
                 my.alert({ content: 'Target device is found' });
@@ -205,6 +207,7 @@ Page({
       },
     });
   },
+
   bindKeyInput(e) {
     this.setData({
       devid: e.detail.value,
@@ -277,7 +280,10 @@ Page({
           serviceId: this.data.serid,
           success: res => {
             my.alert({ content: JSON.stringify(res) });
+
             //See the related document for more information of the properties of the characteristics. Pair the characteristics according to the properties and record the value for later use.
+            this.setData({
+            this.setData({
             this.setData({
               charid: res.characteristics[0].characteristicId,
             });
@@ -305,6 +311,7 @@ Page({
           deviceId: this.data.devid,
           serviceId: this.data.serid,
           characteristicId: this.data.notifyId,
+
           //1、Android reading service
           // serviceId:'0000180d-0000-1000-8000-00805f9b34fb',
           // characteristicId:'00002a38-0000-1000-8000-00805f9b34fb',
@@ -318,6 +325,7 @@ Page({
       },
     });
   },
+
   writeBLECharacteristicValue() {
     my.getConnectedBluetoothDevices({
       success: res => {
@@ -328,10 +336,12 @@ Page({
         this.setData({
           devid: res.devices[0].deviceId,
         });
+
         my.writeBLECharacteristicValue({
           deviceId: this.data.devid,
           serviceId: this.data.serid,
           characteristicId: this.data.charid,
+
           //Android writing service
           //serviceId:'0000180d-0000-1000-8000-00805f9b34fb',
           //characteristicId:'00002a39-0000-1000-8000-00805f9b34fb',
@@ -356,15 +366,18 @@ Page({
         this.setData({
           devid: res.devices[0].deviceId,
         });
+
         my.notifyBLECharacteristicValueChange({
           state: true,
           deviceId: this.data.devid,
           serviceId: this.data.serid,
           characteristicId: this.data.notifyId,
           success: () => {
-            //Listens to characteristic change events 
+
+            //Listens on characteristic change events
             my.onBLECharacteristicValueChange({
               success: res => {
+
                 //  my.alert({content: 'Changes of characteristics：'+JSON.stringify(res)});
                 my.alert({ content: 'Obtain the response data = ' + res.value });
               },
@@ -430,31 +443,17 @@ Page({
     <tr>
         <th>Propiedad</th>
         <th>Tipo</th>
-        <th>Requerida</th>
         <th>Descripción</th>
     </tr>
     <tr>
         <td>deviceId</td>
         <td>String</td>
-        <td>Si</td>
         <td>La ID del dispositivo Bluetooth.</td>
      </tr>
      <tr>
-        <td>success</td>
-        <td>Función</td>
-        <td>No</td>
-        <td>La función de devolución de llamada para una llamada exitosa a la API.</td>
-     </tr>
-     <tr>
-        <td>fail</td>
-        <td>Función</td>
-        <td>No</td>
-        <td>La función de devolución de llamada para una llamada a la API fallida.</td>
-     </tr>
-     <tr>
-        <td>complete</td>
-         <td>Función</td>
-        <td>No</td>
-        <td>La función de devolución de llamada utilizada cuando se completa la llamada a la API. Esta función se ejecuta siempre, independientemente de que la llamada se realice correctamente o no.</td>
+        <td>connected</td>
+        <td>Boolean</td>
+        <td>El estado actual de la conexión.</td>
      </tr>
 </table>
+

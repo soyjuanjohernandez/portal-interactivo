@@ -1,19 +1,14 @@
 ---
-sidebar_position: 2
+sidebar_position: 3
 ---
 
-# my.disconnectBLEDevice
+# my.getBLEDeviceCharacteristics
 
-Utilice esta API para desconectarse de un dispositivo Bluetooth Low Energy (BLE).
+Utilice esta API para obtener todas las características en un dispositivo Bluetooth que está conectado a la nativa.
 
 **Instrucciones:**
 
-* El dispositivo Bluetooth puede desconectarse en cualquier momento. Se recomienda escuchar el evento de devolución de llamada [my.onBLEConnectionStateChanged](./my.onBLEConnectionStateChanged). Cuando el dispositivo BLE se desconecte, realice la operación de reconexión según sea necesario.
-* Después de llamar a la interfaz de lectura y escritura para un dispositivo desconectado, se devuelve el error 10006 y se recomienda la reconexión.
-
-:::info[NOTA:]
-Actualmente la simulación en IDE no está soportada. Por favor, depure en un entorno de producción.
-:::
+Después de la conexión, ejecute [my.getBLEDeviceServices](./my.getBLEDeviceServices) y esta interfaz antes de que se puedan intercambiar datos con el dispositivo Bluetooth.
 
 ## Código de muestra
 
@@ -34,9 +29,9 @@ Actualmente la simulación en IDE no está soportada. Por favor, depure en un en
     "defaultTitle": "Bluetooth"
 }
 ```
-
 ```js
 <!-- .axml-->
+
 <view class="page">
   <view class="page-description">Bluetooth API</view>
   <view class="page-section">
@@ -332,7 +327,7 @@ Page({
           deviceId: this.data.devid,
           serviceId: this.data.serid,
           characteristicId: this.data.charid,
-          //Android writing service
+          //Andriod writing service
           //serviceId:'0000180d-0000-1000-8000-00805f9b34fb',
           //characteristicId:'00002a39-0000-1000-8000-00805f9b34fb',
           value: 'ABCD',
@@ -440,6 +435,12 @@ Page({
         <td>La ID del dispositivo Bluetooth.</td>
      </tr>
      <tr>
+        <td>serviceId</td>
+        <td>String</td>
+        <td>Si</td>
+        <td>UUID del servicio correspondiente a una característica Bluetooth.</td>
+     </tr>
+     <tr>
         <td>success</td>
         <td>Función</td>
         <td>No</td>
@@ -458,3 +459,83 @@ Page({
         <td>La función de devolución de llamada utilizada cuando se completa la llamada a la API. Esta función se ejecuta siempre, independientemente de que la llamada se realice correctamente o no.</td>
      </tr>
 </table>
+
+### Función de devolución de llamada de éxito
+
+<table>
+<tr>
+        <th>Propiedad</th>
+        <th>Tipo</th>
+        <th>Descripción</th>
+    </tr>
+    <tr>
+        <td>characteristic</td>
+        <td>Array</td>
+        <td>La lista de características del dispositivo.</td>
+     </tr>
+</table>
+
+
+### característica
+
+La información característica del dispositivo Bluetooth.
+
+<table>
+<tr>
+        <th>Propiedad</th>
+        <th>Tipo</th>
+        <th>Descripción</th>
+    </tr>
+    <tr>
+        <td>characteristicId</td>
+        <td>String</td>
+        <td>La característica UUID característica del dispositivo Bluetooth.</td>
+     </tr>
+     <tr>
+        <td>serviceId</td>
+        <td>String</td>
+        <td>El UUID del servicio correspondiente a una característica de Bluetooth.</td>
+     </tr>
+     <tr>
+        <td>value</td>
+        <td>Hex String</td>
+        <td>El valor hexadecimal correspondiente a una característica Bluetooth.</td>
+     </tr>
+     <tr>
+        <td>properties</td>
+        <td>Object</td>
+        <td>Los tipos de operación compatibles con esta característica.</td>
+     </tr>
+</table>
+
+
+#### propiedades
+
+<table>
+<tr>
+        <th>Propiedad</th>
+        <th>Tipo</th>
+        <th>Descripción</th>
+    </tr>
+    <tr>
+        <td>read</td>
+        <td>Booleano</td>
+        <td>Este campo indica si esta característica admite la operación de lectura.</td>
+     </tr>
+     <tr>
+        <td>write</td>
+        <td>Booleano</td>
+        <td>Este campo indica si esta característica admite la operación de escritura.</td>
+     </tr>
+     <tr>
+        <td>notify</td>
+        <td>Booleano</td>
+        <td>Este campo indica si esta característica admite la operación de notificación.</td>
+     </tr>
+     <tr>
+        <td>indicate</td>
+        <td>Booleano</td>
+        <td>Este campo indica si esta característica admite indica operación.</td>
+     </tr>
+</table>
+

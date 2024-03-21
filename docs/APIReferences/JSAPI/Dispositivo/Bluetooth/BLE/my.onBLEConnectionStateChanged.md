@@ -1,17 +1,15 @@
 ---
-sidebar_position: 2
+sidebar_position: 9
 ---
 
-# my.disconnectBLEDevice
+# my.onBLEConnectionStateChanged
 
-Utilice esta API para desconectarse de un dispositivo Bluetooth Low Energy (BLE).
+Utilice esta API para escuchar el evento de error de conexión Bluetooth Low Energy (BLE), incluyendo la pérdida del dispositivo y desconexiones inusuales.
 
 **Instrucciones:**
+Se recomienda llamar al método ```off``` y cerrar la escucha de eventos antes de llamar al método ```on``` para escuchar eventos para prevenir la situación en la que múltiples escuchas de eventos causen múltiples devoluciones de llamada de un evento.
 
-* El dispositivo Bluetooth puede desconectarse en cualquier momento. Se recomienda escuchar el evento de devolución de llamada [my.onBLEConnectionStateChanged](./my.onBLEConnectionStateChanged). Cuando el dispositivo BLE se desconecte, realice la operación de reconexión según sea necesario.
-* Después de llamar a la interfaz de lectura y escritura para un dispositivo desconectado, se devuelve el error 10006 y se recomienda la reconexión.
-
-:::info[NOTA:]
+:::info[NOTA]
 Actualmente la simulación en IDE no está soportada. Por favor, depure en un entorno de producción.
 :::
 
@@ -23,6 +21,7 @@ Actualmente la simulación en IDE no está soportada. Por favor, depure en un en
   padding:10px;
   color:#000000;
 }
+
 .help-title {
   padding:10px;
   color:#FC0D1B;
@@ -46,6 +45,7 @@ Actualmente la simulación en IDE no está soportada. Por favor, depure en un en
        <button type="primary" onTap="closeBluetoothAdapter">Close Bluetooth</button>
        <button type="primary" onTap="getBluetoothAdapterState">Obtain Bluetooth state</button>
     </view>
+
     <view class="page-section-title">Scan the Bluetooth device</view>
     <view class="page-section-demo">
        <button type="primary" onTap="startBluetoothDevicesDiscovery">Start searching</button>
@@ -53,6 +53,7 @@ Actualmente la simulación en IDE no está soportada. Por favor, depure en un en
        <button type="primary" onTap="getConnectedBluetoothDevices">All devices connected</button>
        <button type="primary" onTap="stopBluetoothDevicesDiscovery">Stop searching</button>
     </view>
+
     <view class="page-section-title">Connect the device</view>
     <view class="page-section-demo">
        <input class="input" onInput="bindKeyInput" type="{{text}}" placeholder="Enter the device ID of the device to connect"></input>
@@ -61,6 +62,7 @@ Actualmente la simulación en IDE no está soportada. Por favor, depure en un en
        <button type="primary" onTap="getBLEDeviceCharacteristics">Obtain read and write characteristics</button>
        <button type="primary" onTap="disconnectBLEDevice">Disconnect the device</button>
     </view>
+
      <view class="page-section-title">Read and write data</view>
      <view class="page-section-demo">
        <button type="primary" onTap="notifyBLECharacteristicValueChange">Listens to the characteristic data change</button>
@@ -68,17 +70,18 @@ Actualmente la simulación en IDE no está soportada. Por favor, depure en un en
        <button type="primary" onTap="writeBLECharacteristicValue">Write data</button>
        <button type="primary" onTap="offBLECharacteristicValueChange">Un-listens to characteristic value</button>
     </view>
+
      <view class="page-section-title">Other events</view>
      <view class="page-section-demo">
        <button type="primary" onTap="bluetoothAdapterStateChange">Changes of the Bluetooth state</button>
        <button type="primary" onTap="offBluetoothAdapterStateChange">Un-listens to Bluetooth state</button>
        <button type="primary" onTap="BLEConnectionStateChanged">Changes of Bluetooth connection state</button>
        <button type="primary" onTap="offBLEConnectionStateChanged">Un-listens to Bluetooth connection state</button>
-       
     </view>
   </view>
 </view>
 ```
+
 ```js
 // .js
 Page({
@@ -205,6 +208,7 @@ Page({
       },
     });
   },
+
   bindKeyInput(e) {
     this.setData({
       devid: e.detail.value,
@@ -264,6 +268,8 @@ Page({
   //Obtain the char ID of the connected device, read and write characteristics are respectively screened out.
   getBLEDeviceCharacteristics() {
     my.getConnectedBluetoothDevices({
+  getBLEDeviceCharacteristics() {
+    my.getConnectedBluetoothDevices({
       success: res => {
         if (res.devices.length === 0) {
           my.alert({ content: 'No connected devices' });
@@ -318,6 +324,7 @@ Page({
       },
     });
   },
+
   writeBLECharacteristicValue() {
     my.getConnectedBluetoothDevices({
       success: res => {
@@ -328,6 +335,7 @@ Page({
         this.setData({
           devid: res.devices[0].deviceId,
         });
+
         my.writeBLECharacteristicValue({
           deviceId: this.data.devid,
           serviceId: this.data.serid,
@@ -356,6 +364,7 @@ Page({
         this.setData({
           devid: res.devices[0].deviceId,
         });
+
         my.notifyBLECharacteristicValueChange({
           state: true,
           deviceId: this.data.devid,
@@ -430,31 +439,17 @@ Page({
     <tr>
         <th>Propiedad</th>
         <th>Tipo</th>
-        <th>Requerida</th>
         <th>Descripción</th>
     </tr>
     <tr>
         <td>deviceId</td>
         <td>String</td>
-        <td>Si</td>
         <td>La ID del dispositivo Bluetooth.</td>
      </tr>
      <tr>
-        <td>success</td>
-        <td>Función</td>
-        <td>No</td>
-        <td>La función de devolución de llamada para una llamada exitosa a la API.</td>
-     </tr>
-     <tr>
-        <td>fail</td>
-        <td>Función</td>
-        <td>No</td>
-        <td>La función de devolución de llamada para una llamada a la API fallida.</td>
-     </tr>
-     <tr>
-        <td>complete</td>
-         <td>Función</td>
-        <td>No</td>
-        <td>La función de devolución de llamada utilizada cuando se completa la llamada a la API. Esta función se ejecuta siempre, independientemente de que la llamada se realice correctamente o no.</td>
+        <td>connected</td>
+        <td>Boolean</td>
+        <td>Estado actual de la conexión.</td>
      </tr>
 </table>
+

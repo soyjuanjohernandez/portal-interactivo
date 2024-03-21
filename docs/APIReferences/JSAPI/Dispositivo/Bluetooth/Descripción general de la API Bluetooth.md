@@ -44,57 +44,57 @@ El siguiente diagrama ilustra cómo la función Bluetooth está habilitada con A
     </tr>
      <tr>
         <td>BLE</td>
-        <td>my.connectBLEDevice</td>
+        <td>[my.connectBLEDevice](./BLE/my.connectBLEDevice)</td>
         <td>Conectarse a dispositivos Bluetooth de baja energía.</td>
      </tr>
      <tr>
         <td>BLE</td>
-        <td>my.disconnectBLEDevice</td>
+        <td>[my.disconnectBLEDevice](./BLE/my.disconnectBLEDevice)</td>
         <td>Desconectar dispositivos Bluetooth de baja energía.</td>
      </tr>
      <tr>
         <td>BLE</td>
-        <td>my.getBLEDeviceCharacteristics</td>
+        <td>[my.getBLEDeviceCharacteristics](./BLE/my.getBLEDeviceCharacteristics)</td>
         <td>Obtenga las características de los dispositivos Bluetooth de baja energía.</td>
      </tr>
      <tr>
         <td>BLE</td>
-        <td>my.getBLEDeviceServices	</td>
+        <td>[my.getBLEDeviceServices](./BLE/my.getBLEDeviceServices)</td>
         <td>Obtenga todos los dispositivos Bluetooth de baja energía que se descubren, incluidos los dispositivos conectados.</td>
      </tr>
      <tr>
         <td>BLE</td>
-        <td>my.notifyBLECharacteristicValueChange</td>
+        <td>[my.notifyBLECharacteristicValueChange](./BLE/my.notifyBLECharacteristicValueChange)</td>
         <td>Habilite la función para notificar los cambios al valor característico.</td>
      </tr>
      <tr>
         <td>BLE</td>
-        <td>my.offBLECharacteristicValueChange</td>
+        <td>[my.offBLECharacteristicValueChange](./BLE/my.offBLECharacteristicValueChange)</td>
         <td>Deshabilite la función para notificar los cambios al valor característico.</td>
      </tr>
      <tr>
         <td>BLE</td>
-        <td>my.offBLEConnectionStateChanged</td>
+        <td>[my.offBLEConnectionStateChanged](./BLE/my.offBLEConnectionStateChanged)</td>
         <td>Deshabilite el oyente del evento para el estado de conexión.</td>
      </tr>
      <tr>
         <td>BLE</td>
-        <td>my.onBLECharacteristicValueChange</td>
+        <td>[my.onBLECharacteristicValueChange](./BLE/my.onBLECharacteristicValueChange)</td>
         <td>Habilite al oyente del evento para los cambios en el valor característico.</td>
      </tr>
      <tr>
         <td>BLE</td>
-        <td>my.onBLEConnectionStateChanged</td>
+        <td>[my.onBLEConnectionStateChanged](./BLE/my.onBLEConnectionStateChanged)</td>
         <td>Habilite el oyente del evento para los cambios en el estado de conexión, como el dispositivo perdido y el dispositivo desconectado.</td>
      </tr>
      <tr>
         <td>BLE</td>
-        <td>my.readBLECharacteristicValue	</td>
+        <td>[my.readBLECharacteristicValue](./BLE/my.readBLECharacteristicValue)</td>
         <td>Lea el valor característico.</td>
      </tr>
      <tr>
         <td>BLE</td>
-        <td>my.writeBLECharacteristicValue</td>
+        <td>[my.writeBLECharacteristicValue](./BLE/my.writeBLECharacteristicValue)</td>
         <td>Escriba datos al valor característico.</td>
      </tr>
      <tr>

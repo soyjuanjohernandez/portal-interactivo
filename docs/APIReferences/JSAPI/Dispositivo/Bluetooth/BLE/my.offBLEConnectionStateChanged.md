@@ -1,17 +1,17 @@
 ---
-sidebar_position: 2
+sidebar_position: 7
 ---
 
-# my.disconnectBLEDevice
+# my.offBLEConnectionStateChanged
 
-Utilice esta API para desconectarse de un dispositivo Bluetooth Low Energy (BLE).
+Utilice esta API para dejar de escuchar el evento de cambio de estado de conexión Bluetooth Low Energy (BLE).
 
 **Instrucciones:**
 
-* El dispositivo Bluetooth puede desconectarse en cualquier momento. Se recomienda escuchar el evento de devolución de llamada [my.onBLEConnectionStateChanged](./my.onBLEConnectionStateChanged). Cuando el dispositivo BLE se desconecte, realice la operación de reconexión según sea necesario.
-* Después de llamar a la interfaz de lectura y escritura para un dispositivo desconectado, se devuelve el error 10006 y se recomienda la reconexión.
+Se recomienda llamar al método ```off``` y cerrar la escucha de eventos antes de llamar al método ```on``` para escuchar eventos para prevenir la situación en la que múltiples escuchas de eventos causen múltiples callbacks de un evento.
 
-:::info[NOTA:]
+
+:::info[NOTA]
 Actualmente la simulación en IDE no está soportada. Por favor, depure en un entorno de producción.
 :::
 
@@ -74,11 +74,11 @@ Actualmente la simulación en IDE no está soportada. Por favor, depure en un en
        <button type="primary" onTap="offBluetoothAdapterStateChange">Un-listens to Bluetooth state</button>
        <button type="primary" onTap="BLEConnectionStateChanged">Changes of Bluetooth connection state</button>
        <button type="primary" onTap="offBLEConnectionStateChanged">Un-listens to Bluetooth connection state</button>
-       
     </view>
   </view>
 </view>
 ```
+
 ```js
 // .js
 Page({
@@ -424,37 +424,15 @@ Page({
 });
 ```
 
-## Parámetros
+## Pasar o no el valor de la llamada de retorno
+* Si no se pasa el valor de devolución de llamada, se eliminarán las devoluciones de llamada de todos los eventos.El código de muestra es el siguiente:
 
-<table>
-    <tr>
-        <th>Propiedad</th>
-        <th>Tipo</th>
-        <th>Requerida</th>
-        <th>Descripción</th>
-    </tr>
-    <tr>
-        <td>deviceId</td>
-        <td>String</td>
-        <td>Si</td>
-        <td>La ID del dispositivo Bluetooth.</td>
-     </tr>
-     <tr>
-        <td>success</td>
-        <td>Función</td>
-        <td>No</td>
-        <td>La función de devolución de llamada para una llamada exitosa a la API.</td>
-     </tr>
-     <tr>
-        <td>fail</td>
-        <td>Función</td>
-        <td>No</td>
-        <td>La función de devolución de llamada para una llamada a la API fallida.</td>
-     </tr>
-     <tr>
-        <td>complete</td>
-         <td>Función</td>
-        <td>No</td>
-        <td>La función de devolución de llamada utilizada cuando se completa la llamada a la API. Esta función se ejecuta siempre, independientemente de que la llamada se realice correctamente o no.</td>
-     </tr>
-</table>
+```js
+my.offBLEConnectionStateChanged();
+```
+
+* Si no se pasa el valor de devolución de llamada, se eliminarán las devoluciones de llamada de todos los eventos.El código de muestra es el siguiente:
+
+```js
+my.offBLEConnectionStateChanged(this.callback);
+```
