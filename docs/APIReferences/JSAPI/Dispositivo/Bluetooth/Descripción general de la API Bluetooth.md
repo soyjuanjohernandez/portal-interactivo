@@ -99,57 +99,57 @@ El siguiente diagrama ilustra cómo la función Bluetooth está habilitada con A
      </tr>
      <tr>
         <td>Bluetooth</td>
-        <td>my.openBluetoothAdapter</td>
+        <td>[my.openBluetoothAdapter](./Bluetooth/my.openBluetoothAdapter)</td>
         <td>Use esta API para inicializar el módulo Bluetooth en el MINI programa.</td>
      </tr>
      <tr>
         <td>Bluetooth</td>
-        <td>my.closeBluetoothAdapter</td>
+        <td>[my.closeBluetoothAdapter](Bluetooth/my.closeBluetoothAdapter)</td>
         <td>Use esta API para cerrar el módulo Bluetooth en el programa MINI.</td>
      </tr>
      <tr>
         <td>Bluetooth</td>
-        <td>my.getBluetoothAdapterState</td>
+        <td>[my.getBluetoothAdapterState](Bluetooth/my.getBluetoothAdapterState)</td>
         <td>Use esta API para verificar el estado del adaptador Bluetooth en el mini programa.</td>
      </tr>
      <tr>
         <td>Bluetooth</td>
-        <td>my.startBluetoothDevicesDiscovery</td>
+        <td>[my.startBluetoothDevicesDiscovery](Bluetooth/my.startBluetoothDevicesDiscovery)</td>
         <td>Use esta API para comenzar a descubrir dispositivos Bluetooth.</td>
      </tr>
      <tr>
         <td>Bluetooth</td>
-        <td>my.stopBluetoothDevicesDiscovery</td>
+        <td>[my.stopBluetoothDevicesDiscovery](Bluetooth/my.stopBluetoothDevicesDiscovery)</td>
         <td>Use esta API para dejar de descubrir dispositivos Bluetooth.</td>
      </tr>
      <tr>
         <td>Bluetooth</td>
-        <td>my.getBluetoothDevices</td>
+        <td>[my.getBluetoothDevices](Bluetooth/my.getBluetoothDevices)</td>
         <td>Use esta API para obtener todos los dispositivos Bluetooth que se descubren, incluidos los que están conectados al dispositivo actual.</td>
      </tr>
      <tr>
         <td>Bluetooth</td>
-        <td>my.getConnectedBluetoothDevices</td>
+        <td>[my.getConnectedBluetoothDevices](Bluetooth/my.getConnectedBluetoothDevices)</td>
         <td>Use esta API para obtener los dispositivos Bluetooth que están conectados.</td>
      </tr>
      <tr>
         <td>Bluetooth</td>
-        <td>my.onBluetoothDeviceFound</td>
+        <td>[my.onBluetoothDeviceFound](Bluetooth/my.onBluetoothDeviceFound)</td>
         <td>Use esta API cuando se encuentre un nuevo dispositivo Bluetooth.</td>
      </tr>
      <tr>
         <td>Bluetooth</td>
-        <td>my.offBluetoothDeviceFound</td>
+        <td>[my.offBluetoothDeviceFound](Bluetooth/my.offBluetoothDeviceFound)</td>
         <td>Use esta API para eliminar los dispositivos Bluetooth que se encuentran.</td>
      </tr>
      <tr>
         <td>Bluetooth</td>
-        <td>my.onBluetoothAdapterStateChange</td>
+        <td>[my.onBluetoothAdapterStateChange](Bluetooth/my.onBluetoothAdapterStateChange)</td>
         <td>Use esta API para monitorear los cambios de estado del adaptador Bluetooth.</td>
      </tr>
      <tr>
         <td>Bluetooth</td>
-        <td>my.offBluetoothAdapterStateChange</td>
+        <td>[my.offBluetoothAdapterStateChange](Bluetooth/my.offBluetoothAdapterStateChange)</td>
         <td>Use esta API para eliminar el adaptador Bluetooth con un cambio de estado.</td>
      </tr>
 </table>
