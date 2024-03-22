@@ -1,3 +1,7 @@
+---
+sidebar_position: 7
+---
+
 # Button
 
 Puedes usar el componente de botón para permitir a los usuarios realizar acciones o tomar decisiones. El componente se utiliza a menudo para enviar formularios, redirigir a los usuarios a otra interfaz o guiar a los usuarios hacia los siguientes pasos. El uso es consistente con el componente básico de botón, pero se añaden más estilos en el componente de botón extendido.

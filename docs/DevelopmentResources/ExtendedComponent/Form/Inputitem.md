@@ -1,3 +1,7 @@
+---
+sidebar_position: 1
+---
+
 # InputItem
 
 Texto de entrada.
@@ -139,30 +143,139 @@ Page({
 ```
 
 ## Atributos
-### Propiedad
 
-| Descripción     | Tipo   | Por defecto |
-| --------------- | ------ | ----------- |
-| className       | Clase personalizada. | String | '' |
-| labelCls        | Clase de etiqueta personalizada. | String | '' |
-| inputCls        | Clase de entrada personalizada. | String | '' |
-| last            | ¿Es la última fila o no? | Boolean | false |
-| value           | Contenido inicial. | String | '' |
-| name            | Nombre del componente, utilizado para obtener datos mediante el envío de formularios. | String | '' |
-| type            | Tipo de entrada, valores efectivos incluyendo texto, número, idcard y dígito (ver tabla a continuación para más detalles). | String | 'text' |
-| password        | ¿Es tipo contraseña o no? | Boolean | false |
-| placeholder     | Marcador de posición. | String | '' |
-| placeholderStyle| Especifica el estilo del marcador de posición. | String | '' |
-| placeholderClass| Especifica la clase de estilo del marcador de posición. | String | '' |
-| disabled        | ¿Desactivado o no? | Boolean | false |
-| maxlength       | Longitud máxima. | Número | 140 |
-| focus           | Obtener el foco. | Boolean | false |
-| clear           | ¿Tiene función de limpieza o no, solo tiene efecto cuando disabled es falso? | Boolean | false |
-| onInput         | Desencadena el evento de entrada en la entrada del teclado. | (e: Object) => void | - |
-| onConfirm       | Desencadena al hacer clic en la finalización del teclado. | (e: Object) => void | - |
-| onFocus         | Desencadena al obtener el foco. | (e: Object) => void | - |
-| onBlur          | Desencadena al perder el foco. | (e: Object) => void | - |
-| onClear         | Desencadena al hacer clic en el icono de borrar. | () => void | - |
+<table>
+  <thead>
+    <tr>
+      <th>Propiedad</th>
+      <th>Descripción</th>
+      <th>Tipo</th>
+      <th>Por Defecto</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>className</td>
+      <td>Clase personalizada.</td>
+      <td>String</td>
+      <td>''</td>
+    </tr>
+    <tr>
+      <td>labelCls</td>
+      <td>Clase de etiqueta personalizada.</td>
+      <td>String</td>
+      <td>''</td>
+    </tr>
+    <tr>
+      <td>inputCls</td>
+      <td>Clase de entrada personalizada.</td>
+      <td>String</td>
+      <td>''</td>
+    </tr>
+    <tr>
+      <td>last</td>
+      <td>¿Es la última fila o no?</td>
+      <td>Boolean</td>
+      <td>false</td>
+    </tr>
+    <tr>
+      <td>value</td>
+      <td>Contenido inicial.</td>
+      <td>String</td>
+      <td>''</td>
+    </tr>
+    <tr>
+      <td>name</td>
+      <td>Nombre del componente, utilizado para obtener datos mediante el envío de formularios.</td>
+      <td>String</td>
+      <td>''</td>
+    </tr>
+    <tr>
+      <td>type</td>
+      <td>Tipo de entrada, valores efectivos incluyen texto, número, identificación y dígito (ver tabla a continuación para más detalles).</td>
+      <td>String</td>
+      <td>text</td>
+    </tr>
+    <tr>
+      <td>password</td>
+      <td>¿Es de tipo contraseña o no?</td>
+      <td>Boolean</td>
+      <td>false</td>
+    </tr>
+    <tr>
+      <td>placeholder</td>
+      <td>Placeholder.</td>
+      <td>String</td>
+      <td>''</td>
+    </tr>
+    <tr>
+      <td>placeholderStyle</td>
+      <td>Especifica el estilo del marcador de posición.</td>
+      <td>String</td>
+      <td>''</td>
+    </tr>
+    <tr>
+      <td>placeholderClass</td>
+      <td>Especifica la clase de estilo del marcador de posición.</td>
+      <td>String</td>
+      <td>''</td>
+    </tr>
+    <tr>
+      <td>disabled</td>
+      <td>¿Deshabilitar o no?</td>
+      <td>Boolean</td>
+      <td>false</td>
+    </tr>
+    <tr>
+      <td>maxlength</td>
+      <td>Longitud máxima.</td>
+      <td>Número</td>
+      <td>140</td>
+    </tr>
+    <tr>
+      <td>focus</td>
+      <td>Obtener el enfoque.</td>
+      <td>Boolean</td>
+      <td>false</td>
+    </tr>
+    <tr>
+      <td>clear</td>
+      <td>¿Tiene función de borrar o no, solo tiene efecto cuando disabled es false?</td>
+      <td>Boolean</td>
+      <td>false</td>
+    </tr>
+    <tr>
+      <td>onInput</td>
+      <td>Dispara el evento de entrada en la entrada del teclado.</td>
+      <td>(e: Object) => void</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>onConfirm</td>
+      <td>Dispara al hacer clic en la finalización del teclado.</td>
+      <td>(e: Object) => void</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>onFocus</td>
+      <td>Dispara al obtener el enfoque.</td>
+      <td>(e: Object) => void</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>onBlur</td>
+      <td>Dispara al perder el enfoque.</td>
+      <td>(e: Object) => void</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>onClear</td>
+      <td>Dispara al hacer clic en el icono de borrar.</td>
+      <td>() => void</td>
+      <td>-</td>
+    </tr>
+  </tbody>
+</table>
 
 ### Descripción del valor del atributo type
 

@@ -1,3 +1,7 @@
+---
+sidebar_position: 2
+---
+
 # Código de Verificación
 
 Puedes usar el componente verify-code para mostrar el cuadro de entrada del código de verificación.

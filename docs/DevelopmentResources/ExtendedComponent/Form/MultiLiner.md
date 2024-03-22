@@ -1,3 +1,7 @@
+---
+sidebar_position: 5
+---
+
 # Multi Liner
 
 Puedes usar el componente de multi-línea para permitir a los usuarios ingresar múltiples líneas de contenido en una caja de entrada de texto.

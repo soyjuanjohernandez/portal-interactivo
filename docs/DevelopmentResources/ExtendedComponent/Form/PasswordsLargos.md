@@ -1,3 +1,7 @@
+---
+sidebar_position: 4
+---
+
 # Long Password
 
 Puedes usar el componente long-password para mostrar el cuadro de entrada de la contraseña.
