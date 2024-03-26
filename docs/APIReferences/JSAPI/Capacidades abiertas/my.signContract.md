@@ -10,8 +10,6 @@ A continuación se muestra un diagrama que ilustra cómo funciona la interacció
 
 ![signcontract](../img/signContract.png)
 
-**my.signContract**
-
 El servidor del Mini Program del merchant puede llamar a [la API de consulta de autorización](/) en el paso 2 para obtener el contenido de la firma con una URL de autorización. Luego, el Mini Program llamará al JSAPI `my.signContract` para invocar el proceso de autorización. Después de que el usuario complete la autorización, el Mini Programa envía el resultado de JSAPI a su servidor para que el servidor pueda llamar a la [API de aplicación de token](/) para obtener el accessToken.
 
 ## Ejemplo del código

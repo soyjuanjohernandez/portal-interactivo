@@ -1,12 +1,12 @@
 # Loading
-2021-07-06 06:36
 
 Puedes usar el componente de carga para mostrar la animación de carga.
 
 ## Ejemplo del código
 
 ### .json
-```json
+
+```js
 {
   "defaultTitle": "Loading",
   "usingComponents": {
@@ -17,6 +17,7 @@ Puedes usar el componente de carga para mostrar la animación de carga.
 ```
 
 ### .axml
+
 ```xml
 Loading<loading size="80rpx" className="inlineBlock" />
 <container hasTitle='{{true}}' title='loading size="6rpx"'>
