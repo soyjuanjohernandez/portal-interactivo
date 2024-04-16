@@ -1,0 +1,9 @@
+{
+  "label": "Android",
+  "position": 2,
+  "link": {
+    "type": "generated-index",
+    "description": "Este tema presenta cómo configurar rápidamente el SDK de Android IAPminiprogram e implementar capacidades básicas de mini-programa."
+  }
+}
+

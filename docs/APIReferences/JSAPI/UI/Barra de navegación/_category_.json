@@ -1,0 +1,9 @@
+{
+  "label": "Barra de navegación",
+  "position": 1,
+  "link": {
+    "type": "generated-index",
+    "description": "Barra de navegación"
+  }
+}
+
